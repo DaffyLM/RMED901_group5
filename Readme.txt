@@ -1,6 +1,7 @@
 RMED901
-Created 2023-09-07-DLM
+Created 2023-09-07
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Hei, jeg endret denne
@@ -31,3 +32,6 @@ Denne endringen er skrevet av Dagfinn 2023-09-11
 Jeg prøver å endre
 
 >>>>>>> a2a0bdc9cca501a66898d91206700beb8c4112cc
+=======
+Nå har jeg ryddet i filen
+>>>>>>> d556013fc76aab8921976423e73591919b5891c8
