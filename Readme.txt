@@ -29,4 +29,5 @@ Denne endringen er skrevet av Dagfinn 2023-09-11
 =======
 
 Jeg prøver å endre
+
 >>>>>>> a2a0bdc9cca501a66898d91206700beb8c4112cc
