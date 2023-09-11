@@ -6,3 +6,5 @@ Denne endringen er skrevet av Dagfinn 2023-09-11
 =======
 #Hi, group members!
 >>>>>>> d3abdbeb3a3dab7c165f978a12960aa94dddcca5
+
+Oppdatert av Dagfinn kl 11:22
