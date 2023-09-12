@@ -13,8 +13,6 @@ OurData <-
   rename(BMI = `BMI kg/m2`,
          Preg.ended_bf37 = `Preg.ended<37wk`)
 
-glimpse(OurData)
-OurData
 
 #Variable type changes
 ##PID, mounth, year and age to integer
@@ -22,11 +20,6 @@ OurData
 ##BMI to integer
 ##Hypertension, diabetes to logical
 ##BL.Diab.Type to factor
-
-read_tsv(here("Data", "exam_data.txt"))
-# Read the file
-
-OurData <- read_tsv(here("Data", "exam_data.txt"))
 
 OurData %>% 
   glimpse()
@@ -40,16 +33,6 @@ OurData <- OurData %>%
 OurData %>% 
   glimpse()
 
-install.packages("here")
-library(here)
-here()
-
-OurData <- read_tsv(here("DATA", "exam_data.txt"))
-OurData
-glimpse(OurData)
-head(OurData)
-tail(OurData)
-view(OurData)
 
 #Remove duplicates
 OurData <- OurData %>%
@@ -66,7 +49,3 @@ OurData <- OurData %>%
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
-
-OurData <- OurData %>%
-  distinct()
-
