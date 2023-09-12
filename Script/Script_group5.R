@@ -10,6 +10,7 @@ head(OurData)
 tail(OurData)
 view(OurData)
 
+#<<<<<<< DLM
 #Remove duplicates
 OurData <- OurData %>%
   distinct()
@@ -25,3 +26,5 @@ OurData <- OurData %>%
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
 
+OurData <- OurData %>%
+  distinct()
