@@ -4,6 +4,7 @@ Created 2023-09-07
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Hei, jeg endret denne
 =======
 #Hi, group members!
@@ -35,3 +36,6 @@ Jeg prøver å endre
 =======
 Nå har jeg ryddet i filen
 >>>>>>> d556013fc76aab8921976423e73591919b5891c8
+=======
+Updated 2023-09-12
+>>>>>>> 63e3d525dfdad012457351ffbb50f560992ef449
