@@ -22,7 +22,7 @@ OurData
 ##BMI to integer
 ##Hypertension, diabetes to logical
 ##BL.Diab.Type to factor
-=======
+
 read_tsv(here("Data", "exam_data.txt"))
 # Read the file
 
@@ -51,17 +51,11 @@ head(OurData)
 tail(OurData)
 view(OurData)
 
-<<<<<<< HEAD
-=======
-#<<<<<<< DLM
->>>>>>> e7b4b0013e67afe85febdcfa5e9dd7d9bb3887f9
 #Remove duplicates
 OurData <- OurData %>%
   distinct()
 
-<<<<<<< HEAD
 #Endret fra 835 til 834 rader
-=======
 #Endret fra 835 til 834 rader
 
 #Variable types
@@ -76,5 +70,3 @@ OurData <- OurData %>%
 OurData <- OurData %>%
   distinct()
 
-
->>>>>>> e7b4b0013e67afe85febdcfa5e9dd7d9bb3887f9
