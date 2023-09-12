@@ -1,0 +1,77 @@
+install.packages("tidyverse"O)
+
+#Read files: 
+read_dta(...)
+read_sas
+read_spss
+
+readxl::read_excel(...)
+readxl::read_xlsx(...)
+
+#Tidyverse
+read_delim
+
+#skifte navn på variabel
+df%<%
+	rename(newName = coloumn1)
+
+pivot_wider(names_from, vlues_from = value)
+
+separate()#dele en variabel (med skilletegn) inn i flere kolonner 
+separate_wider_position #dele variabel basert på antall tegn~
+
+library(tidyverse)
+install.packages("here")
+library(here)
+here()
+
+df <- read_csv2(here("DATA", "Konsultasjoner.csv"))#read_csv2 leser semikolonnedelte csv-filer
+df
+glimpse(df)
+head(df)
+tail(df)
+view(df)
+
+install.packages("skimr")
+skimr::skim(df)
+
+install.packages("naniar")
+naniar::gg_miss_var(df) #identifiserer manglende data
+
+df %>%
+  pivot_longer(
+    names_to = "year",
+    values_to = "nConsultations",
+    cols = starts_with("Konsultasjoner")
+  )
+
+df <- df %>%
+  pivot_longer(
+    names_sep = " ",
+    names_to = c(NA, "year"),
+    values_to = "nConsultations",
+    cols = starts_with("Konsultasjoner")
+  )
+
+#Skifte navn på variabler
+df <- 
+  df %>%
+  rename(age = alder,
+         gender = kjoenn,
+         diagnosis = diagnose)
+
+#Removes duplicates
+df %>%
+  distinct()
+
+#Teller og sorterer
+df %>%
+  count(gender, sort = T)
+
+df %>%
+  summarise(max(nConsultations), min(nConsultations))
+
+#save tidy data
+fileName <- paste0("tidy_consultation_", Sys.Date(), ".txt")
+write_delim(df,
+            file=here("DATA", fileName), delim="\t")
