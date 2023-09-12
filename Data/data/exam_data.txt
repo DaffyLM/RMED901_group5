@@ -1,0 +1,836 @@
+PID	month	year	Age	Black	White	Nat.Am	Asian	Hisp	BMI kg/m2	Education	Hypertension	Diabetes	BL.Diab.Type	Tx.comp.	Tx.time	EDC.necessary.	Completed.EDC	N.extractions	N.perm.restorations	N.qualifying.teeth	Birth.outcome	Preg.ended<37wk	GA.at.outcome	Birthweight	Local_Topical.Anest	C	T
+100034	6	2010	25	Yes	No	No	No	NA	NA	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	13	Live birth	No	265	3490	NA_NA	TRUE	NA
+100042	8	2010	21	Yes	No	No	No	NA	21	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	12	Live birth	Yes	253	2350	NA_NA	TRUE	NA
+100067	6	2008	25	No	Yes	No	No	Yes	24	8-12 yrs 	N  	No	NA	Und	1	Yes	Yes	0	1	16	Live birth	No	266	2525	No_No	NA	TRUE
+100083	8	2008	36	Yes	No	No	No	NA	36	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	15	Live birth	No	271	3650	NA_NA	TRUE	NA
+100091	2	2009	21	No	Yes	No	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	16	Live birth	No	280	3865	NA_NA	TRUE	NA
+100109	2	2009	40	No	No	No	Yes	NA	24	8-12 yrs 	N  	No	NA	Und	1.666666667	NA	NA	NA	NA	16	Live birth	No	275	3120	No_Yes	NA	TRUE
+100117	1	2009	23	Yes	No	No	No	NA	32	8-12 yrs 	N  	No	NA	Und	1.5	Yes	Yes	1	0	19	Live birth	No	284	3380	No_Yes	NA	TRUE
+100133	7	2008	28	Yes	No	No	No	NA	NA	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	280	3100	NA_NA	TRUE	NA
+100141	11	2008	25	Yes	No	No	No	NA	26	8-12 yrs 	N  	No	NA	Und	1.75	Yes	Yes	0	0	21	Live birth	No	283	3145	No_No	NA	TRUE
+100158	1	2010	27	Yes	No	No	No	NA	28	MT 12 yrs	N  	No	NA	Und	2	NA	NA	NA	NA	11	Non-live birth	Yes	150	NA	No_Yes	NA	TRUE
+100166	1	2008	32	Yes	No	No	No	NA	40	MT 12 yrs	N  	No	NA	NA	NA	NA	NA	NA	NA	25	Lost to FU	NA	119	NA	No_No	NA	TRUE
+100174	1	2010	34	Yes	No	No	No	NA	32	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	0	16	Live birth	No	274	4645	NA_NA	TRUE	NA
+100216	12	2009	37	Yes	No	No	No	NA	28	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	9	Live birth	No	272	3675	NA_NA	TRUE	NA
+100224	6	2008	30	Yes	No	No	No	NA	26	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	1	15	Live birth	No	278	3107	NA_NA	TRUE	NA
+100257	7	2010	29	Yes	No	No	No	NA	27	MT 12 yrs	N  	No	NA	Und	1.25	Yes	Yes	0	4	11	Live birth	Yes	229	1860	No_Yes	NA	TRUE
+100265	9	2009	22	No	Yes	No	No	NA	20	MT 12 yrs	N  	No	NA	NA	NA	NA	NA	NA	NA	9	Non-live birth	Yes	103	NA	NA_NA	TRUE	NA
+100273	7	2010	30	No	No	No	Yes	NA	21	MT 12 yrs	N  	No	NA	Und	1.83333333	Yes	No	0	3	19	Live birth	No	282	3375	No_No	NA	TRUE
+100281	12	2008	27	Yes	No	No	No	NA	26	8-12 yrs 	N  	No	NA	Und	1.5	Yes	No	NA	NA	13	Live birth	No	260	3062	No_No	NA	TRUE
+100299	2	2010	33	Yes	No	No	No	NA	27	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	0	8	Live birth	No	291	3705	NA_NA	TRUE	NA
+100315	11	2008	24	No	Yes	No	No	Yes	NA	MT 12 yrs	N  	No	NA	Und	1	No	NA	NA	NA	24	Live birth	No	272	4261	No_Yes	NA	TRUE
+100349	11	2009	19	Yes	No	No	No	NA	21	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	18	Lost to FU	NA	112	NA	No_No	NA	TRUE
+100356	11	2008	28	Yes	No	No	No	NA	27	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	8	Live birth	Yes	244	2040	NA_NA	TRUE	NA
+100364	4	2010	30	No	Yes	No	No	NA	NA	MT 12 yrs	N  	No	NA	Und	1	Yes	Yes	0	1	19	Live birth	No	276	3105	No_Yes	NA	TRUE
+100372	2	2010	24	Yes	No	No	No	NA	34	LT 8 yrs 	N  	No	NA	Und	1	Yes	No	NA	NA	11	Live birth	No	267	3610	No_No	NA	TRUE
+100380	4	2008	25	Yes	Yes	No	No	Yes	27	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	269	2880	NA_NA	TRUE	NA
+100398	3	2010	24	No	Yes	No	No	Yes	26	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	16	Live birth	No	275	3060	NA_NA	TRUE	NA
+100406	11	2008	26	Yes	No	No	No	NA	27	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	26	Non-live birth	Yes	161	600	NA_NA	TRUE	NA
+100414	10	2010	35	Yes	No	No	No	NA	25	LT 8 yrs 	N  	No	NA	Und	1	Yes	No	NA	NA	14	Live birth	Yes	252	2340	No_Yes	NA	TRUE
+100422	10	2008	35	Yes	No	No	No	NA	NA	LT 8 yrs 	N  	No	NA	Und	1.25	Yes	No	0	1	13	Live birth	No	290	2845	No_No	NA	TRUE
+100430	1	2009	18	Yes	No	No	No	NA	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	283	3190	NA_NA	TRUE	NA
+100448	11	2008	19	No	Yes	No	No	Yes	NA	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	15	Live birth	No	274	2250	NA_NA	TRUE	NA
+100455	6	2008	23	Yes	No	No	No	NA	NA	MT 12 yrs	N  	No	NA	Und	1	No	NA	NA	NA	7	Live birth	Yes	254	3150	No_Yes	NA	TRUE
+100463	3	2010	27	Yes	No	No	No	NA	NA	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	281	3190	NA_NA	TRUE	NA
+100471	8	2009	23	Yes	No	No	No	NA	42	8-12 yrs 	N  	No	NA	Und	1.5	No	NA	NA	NA	23	Live birth	No	275	3425	No_Yes	NA	TRUE
+100489	7	2008	19	Yes	No	No	No	NA	30	MT 12 yrs	N  	No	NA	Und	1	No	NA	NA	NA	27	Live birth	No	293	3465	No_Yes	NA	TRUE
+100497	4	2009	35	Yes	No	No	No	NA	NA	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	269	2730	NA_NA	TRUE	NA
+100505	10	2008	33	Yes	No	No	No	NA	NA	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Live birth	No	288	3050	NA_NA	TRUE	NA
+100513	1	2009	24	Yes	No	No	No	NA	30	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	16	Live birth	No	273	3285	NA_NA	TRUE	NA
+100521	11	2009	30	Yes	No	No	No	NA	32	MT 12 yrs	N  	No	NA	Und	1	No	NA	NA	NA	8	Live birth	No	286	3415	No_No	NA	TRUE
+100539	5	2009	19	Yes	No	No	No	NA	NA	8-12 yrs 	N  	No	NA	Und	1	Yes	No	NA	NA	22	Live birth	No	279	3585	No_Yes	NA	TRUE
+100547	1	2010	31	Yes	No	No	No	NA	NA	8-12 yrs 	N  	No	NA	Und	2.583333333	No	NA	NA	NA	20	Live birth	Yes	183	865	No_Yes	NA	TRUE
+100554	6	2009	24	Yes	No	No	No	NA	NA	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	12	Live birth	No	275	3445	NA_NA	TRUE	NA
+100562	2	2008	22	Yes	No	No	No	NA	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	24	Lost to FU	NA	126	NA	NA_NA	TRUE	NA
+100570	2	2008	30	No	Yes	No	No	Yes	NA	8-12 yrs 	N  	No	NA	Und	1	Yes	Yes	0	0	14	Live birth	No	283	3565	No_No	NA	TRUE
+100588	3	2008	22	Yes	No	No	No	NA	21	LT 8 yrs 	N  	No	NA	Und	1	No	NA	NA	NA	8	Live birth	Yes	258	2820	No_No	NA	TRUE
+100596	3	2009	44	Yes	No	No	No	NA	NA	LT 8 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	24	Live birth	Yes	256	3220	NA_NA	TRUE	NA
+100604	1	2010	29	Yes	No	No	No	NA	NA	8-12 yrs 	N  	No	NA	Und	1	No	NA	NA	NA	11	Live birth	No	281	3220	No_No	NA	TRUE
+100612	9	2010	21	Yes	No	No	No	NA	24	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	11	Live birth	No	288	3260	NA_NA	TRUE	NA
+100620	2	2008	41	Yes	No	No	No	NA	20	LT 8 yrs 	N  	No	NA	Und	1	Yes	No	NA	NA	24	Live birth	No	284	3655	No_No	NA	TRUE
+100638	10	2008	33	No	Yes	No	No	Yes	20	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	8	Live birth	No	292	3535	NA_NA	TRUE	NA
+100646	3	2008	23	Yes	No	No	No	NA	22	8-12 yrs 	N  	No	NA	Und	1.83333333	No	NA	NA	NA	12	Live birth	No	280	3120	No_No	NA	TRUE
+100653	8	2010	28	Yes	No	No	No	NA	21	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	1	0	8	Live birth	No	266	3235	NA_NA	TRUE	NA
+100661	2	2009	22	Yes	No	No	No	NA	29	8-12 yrs 	N  	No	NA	Und	1	No	NA	NA	NA	15	Live birth	No	285	3728	No_Yes	NA	TRUE
+100679	11	2008	28	Yes	No	No	No	NA	28	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	14	Non-live birth	Yes	139	NA	No_No	NA	TRUE
+100687	8	2008	35	No	Yes	No	No	Yes	35	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	267	4139	NA_NA	TRUE	NA
+100695	3	2010	30	Yes	No	No	No	NA	NA	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	8	Live birth	No	264	4026	NA_NA	TRUE	NA
+100703	2	2008	27	Yes	No	No	No	NA	NA	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	8	Live birth	No	284	3155	NA_NA	TRUE	NA
+100711	11	2008	31	No	Yes	No	No	Yes	26	LT 8 yrs 	N  	No	NA	Und	1.83333333	No	NA	NA	NA	11	Live birth	No	270	3460	No_Yes	NA	TRUE
+100729	5	2009	23	No	Yes	No	No	Yes	NA	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	13	Live birth	No	270	3210	NA_NA	TRUE	NA
+100737	12	2008	33	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	Und	1	Yes	No	NA	NA	12	Live birth	No	287	3325	No_No	NA	TRUE
+100745	1	2008	22	No	Yes	No	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	13	Live birth	No	281	3235	NA_NA	TRUE	NA
+100752	2	2010	26	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	Und	1	Yes	Yes	1	0	10	Live birth	Yes	257	2025	No_Yes	NA	TRUE
+100760	1	2009	24	Yes	No	No	No	No	25	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	16	Live birth	No	269	3425	NA_NA	TRUE	NA
+100778	3	2008	34	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	Und	1.25	No	NA	NA	NA	9	Live birth	No	281	3220	No_Yes	NA	TRUE
+100786	1	2008	22	No	Yes	No	No	Yes	23	8-12 yrs 	N  	No	NA	Und	1	No	NA	NA	NA	12	Live birth	No	273	3410	No_Yes	NA	TRUE
+100794	2	2010	21	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	Yes	253	2180	NA_NA	TRUE	NA
+100802	7	2010	25	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	11	Live birth	No	286	4070	NA_NA	TRUE	NA
+100810	8	2008	21	Yes	No	No	No	No	22	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	11	Live birth	No	285	3325	No_No	NA	TRUE
+100828	5	2008	22	Yes	No	No	No	No	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	274	3165	NA_NA	TRUE	NA
+100836	1	2010	27	Yes	No	No	No	No	34	8-12 yrs 	N  	No	NA	Und	1.25	No	NA	NA	NA	11	Live birth	No	284	3555	No_No	NA	TRUE
+100844	9	2008	29	Yes	No	No	No	No	24	MT 12 yrs	N  	No	NA	Und	1.5	No	NA	NA	NA	18	Live birth	Yes	257	2405	No_Yes	NA	TRUE
+100851	8	2008	23	No	Yes	No	No	Yes	NA	8-12 yrs 	N  	No	NA	Und	1.25	Yes	Yes	0	2	13	Live birth	No	275	4510	No_Yes	NA	TRUE
+100869	3	2009	33	Yes	No	No	No	No	NA	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	295	3535	NA_NA	TRUE	NA
+100877	6	2010	26	Yes	No	No	No	No	33	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	13	Live birth	No	260	2525	NA_NA	TRUE	NA
+100885	2	2009	33	Yes	No	No	No	No	26	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	7	Live birth	No	288	2940	No_No	NA	TRUE
+100893	1	2009	36	Yes	No	No	No	No	NA	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	276	3435	NA_NA	TRUE	NA
+100901	9	2010	26	Yes	No	No	No	No	21	LT 8 yrs 	N  	No	NA	Und	2.75	No	NA	NA	NA	26	Live birth	No	270	2810	No_No	NA	TRUE
+100919	3	2010	30	No	Yes	No	No	Yes	30	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Live birth	No	265	3255	NA_NA	TRUE	NA
+100927	6	2009	26	No	Yes	No	No	Yes	NA	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	0	8	Live birth	No	280	3670	NA_NA	TRUE	NA
+100935	1	2008	24	No	Yes	No	No	Yes	31	8-12 yrs 	N  	No	NA	Und	1.25	Yes	Yes	0	0	10	Lost to FU	NA	147	NA	No_Yes	NA	TRUE
+100943	3	2010	30	No	Yes	No	No	Yes	38	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	1	14	Live birth	No	280	3495	NA_NA	TRUE	NA
+100950	6	2009	21	Yes	No	No	No	No	24	LT 8 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	13	Live birth	No	274	3080	NA_NA	TRUE	NA
+100968	9	2010	35	Yes	No	No	No	No	20	LT 8 yrs 	N  	No	NA	Und	3.83333333	Yes	No	0	0	21	Live birth	No	281	3095	No_No	NA	TRUE
+100976	5	2008	35	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	Und	2.5	Yes	Yes	0	2	21	Live birth	Yes	255	3130	No_No	NA	TRUE
+100984	1	2008	31	No	Yes	No	No	Yes	28	MT 12 yrs	N  	No	NA	Und	2.25	No	NA	NA	NA	14	Live birth	No	288	3135	No_No	NA	TRUE
+100992	10	2008	33	Yes	No	No	No	No	39	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	270	3860	NA_NA	TRUE	NA
+101008	1	2008	20	Yes	No	No	No	No	26	8-12 yrs 	N  	No	NA	Und	2.333333333	Yes	Yes	0	1	13	Live birth	No	282	2930	No_No	NA	TRUE
+101016	1	2009	33	Yes	No	No	No	No	25	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	13	Live birth	No	293	3585	NA_NA	TRUE	NA
+101024	1	2010	19	No	Yes	No	No	Yes	NA	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	6	16	Live birth	No	275	3550	NA_NA	TRUE	NA
+101032	1	2010	23	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	Und	3.333333333	Yes	Yes	0	2	12	Live birth	Yes	247	2335	No_No	NA	TRUE
+101040	4	2009	19	Yes	No	No	No	No	28	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	272	2615	No_No	NA	TRUE
+101057	9	2008	32	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	Und	3	Yes	No	1	0	5	Live birth	No	273	2985	No_No	NA	TRUE
+101065	6	2009	21	Yes	No	No	No	No	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	14	Lost to FU	NA	147	NA	NA_NA	TRUE	NA
+101073	3	2010	31	Yes	No	No	No	No	28	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	282	4075	NA_NA	TRUE	NA
+101081	6	2009	29	Yes	No	No	No	No	20	8-12 yrs 	N  	No	NA	Und	1.416666667	No	NA	NA	NA	13	Live birth	No	287	3680	No_No	NA	TRUE
+101099	3	2008	34	Yes	No	No	No	No	NA	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	NA	NA	26	Live birth	No	272	4145	NA_NA	TRUE	NA
+101107	5	2010	22	Yes	No	No	No	No	23	MT 12 yrs	N  	No	NA	No	1.583333333	No	NA	NA	NA	9	Live birth	No	273	2930	No_No	NA	TRUE
+101115	7	2010	26	Yes	No	No	No	No	26	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	7	Live birth	No	260	3559	NA_NA	TRUE	NA
+101123	12	2009	21	No	Yes	No	No	Yes	26	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	0	14	Live birth	No	273	3910	NA_NA	TRUE	NA
+101131	3	2010	22	Yes	No	No	No	No	26	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	8	Live birth	No	285	3365	NA_NA	TRUE	NA
+101149	11	2009	36	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	No	1.5	Yes	No	NA	NA	20	Live birth	No	281	3475	No_No	NA	TRUE
+101156	4	2009	21	Yes	No	No	No	No	26	8-12 yrs 	N  	No	NA	Yes	0.116666667	No	NA	NA	NA	10	Live birth	No	290	2960	No_No	NA	TRUE
+101164	7	2010	18	No	Yes	No	No	Yes	NA	MT 12 yrs	N  	No	NA	Yes	0.666666667	No	NA	NA	NA	11	Live birth	No	275	3030	No_Yes	NA	TRUE
+101172	2	2008	17	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Non-live birth	Yes	216	650	NA_NA	TRUE	NA
+101180	12	2010	33	Yes	No	No	No	No	20	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	275	3520	NA_NA	TRUE	NA
+101198	4	2008	21	Yes	No	No	No	No	26	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Live birth	No	277	3590	No_No	NA	TRUE
+101206	6	2008	27	Yes	No	No	No	No	45	8-12 yrs 	N  	No	NA	Yes	0.833333333	Yes	Yes	0	0	14	Live birth	No	282	3845	No_Yes	NA	TRUE
+101214	5	2009	19	Yes	No	No	No	No	23	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	12	Live birth	No	269	3000	NA_NA	TRUE	NA
+101222	3	2008	21	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	No	1.33333333	No	NA	NA	NA	14	Live birth	No	279	2830	No_No	NA	TRUE
+101230	4	2009	26	Yes	No	No	No	No	38	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	2	0	12	Live birth	No	266	3575	NA_NA	TRUE	NA
+101248	3	2009	35	Yes	No	No	No	No	26	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	4	0	8	Live birth	No	278	3730	NA_NA	TRUE	NA
+101255	10	2010	26	Yes	No	No	No	No	30	MT 12 yrs	N  	No	NA	Yes	0.75	Yes	No	1	0	12	Live birth	No	281	3925	No_No	NA	TRUE
+101263	1	2008	37	No	Yes	No	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	8	Live birth	No	272	3290	NA_NA	TRUE	NA
+101271	1	2010	24	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	Yes	2.75	No	NA	NA	NA	15	Live birth	No	279	3860	No_Yes	NA	TRUE
+101289	9	2008	35	Yes	No	No	No	No	31	MT 12 yrs	Y  	No	NA	Yes	1	Yes	No	1	0	8	Live birth	No	282	3544	No_No	NA	TRUE
+101297	4	2009	17	No	Yes	No	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	11	Live birth	No	278	3455	NA_NA	TRUE	NA
+101305	1	2009	28	Yes	No	No	No	No	NA	MT 12 yrs	N  	No	NA	Yes	0.666666667	Yes	Yes	0	0	8	Live birth	No	277	3270	No_No	NA	TRUE
+101313	12	2009	28	Yes	No	No	No	No	NA	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	6	Live birth	No	278	4160	NA_NA	TRUE	NA
+101321	12	2008	38	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	Yes	0.583333333	Yes	Yes	2	0	11	Live birth	No	280	3495	No_No	NA	TRUE
+101339	3	2008	23	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	0	11	Live birth	No	282	4000	NA_NA	TRUE	NA
+101347	5	2008	19	Yes	No	No	No	No	35	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	8	Non-live birth	Yes	144	452	NA_NA	TRUE	NA
+101354	9	2008	18	Yes	No	No	No	No	21	8-12 yrs 	N  	No	NA	Yes	1.85	No	NA	NA	NA	13	Live birth	Yes	247	2965	No_No	NA	TRUE
+101362	2	2008	21	Yes	No	No	No	No	NA	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	2	0	11	Live birth	No	284	3705	NA_NA	TRUE	NA
+101388	9	2010	17	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	No	1.683333333	NA	NA	NA	NA	5	Live birth	No	281	3020	No_No	NA	TRUE
+101396	6	2010	19	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	Yes	2.266666667	Yes	Yes	1	0	4	Live birth	No	266	3430	No_No	NA	TRUE
+101404	7	2010	24	Yes	No	No	No	No	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	Yes	257	3690	NA_NA	TRUE	NA
+101412	10	2010	38	No	Yes	No	No	Yes	32	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	5	Live birth	No	279	4300	NA_NA	TRUE	NA
+101420	10	2010	26	Yes	No	No	No	No	NA	LT 8 yrs 	N  	No	NA	Yes	1.45	Yes	No	NA	NA	22	Live birth	No	284	3455	No_No	NA	TRUE
+101438	10	2010	21	No	Yes	No	No	Yes	17	8-12 yrs 	N  	No	NA	Yes	2.83333333	Yes	No	NA	NA	8	Live birth	Yes	160	520	No_No	NA	TRUE
+101446	12	2010	34	Yes	No	No	No	No	29	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	4	1	7	Live birth	No	266	2680	NA_NA	TRUE	NA
+101453	6	2008	26	Yes	No	No	No	No	29	LT 8 yrs 	N  	No	NA	Yes	2.7	No	NA	NA	NA	10	Live birth	No	279	4360	No_No	NA	TRUE
+101461	11	2009	27	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	0	10	Live birth	No	281	3458	NA_NA	TRUE	NA
+101479	1	2010	21	Yes	No	No	No	No	25	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	1	0	16	Live birth	No	283	3460	NA_NA	TRUE	NA
+101487	4	2009	22	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	Yes	1.65	Yes	Yes	3	0	9	Live birth	No	290	3180	No_No	NA	TRUE
+101495	5	2010	25	Yes	No	No	No	No	22	8-12 yrs 	N  	No	NA	Yes	2.583333333	No	NA	NA	NA	20	Live birth	No	277	2800	No_No	NA	TRUE
+101503	9	2010	24	No	Yes	No	No	Yes	41	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	12	Live birth	No	286	3200	NA_NA	TRUE	NA
+101529	8	2009	33	No	Yes	No	No	Yes	NA	LT 8 yrs 	N  	No	NA	Yes	1.183333333	No	NA	NA	NA	9	Live birth	No	276	3160	No_No	NA	TRUE
+101537	8	2010	23	Yes	No	No	No	No	42	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	8	Live birth	No	281	2835	NA_NA	TRUE	NA
+101545	7	2010	18	Yes	Yes	No	No	Yes	20	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	5	Live birth	No	272	3260	NA_NA	TRUE	NA
+101552	2	2009	32	No	Yes	No	No	Yes	25	8-12 yrs 	N  	No	NA	Yes	1.4	Yes	No	0	1	8	Live birth	No	277	3320	No_No	NA	TRUE
+101560	1	2010	23	Yes	No	Yes	No	No	36	MT 12 yrs	N  	No	NA	No	2.883333333	Yes	No	NA	NA	15	Live birth	No	280	3030	No_No	NA	TRUE
+101578	12	2008	28	Yes	No	No	No	No	NA	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	0	2	8	Live birth	No	284	3370	NA_NA	TRUE	NA
+101586	11	2008	34	No	Yes	No	No	Yes	NA	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	0	11	Live birth	No	284	5160	NA_NA	TRUE	NA
+101594	1	2009	20	Yes	No	No	No	No	NA	LT 8 yrs 	N  	No	NA	Yes	1.35	Yes	Yes	0	0	8	Live birth	No	269	3455	No_No	NA	TRUE
+101602	4	2009	28	Yes	No	No	No	No	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	0	21	Live birth	No	271	2760	NA_NA	TRUE	NA
+101610	8	2010	30	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	Yes	2.416666667	Yes	No	NA	NA	17	Live birth	No	274	2860	No_No	NA	TRUE
+101628	8	2008	25	Yes	No	No	No	No	37	MT 12 yrs	N  	No	NA	Yes	2.883333333	No	NA	NA	NA	18	Live birth	No	268	3660	No_No	NA	TRUE
+101636	6	2010	37	Yes	No	No	No	No	NA	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	1	9	Live birth	No	281	2680	NA_NA	TRUE	NA
+101644	7	2009	35	No	Yes	No	No	Yes	30	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	0	9	Live birth	No	274	3215	NA_NA	TRUE	NA
+101651	4	2010	31	Yes	No	No	No	No	22	8-12 yrs 	N  	No	NA	Yes	1.183333333	Yes	Yes	1	0	15	Lost to FU	NA	112	NA	No_No	NA	TRUE
+101669	12	2008	26	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	9	Live birth	No	274	4005	NA_NA	TRUE	NA
+101677	3	2010	20	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	Yes	1.733333333	Yes	Yes	1	0	17	Live birth	Yes	246	2465	No_No	NA	TRUE
+101685	10	2010	21	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	No	0.733333333	Yes	No	NA	NA	15	Live birth	No	294	2960	No_No	NA	TRUE
+101693	11	2010	23	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Live birth	No	284	3120	NA_NA	TRUE	NA
+101701	1	2010	30	Yes	No	No	No	No	34	8-12 yrs 	Y  	No	NA	No	0.866666667	Yes	No	5	0	9	Live birth	No	278	4210	No_No	NA	TRUE
+101719	10	2010	27	Yes	No	No	No	No	NA	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	277	2670	NA_NA	TRUE	NA
+101727	12	2009	37	No	Yes	No	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	0	7	Live birth	No	283	3670	NA_NA	TRUE	NA
+101735	9	2009	18	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	Yes	1.633333333	No	NA	NA	NA	7	Live birth	No	280	3880	No_No	NA	TRUE
+101743	1	2010	26	Yes	No	No	No	No	NA	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	277	3360	NA_NA	TRUE	NA
+101750	6	2008	26	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	Yes	1.566666667	Yes	No	NA	NA	10	Live birth	No	276	3040	No_No	NA	TRUE
+101768	1	2009	25	Yes	No	No	No	No	19	8-12 yrs 	N  	No	NA	Yes	1.383333333	Yes	Yes	2	0	6	Live birth	No	276	2466	No_No	NA	TRUE
+101776	2	2008	23	Yes	No	No	No	No	NA	LT 8 yrs 	N  	No	NA	NA	NA	Yes	No	3	0	7	Live birth	No	270	3445	NA_NA	TRUE	NA
+101784	7	2008	29	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	Yes	1.433333333	Yes	Yes	2	0	11	Live birth	No	293	3255	No_Yes	NA	TRUE
+101792	4	2008	25	Yes	No	No	No	No	35	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	9	Live birth	No	273	3232	NA_NA	TRUE	NA
+101800	7	2010	18	Yes	No	No	No	No	NA	LT 8 yrs 	N  	No	NA	Yes	0.716666667	No	NA	NA	NA	17	Live birth	No	276	2630	No_No	NA	TRUE
+101818	4	2009	28	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	Yes	2.366666667	Yes	No	0	0	13	Live birth	No	291	3105	No_No	NA	TRUE
+101826	1	2008	29	Yes	No	No	No	No	NA	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	20	Live birth	No	262	2640	NA_NA	TRUE	NA
+101834	2	2010	23	No	Yes	No	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	273	3402	NA_NA	TRUE	NA
+101842	5	2008	20	Yes	No	No	No	No	18	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	5	Live birth	No	276	3190	NA_NA	TRUE	NA
+101859	5	2008	41	Yes	No	No	No	No	37	8-12 yrs 	N  	No	NA	Yes	2.1	No	NA	NA	NA	22	Live birth	No	274	2990	No_No	NA	TRUE
+101867	12	2009	27	Yes	No	No	No	No	49	8-12 yrs 	Y  	No	NA	No	2.716666667	NA	NA	NA	NA	28	Live birth	Yes	230	1775	No_No	NA	TRUE
+101875	9	2010	28	Yes	No	No	No	No	27	MT 12 yrs	N  	No	NA	Yes	2.483333333	No	NA	NA	NA	16	Live birth	No	261	3150	No_No	NA	TRUE
+101883	12	2010	23	Yes	No	No	No	No	27	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	8	Live birth	No	263	4167	NA_NA	TRUE	NA
+200034	1	2008	18	No	Yes	No	No	Yes	26	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	1	5	Live birth	No	282	3300	NA_NA	TRUE	NA
+200067	12	2008	19	No	Yes	Yes	No	NA	28	8-12 yrs 	N  	No	NA	Und	3.25	Yes	No	NA	NA	3	Live birth	No	285	3680	Yes_Yes	NA	TRUE
+200075	11	2008	23	No	Yes	No	No	Yes	31	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	282	3560	NA_NA	TRUE	NA
+200091	10	2008	31	No	Yes	No	No	Yes	22	MT 12 yrs	N  	No	NA	Und	2.75	No	NA	NA	NA	21	Live birth	No	287	3880	Yes_Yes	NA	TRUE
+200109	11	2009	23	No	Yes	No	No	Yes	26	LT 8 yrs 	N  	No	NA	NA	NA	Yes	No	0	2	19	Live birth	No	275	4020	NA_NA	TRUE	NA
+200117	3	2008	35	Yes	No	No	No	NA	36	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	10	Live birth	No	275	2730	NA_NA	TRUE	NA
+200133	1	2008	23	No	Yes	No	No	NA	25	LT 8 yrs 	N  	No	NA	Und	2.75	Yes	Yes	1	8	9	Live birth	No	263	1830	Yes_Yes	NA	TRUE
+200182	3	2009	22	Yes	No	No	No	NA	23	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	0	14	Live birth	No	286	4055	NA_NA	TRUE	NA
+200190	5	2008	20	No	Yes	No	No	Yes	24	8-12 yrs 	N  	No	NA	Und	1.75	Yes	No	NA	NA	5	Live birth	No	277	3920	No_No	NA	TRUE
+200208	7	2008	32	Yes	No	No	No	NA	37	MT 12 yrs	N  	No	NA	Und	3.83333333	Yes	Yes	5	0	15	Live birth	No	270	3000	Yes_Yes	NA	TRUE
+200216	6	2010	20	Yes	No	No	No	NA	32	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	7	Live birth	Yes	201	585	NA_NA	TRUE	NA
+200224	7	2008	38	No	Yes	No	No	Yes	32	8-12 yrs 	N  	Yes	Type II   	Und	3.583333333	Yes	Yes	1	0	8	Live birth	No	281	4933	Yes_Yes	NA	TRUE
+200257	12	2010	28	No	Yes	No	No	Yes	25	8-12 yrs 	N  	No	NA	Und	3.75	No	NA	NA	NA	11	Live birth	No	271	3210	Yes_Yes	NA	TRUE
+200265	7	2009	23	No	Yes	No	No	Yes	21	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	12	Live birth	No	280	3900	NA_NA	TRUE	NA
+200273	2	2008	34	Yes	No	No	No	NA	22	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	1	0	9	Live birth	No	278	3120	NA_NA	TRUE	NA
+200281	7	2008	23	No	Yes	No	No	Yes	24	8-12 yrs 	N  	No	NA	Und	1.5	Yes	No	0	0	13	Live birth	No	271	3090	No_No	NA	TRUE
+200307	2	2009	23	No	Yes	No	No	Yes	19	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	15	Live birth	No	283	4190	NA_NA	TRUE	NA
+200315	1	2009	39	No	Yes	No	No	Yes	27	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	15	Live birth	No	295	3840	NA_NA	TRUE	NA
+200323	8	2008	24	Yes	No	Yes	No	NA	24	8-12 yrs 	N  	No	NA	Und	1.916666667	No	NA	NA	NA	5	Live birth	No	293	3550	No_No	NA	TRUE
+200331	3	2009	26	No	Yes	No	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	281	3240	NA_NA	TRUE	NA
+200349	1	2008	33	Yes	No	No	No	NA	22	MT 12 yrs	N  	No	NA	Und	4.416666667	Yes	Yes	0	2	7	Live birth	No	277	3409	Yes_Yes	NA	TRUE
+200356	4	2010	21	No	Yes	No	No	NA	20	LT 8 yrs 	N  	No	NA	Und	1	Yes	Yes	1	2	15	Live birth	No	279	3490	No_Yes	NA	TRUE
+200372	6	2009	23	No	Yes	No	No	Yes	28	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	1	11	Live birth	No	263	3220	NA_NA	TRUE	NA
+200398	9	2008	25	No	Yes	No	No	Yes	26	8-12 yrs 	N  	No	NA	Und	2.75	No	NA	NA	NA	18	Live birth	Yes	257	3470	Yes_Yes	NA	TRUE
+200406	3	2008	21	No	Yes	No	No	Yes	28	8-12 yrs 	N  	No	NA	Und	0.833333333	No	NA	NA	NA	14	Live birth	No	277	2900	Yes_Yes	NA	TRUE
+200414	4	2008	21	Yes	No	No	No	NA	34	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	5	Live birth	No	291	3980	NA_NA	TRUE	NA
+200422	6	2010	37	No	Yes	No	No	Yes	27	LT 8 yrs 	N  	No	NA	Und	3	Yes	Yes	1	0	22	Live birth	No	279	3140	Yes_Yes	NA	TRUE
+200430	12	2008	38	No	Yes	No	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	19	Live birth	No	261	3300	NA_NA	TRUE	NA
+200448	7	2010	29	No	Yes	No	No	Yes	31	LT 8 yrs 	N  	No	NA	Und	2.75	Yes	Yes	0	0	17	Live birth	No	289	3200	Yes_Yes	NA	TRUE
+200455	12	2009	23	No	Yes	No	No	NA	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	0	9	Live birth	No	280	3455	NA_NA	TRUE	NA
+200463	4	2010	24	Yes	No	No	No	NA	25	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	3	2	13	Live birth	No	295	2940	NA_NA	TRUE	NA
+200471	9	2008	24	Yes	No	No	No	NA	51	8-12 yrs 	N  	Yes	Type II   	Und	2	Yes	Yes	2	0	18	Non-live birth	Yes	252	3600	Yes_Yes	NA	TRUE
+200489	3	2010	21	No	Yes	No	No	Yes	24	8-12 yrs 	N  	No	NA	Und	1.83333333	Yes	Yes	0	2	6	Live birth	No	288	3289	No_No	NA	TRUE
+200513	12	2009	22	No	Yes	No	No	Yes	28	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	16	Live birth	No	278	2800	NA_NA	TRUE	NA
+200539	4	2008	32	No	Yes	No	No	Yes	27	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	22	Live birth	No	275	3040	NA_NA	TRUE	NA
+200547	7	2010	34	No	Yes	Yes	No	NA	30	8-12 yrs 	N  	No	NA	Und	2.75	Yes	Yes	0	1	17	Live birth	No	285	3680	Yes_Yes	NA	TRUE
+200554	2	2010	34	Yes	Yes	No	No	NA	39	8-12 yrs 	N  	No	NA	Und	2.25	No	NA	NA	NA	11	Live birth	No	283	4045	Yes_Yes	NA	TRUE
+200562	4	2010	30	No	Yes	No	No	Yes	28	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	4	25	Live birth	No	271	3360	NA_NA	TRUE	NA
+200570	6	2008	35	No	Yes	No	No	Yes	24	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	28	Live birth	No	269	3410	NA_NA	TRUE	NA
+200588	7	2008	34	No	Yes	No	No	Yes	24	8-12 yrs 	N  	No	NA	Und	2.916666667	No	NA	NA	NA	15	Live birth	No	282	3040	Yes_Yes	NA	TRUE
+200604	3	2009	18	No	Yes	No	No	Yes	30	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	14	Live birth	No	274	3440	NA_NA	TRUE	NA
+200612	1	2009	26	No	Yes	No	No	Yes	27	LT 8 yrs 	N  	No	NA	Und	2.5	Yes	Yes	0	2	5	Live birth	No	288	4260	Yes_Yes	NA	TRUE
+200620	7	2008	22	Yes	No	No	No	NA	41	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	15	Non-live birth	Yes	168	308	NA_NA	TRUE	NA
+200646	12	2010	23	No	Yes	No	No	Yes	23	8-12 yrs 	N  	No	NA	Und	3.25	Yes	Yes	0	5	25	Live birth	No	280	3480	Yes_Yes	NA	TRUE
+200653	4	2010	28	No	Yes	No	No	Yes	28	LT 8 yrs 	N  	No	NA	Und	3.75	No	NA	NA	NA	19	Live birth	No	275	3175	Yes_Yes	NA	TRUE
+200661	4	2009	24	No	Yes	No	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	12	Live birth	No	265	3220	NA_NA	TRUE	NA
+200679	4	2010	38	No	No	No	Yes	NA	29	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	5	Live birth	No	277	3560	NA_NA	TRUE	NA
+200687	3	2008	23	No	Yes	No	No	Yes	21	LT 8 yrs 	N  	No	NA	Und	2.916666667	Yes	Yes	0	3	9	Live birth	No	288	3400	Yes_Yes	NA	TRUE
+200695	10	2009	20	No	Yes	No	No	Yes	20	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	19	Live birth	Yes	257	2480	NA_NA	TRUE	NA
+200711	7	2008	20	No	Yes	No	No	NA	20	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	0	25	Live birth	No	286	3040	NA_NA	TRUE	NA
+200729	10	2010	22	No	Yes	No	No	Yes	23	8-12 yrs 	N  	No	NA	Und	2.5	No	NA	NA	NA	6	Live birth	No	270	3210	Yes_Yes	NA	TRUE
+200737	1	2008	37	Yes	No	No	No	NA	25	8-12 yrs 	N  	No	NA	Und	2.25	No	NA	NA	NA	21	Live birth	Yes	254	1450	Yes_Yes	NA	TRUE
+200745	8	2008	29	No	Yes	No	No	Yes	21	LT 8 yrs 	N  	No	NA	Und	3.583333333	Yes	Yes	2	0	21	Live birth	No	271	2900	Yes_Yes	NA	TRUE
+200752	7	2010	25	No	Yes	No	No	Yes	22	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	4	Live birth	No	279	3270	NA_NA	TRUE	NA
+200760	1	2010	23	No	Yes	No	No	Yes	24	8-12 yrs 	N  	No	NA	Und	2.5	Yes	Yes	0	6	6	Live birth	No	277	3360	Yes_Yes	NA	TRUE
+200778	8	2008	27	No	Yes	No	No	Yes	34	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	23	Live birth	No	286	3600	NA_NA	TRUE	NA
+200786	4	2009	26	No	Yes	No	No	Yes	20	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	18	Live birth	No	281	3020	NA_NA	TRUE	NA
+200794	7	2010	26	No	Yes	No	No	Yes	29	8-12 yrs 	N  	No	NA	Und	2.25	Yes	Yes	0	3	9	Live birth	No	272	3240	Yes_Yes	NA	TRUE
+200802	5	2008	18	No	Yes	No	No	Yes	NA	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	19	Live birth	No	280	3620	NA_NA	TRUE	NA
+200828	6	2008	30	No	Yes	No	No	Yes	21	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	5	10	Live birth	No	292	4095	NA_NA	TRUE	NA
+200836	11	2008	24	Yes	No	No	No	NA	31	8-12 yrs 	N  	No	NA	Und	3.83333333	Yes	Yes	1	2	6	Live birth	No	286	3200	Yes_Yes	NA	TRUE
+200844	8	2009	27	No	Yes	Yes	No	Yes	34	LT 8 yrs 	N  	No	NA	Und	2.916666667	Yes	Yes	1	8	18	Live birth	No	296	3200	Yes_Yes	NA	TRUE
+200851	10	2008	28	No	Yes	No	No	Yes	30	LT 8 yrs 	N  	No	NA	Und	2	Yes	Yes	4	8	5	Live birth	No	268	3560	Yes_Yes	NA	TRUE
+200869	8	2010	31	No	Yes	No	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	21	Live birth	No	271	3350	NA_NA	TRUE	NA
+200877	11	2010	34	No	No	No	Yes	NA	25	MT 12 yrs	N  	No	NA	Und	3	No	NA	NA	NA	17	Live birth	No	272	3090	Yes_Yes	NA	TRUE
+200893	4	2009	24	Yes	No	No	No	No	26	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	21	Live birth	No	286	3420	NA_NA	TRUE	NA
+200901	8	2008	21	Yes	No	No	No	No	37	MT 12 yrs	N  	No	NA	Und	1.25	Yes	Yes	0	3	4	Live birth	No	279	3147	No_No	NA	TRUE
+200919	3	2009	29	No	No	No	No	Yes	26	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	5	4	Live birth	Yes	256	2630	NA_NA	TRUE	NA
+200927	7	2010	22	No	No	No	No	Yes	20	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	11	Live birth	No	280	3560	NA_NA	TRUE	NA
+200935	5	2010	26	No	Yes	No	No	No	37	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	28	Live birth	No	268	2770	No_No	NA	TRUE
+200943	3	2009	26	No	No	No	No	Yes	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	3	26	Live birth	No	280	3030	NA_NA	TRUE	NA
+200950	12	2010	27	No	No	Yes	No	Yes	20	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	27	Live birth	No	276	2381	NA_NA	TRUE	NA
+200968	11	2009	26	No	Yes	No	No	Yes	25	8-12 yrs 	N  	No	NA	Und	1.5	Yes	No	NA	NA	25	Live birth	No	262	4000	No_Yes	NA	TRUE
+200976	3	2008	30	No	No	Yes	No	Yes	36	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	11	Live birth	No	272	3700	NA_NA	TRUE	NA
+200984	2	2009	27	No	Yes	No	No	Yes	23	LT 8 yrs 	N  	No	NA	Und	3	No	NA	NA	NA	22	Live birth	No	295	4252	Yes_Yes	NA	TRUE
+200992	10	2010	25	No	No	Yes	No	Yes	18	8-12 yrs 	N  	No	NA	Und	2.75	Yes	Yes	0	1	28	Live birth	No	267	2720	No_Yes	NA	TRUE
+201008	7	2008	26	Yes	No	No	No	No	19	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	2	0	27	Live birth	No	275	3118	NA_NA	TRUE	NA
+201016	12	2010	26	No	No	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	5	Live birth	No	273	3840	NA_NA	TRUE	NA
+201024	4	2008	17	No	No	Yes	No	Yes	29	LT 8 yrs 	N  	No	NA	Und	1	No	NA	NA	NA	6	Live birth	No	281	3540	No_Yes	NA	TRUE
+201032	12	2008	27	No	Yes	No	No	Yes	22	8-12 yrs 	N  	No	NA	Und	3	No	NA	NA	NA	25	Live birth	No	283	3280	No_Yes	NA	TRUE
+201040	7	2010	31	Yes	No	No	No	No	28	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	28	Live birth	Yes	254	2940	NA_NA	TRUE	NA
+201057	2	2010	30	No	No	Yes	No	Yes	47	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	28	Live birth	No	273	3490	NA_NA	TRUE	NA
+201065	1	2010	25	No	No	Yes	No	Yes	18	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Live birth	Yes	258	2780	NA_NA	TRUE	NA
+201073	10	2008	24	No	No	Yes	No	Yes	23	LT 8 yrs 	N  	No	NA	Und	2.5	No	NA	NA	NA	24	Live birth	No	280	3220	No_Yes	NA	TRUE
+201081	4	2008	33	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	28	Live birth	No	286	3500	NA_NA	TRUE	NA
+201099	5	2010	28	Yes	No	No	No	No	28	8-12 yrs 	N  	No	NA	Und	3	Yes	Yes	1	3	24	Live birth	No	259	3000	Yes_Yes	NA	TRUE
+201107	12	2009	21	No	No	Yes	No	Yes	23	MT 12 yrs	N  	No	NA	Und	1.916666667	Yes	Yes	0	1	20	Live birth	No	286	3330	No_Yes	NA	TRUE
+201115	5	2010	34	No	No	Yes	No	Yes	32	8-12 yrs 	N  	No	NA	Und	3.416666667	Yes	Yes	1	4	26	Live birth	Yes	243	2300	Yes_Yes	NA	TRUE
+201123	7	2010	29	No	No	Yes	No	Yes	25	LT 8 yrs 	N  	No	NA	Und	2.75	Yes	Yes	0	1	26	Live birth	Yes	229	1550	Yes_Yes	NA	TRUE
+201131	1	2010	31	Yes	No	No	No	No	26	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	4	13	Live birth	No	282	4000	NA_NA	TRUE	NA
+201149	9	2010	18	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	Und	1	Yes	Yes	0	1	27	Live birth	Yes	201	1028	No_No	NA	TRUE
+201156	2	2010	23	No	Yes	No	No	No	23	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	2	7	5	Live birth	No	291	4360	NA_NA	TRUE	NA
+201164	6	2010	27	No	No	Yes	No	Yes	32	MT 12 yrs	N  	No	NA	Und	2.25	No	NA	NA	NA	27	Live birth	Yes	258	2890	No_Yes	NA	TRUE
+201172	7	2008	28	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	Und	2.25	No	NA	NA	NA	5	Live birth	No	260	2780	No_Yes	NA	TRUE
+201198	4	2009	21	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	14	Live birth	Yes	237	2455	NA_NA	TRUE	NA
+201206	10	2009	24	No	No	Yes	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	27	Live birth	No	276	3760	NA_NA	TRUE	NA
+201214	10	2009	26	No	No	Yes	No	Yes	27	LT 8 yrs 	N  	No	NA	Und	1.75	No	NA	NA	NA	24	Live birth	No	271	2950	No_Yes	NA	TRUE
+201222	2	2008	31	Yes	No	No	No	No	34	8-12 yrs 	N  	Yes	Type II   	NA	NA	Yes	Yes	0	3	25	Live birth	No	272	4170	NA_NA	TRUE	NA
+201230	2	2008	33	No	Yes	Yes	No	Yes	20	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	2	27	Live birth	No	298	4060	NA_NA	TRUE	NA
+201248	10	2010	25	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	Und	2.25	No	NA	NA	NA	12	Live birth	No	277	4220	Yes_Yes	NA	TRUE
+201263	7	2009	27	No	Yes	No	No	Yes	27	MT 12 yrs	N  	No	NA	Und	4.75	Yes	Yes	0	1	28	Live birth	No	271	2900	Yes_Yes	NA	TRUE
+201271	6	2009	21	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	2	26	Live birth	No	282	3160	NA_NA	TRUE	NA
+201289	9	2010	29	Yes	No	No	No	No	34	MT 12 yrs	N  	No	NA	Und	2.75	Yes	Yes	0	2	9	Live birth	No	272	2760	Yes_Yes	NA	TRUE
+201297	6	2008	18	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	4	Live birth	No	284	3330	NA_NA	TRUE	NA
+201305	11	2009	31	No	No	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	6	Live birth	No	279	3260	NA_NA	TRUE	NA
+201313	12	2010	35	No	No	Yes	No	Yes	21	LT 8 yrs 	N  	No	NA	Und	3	Yes	Yes	1	4	13	Live birth	No	276	3000	No_Yes	NA	TRUE
+201321	5	2009	33	Yes	No	No	No	No	22	8-12 yrs 	N  	No	NA	Und	4.5	Yes	Yes	1	4	12	Live birth	No	293	4715	Yes_Yes	NA	TRUE
+201339	12	2009	20	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	Und	2	Yes	Yes	0	2	21	Live birth	No	282	3430	Yes_Yes	NA	TRUE
+201347	8	2010	28	No	No	Yes	No	Yes	35	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	20	Live birth	No	286	4280	NA_NA	TRUE	NA
+201354	6	2008	35	No	Yes	Yes	No	Yes	37	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	1	27	Live birth	No	284	2950	NA_NA	TRUE	NA
+201362	8	2010	28	Yes	No	No	No	Yes	27	8-12 yrs 	N  	No	NA	Und	2.5	Yes	Yes	0	4	27	Live birth	No	271	3730	Yes_Yes	NA	TRUE
+201370	11	2009	24	No	Yes	Yes	No	Yes	19	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	24	Live birth	No	289	3050	NA_NA	TRUE	NA
+201388	2	2010	38	No	No	Yes	No	Yes	31	LT 8 yrs 	N  	No	NA	Und	2	Yes	Yes	0	3	9	Live birth	No	289	3940	Yes_Yes	NA	TRUE
+201396	6	2009	22	Yes	No	No	No	No	39	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	8	7	Live birth	No	291	3750	NA_NA	TRUE	NA
+201404	12	2009	36	No	Yes	No	No	Yes	35	LT 8 yrs 	N  	No	NA	Und	3.25	Yes	Yes	0	2	25	Live birth	No	269	2870	Yes_Yes	NA	TRUE
+201412	9	2008	22	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	4	5	Live birth	No	271	3400	NA_NA	TRUE	NA
+201438	10	2008	22	No	No	Yes	No	Yes	NA	LT 8 yrs 	N  	No	NA	Yes	1.833333333	Yes	Yes	1	8	6	Live birth	No	283	3730	Yes_Yes	NA	TRUE
+201446	7	2009	34	No	No	Yes	No	Yes	25	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	5	25	Live birth	Yes	246	1900	NA_NA	TRUE	NA
+201453	3	2008	27	No	No	Yes	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	9	Live birth	No	286	3070	NA_NA	TRUE	NA
+201461	5	2009	22	No	No	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	28	Live birth	No	285	3500	NA_NA	TRUE	NA
+201487	3	2008	34	No	No	Yes	No	Yes	28	LT 8 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	28	Live birth	No	289	3941	No_No	NA	TRUE
+201495	2	2009	28	No	Yes	No	No	Yes	40	MT 12 yrs	N  	No	NA	Und	1.25	Yes	Yes	0	9	4	Live birth	No	267	3560	No_No	NA	TRUE
+201503	9	2010	35	Yes	No	No	No	No	27	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	9	Live birth	No	302	4590	NA_NA	TRUE	NA
+201529	5	2010	24	No	No	Yes	No	Yes	27	8-12 yrs 	N  	No	NA	Yes	3.5	Yes	Yes	0	3	28	Live birth	No	284	3360	Yes_Yes	NA	TRUE
+201537	10	2009	19	No	No	Yes	No	Yes	19	8-12 yrs 	N  	No	NA	Yes	2.75	Yes	Yes	1	5	27	Live birth	No	280	3000	Yes_Yes	NA	TRUE
+201545	4	2008	30	Yes	No	No	No	No	29	8-12 yrs 	N  	No	NA	Und	2.5	No	NA	NA	NA	27	Live birth	No	278	3960	No_Yes	NA	TRUE
+201552	5	2010	25	No	No	Yes	No	Yes	37	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	5	26	Live birth	No	279	3480	NA_NA	TRUE	NA
+201560	11	2010	24	No	No	Yes	No	Yes	NA	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	6	28	Live birth	No	296	3180	NA_NA	TRUE	NA
+201578	6	2009	33	No	Yes	No	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	24	Live birth	No	275	3810	NA_NA	TRUE	NA
+201586	10	2009	24	No	No	Yes	No	Yes	NA	8-12 yrs 	N  	No	NA	Yes	2	Yes	Yes	1	2	22	Live birth	No	288	3000	Yes_Yes	NA	TRUE
+201594	8	2008	25	Yes	No	No	No	No	34	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	5	28	Live birth	No	280	3260	NA_NA	TRUE	NA
+201602	9	2009	25	Yes	No	No	No	No	22	LT 8 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	15	Live birth	No	293	3535	No_No	NA	TRUE
+201610	4	2010	25	No	Yes	Yes	No	Yes	NA	LT 8 yrs 	N  	No	NA	Yes	4	Yes	Yes	0	8	27	Live birth	No	272	3340	Yes_Yes	NA	TRUE
+201628	11	2010	20	Yes	No	No	No	No	26	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	13	Live birth	Yes	160	450	NA_NA	TRUE	NA
+201636	8	2009	23	No	No	Yes	No	Yes	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	4	28	Live birth	No	272	3300	NA_NA	TRUE	NA
+201644	2	2008	16	No	No	Yes	No	Yes	NA	8-12 yrs 	N  	No	NA	Yes	2	Yes	Yes	0	4	24	Live birth	No	288	3460	No_No	NA	TRUE
+201651	11	2009	42	Yes	No	No	No	No	27	8-12 yrs 	N  	Yes	Type II   	NA	NA	Yes	Yes	0	1	27	Live birth	No	285	4196	NA_NA	TRUE	NA
+201669	12	2010	31	No	No	Yes	No	Yes	NA	8-12 yrs 	N  	No	NA	Yes	1.5	Yes	No	0	8	18	Live birth	No	289	4250	No_No	NA	TRUE
+201677	2	2008	22	No	No	Yes	No	Yes	26	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	27	Live birth	No	267	3180	NA_NA	TRUE	NA
+201685	5	2008	28	No	No	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	2	23	Live birth	No	277	3650	NA_NA	TRUE	NA
+201693	3	2010	23	No	No	Yes	No	Yes	31	LT 8 yrs 	N  	No	NA	Yes	2.5	No	NA	NA	NA	27	Live birth	No	280	2880	Yes_Yes	NA	TRUE
+201701	2	2010	24	No	No	Yes	No	Yes	25	LT 8 yrs 	N  	No	NA	Yes	1.5	Yes	Yes	0	8	7	Live birth	No	272	2585	No_Yes	NA	TRUE
+201719	11	2009	32	No	Yes	No	No	Yes	28	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	5	7	Live birth	No	275	3220	NA_NA	TRUE	NA
+201727	11	2010	35	No	No	Yes	No	Yes	28	LT 8 yrs 	N  	No	NA	Yes	2.5	Yes	Yes	0	1	23	Live birth	No	271	2290	No_Yes	NA	TRUE
+201735	4	2009	24	Yes	No	No	No	No	24	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	1	0	25	Live birth	No	280	3120	NA_NA	TRUE	NA
+201743	8	2010	20	No	Yes	No	No	Yes	25	MT 12 yrs	N  	No	NA	Yes	2.666666667	Yes	Yes	0	1	25	Live birth	No	270	3210	Yes_Yes	NA	TRUE
+201750	9	2009	24	No	No	No	No	Yes	27	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	24	Live birth	No	277	3460	NA_NA	TRUE	NA
+201776	6	2008	24	No	No	Yes	No	Yes	24	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	15	Live birth	No	278	3960	NA_NA	TRUE	NA
+201784	2	2009	33	No	No	Yes	No	Yes	27	8-12 yrs 	N  	No	NA	Yes	2.5	Yes	Yes	1	4	23	Live birth	No	277	3680	No_Yes	NA	TRUE
+201792	12	2009	23	No	No	Yes	No	Yes	30	8-12 yrs 	N  	No	NA	Yes	3.75	Yes	Yes	0	6	26	Live birth	No	284	3690	Yes_Yes	NA	TRUE
+201800	7	2008	33	No	No	Yes	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	27	Live birth	No	276	3690	NA_NA	TRUE	NA
+201818	5	2008	27	No	No	No	No	Yes	23	LT 8 yrs 	N  	No	NA	Yes	2.583333333	No	NA	NA	NA	28	Live birth	No	271	3195	Yes_Yes	NA	TRUE
+201826	3	2008	31	No	No	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	Yes	1.916666667	No	NA	NA	NA	27	Live birth	No	270	3940	No_No	NA	TRUE
+201834	6	2009	31	No	No	Yes	No	Yes	29	MT 12 yrs	N  	No	NA	Yes	1.5	No	NA	NA	NA	21	Live birth	No	266	3050	No_No	NA	TRUE
+201842	7	2010	40	Yes	No	No	No	No	29	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	18	17	Live birth	No	279	3050	NA_NA	TRUE	NA
+201859	12	2008	34	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	4	28	Live birth	No	282	3480	NA_NA	TRUE	NA
+201867	12	2010	26	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	26	Live birth	Yes	258	2160	NA_NA	TRUE	NA
+201875	2	2010	16	Yes	No	No	No	No	27	8-12 yrs 	N  	No	NA	Yes	2.166666667	No	NA	NA	NA	28	Live birth	No	278	3340	No_Yes	NA	TRUE
+201883	12	2008	20	No	No	No	No	Yes	NA	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	16	Live birth	No	282	3300	NA_NA	TRUE	NA
+201891	12	2009	26	Yes	No	No	No	No	22	8-12 yrs 	N  	No	NA	No	0.5	Yes	No	NA	NA	21	Live birth	No	278	3203	Yes_Yes	NA	TRUE
+201909	5	2010	22	No	No	Yes	No	Yes	17	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	28	Live birth	No	266	2810	NA_NA	TRUE	NA
+201917	1	2010	21	Yes	No	No	No	No	23	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	9	Live birth	No	267	3500	NA_NA	TRUE	NA
+201925	11	2009	39	No	Yes	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	Yes	2.75	Yes	Yes	1	6	18	Live birth	No	282	3580	Yes_Yes	NA	TRUE
+201933	5	2010	23	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	Yes	3.333333333	Yes	No	NA	NA	19	Live birth	No	286	3680	Yes_Yes	NA	TRUE
+201941	6	2010	31	No	No	Yes	No	Yes	24	LT 8 yrs 	N  	No	NA	Yes	4	No	NA	NA	NA	26	Live birth	No	267	3160	Yes_Yes	NA	TRUE
+201958	3	2008	28	No	No	Yes	No	Yes	23	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	26	Live birth	No	272	2940	NA_NA	TRUE	NA
+201966	12	2009	32	No	No	Yes	No	Yes	24	LT 8 yrs 	N  	No	NA	Yes	2.5	Yes	Yes	8	12	19	Live birth	No	288	3500	Yes_Yes	NA	TRUE
+201982	3	2010	35	No	No	Yes	No	Yes	30	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	9	Live birth	Yes	249	2200	NA_NA	TRUE	NA
+201990	10	2008	33	No	No	Yes	No	Yes	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	2	2	10	Live birth	No	273	3640	NA_NA	TRUE	NA
+202006	6	2009	28	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	7	28	Live birth	Yes	199	1048	NA_NA	TRUE	NA
+202014	2	2009	27	Yes	No	No	No	No	43	8-12 yrs 	N  	No	NA	Yes	3	Yes	Yes	0	4	27	Live birth	No	281	3636	Yes_Yes	NA	TRUE
+202022	4	2009	24	No	Yes	No	No	No	20	MT 12 yrs	N  	No	NA	Yes	2.75	No	NA	NA	NA	26	Live birth	No	268	2980	Yes_Yes	NA	TRUE
+202030	10	2009	28	No	No	Yes	No	Yes	23	8-12 yrs 	N  	No	NA	Yes	2.166666667	Yes	Yes	2	4	15	Live birth	No	281	3620	Yes_Yes	NA	TRUE
+202048	1	2009	26	No	No	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	25	Live birth	No	286	3120	NA_NA	TRUE	NA
+202055	4	2010	30	No	No	Yes	No	Yes	29	8-12 yrs 	N  	No	NA	Yes	3	Yes	Yes	2	0	28	Live birth	No	278	3800	No_Yes	NA	TRUE
+202063	3	2010	37	Yes	No	No	No	No	19	8-12 yrs 	N  	No	NA	Yes	3	Yes	Yes	0	2	19	Live birth	No	280	3660	Yes_Yes	NA	TRUE
+202071	6	2010	29	No	No	Yes	No	Yes	24	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	4	2	19	Live birth	No	284	3315	NA_NA	TRUE	NA
+202089	8	2008	22	No	Yes	No	No	No	32	8-12 yrs 	N  	No	NA	Yes	2.666666667	Yes	Yes	2	8	6	Live birth	Yes	252	3300	Yes_Yes	NA	TRUE
+202097	3	2010	38	Yes	No	No	No	No	35	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	19	Live birth	No	284	3640	NA_NA	TRUE	NA
+202105	6	2009	20	No	No	Yes	No	Yes	30	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	5	23	Live birth	No	278	2880	NA_NA	TRUE	NA
+202113	1	2008	32	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	Yes	1.25	Yes	Yes	0	1	12	Live birth	No	279	3930	No_No	NA	TRUE
+202121	9	2008	22	No	No	Yes	No	Yes	18	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	27	Live birth	No	274	2580	NA_NA	TRUE	NA
+202139	4	2010	28	No	No	Yes	No	Yes	22	MT 12 yrs	N  	No	NA	Yes	2.25	No	NA	NA	NA	21	Live birth	No	286	2800	Yes_Yes	NA	TRUE
+202147	7	2008	27	Yes	No	No	No	No	33	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Live birth	Yes	254	2040	NA_NA	TRUE	NA
+202154	4	2008	26	No	Yes	No	No	No	32	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	5	8	22	Live birth	No	279	3485	NA_NA	TRUE	NA
+202162	5	2010	30	No	No	Yes	No	Yes	25	MT 12 yrs	N  	No	NA	Yes	2.5	Yes	Yes	3	4	13	Live birth	No	283	4255	Yes_Yes	NA	TRUE
+202170	6	2008	29	No	No	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	Yes	3.166666667	Yes	Yes	2	0	10	Live birth	No	282	3370	Yes_Yes	NA	TRUE
+202188	12	2009	27	No	No	No	No	Yes	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	4	5	Live birth	No	288	4420	NA_NA	TRUE	NA
+202196	4	2010	30	No	No	Yes	No	Yes	22	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	18	Live birth	No	270	3320	NA_NA	TRUE	NA
+202204	3	2010	23	Yes	No	No	No	No	21	MT 12 yrs	N  	No	NA	Yes	2	Yes	Yes	0	5	13	Live birth	No	263	4140	Yes_Yes	NA	TRUE
+202212	1	2008	20	No	No	Yes	No	Yes	25	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	6	Live birth	No	282	2950	NA_NA	TRUE	NA
+202220	3	2010	21	No	No	Yes	No	Yes	19	LT 8 yrs 	N  	No	NA	Yes	2.5	Yes	Yes	0	8	5	Live birth	No	282	3820	Yes_Yes	NA	TRUE
+202238	5	2009	33	Yes	No	No	No	No	24	8-12 yrs 	Y  	No	NA	Yes	3.833333333	Yes	Yes	0	3	23	Live birth	No	278	3320	Yes_Yes	NA	TRUE
+202246	6	2009	23	No	No	Yes	No	Yes	29	LT 8 yrs 	N  	No	NA	Yes	2.25	Yes	Yes	1	1	4	Live birth	No	289	3920	Yes_Yes	NA	TRUE
+202253	1	2010	30	No	Yes	No	No	Yes	34	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	13	Live birth	No	262	3470	NA_NA	TRUE	NA
+202261	2	2009	36	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	17	Live birth	No	272	3010	NA_NA	TRUE	NA
+202279	8	2008	24	No	No	Yes	No	Yes	24	8-12 yrs 	N  	No	NA	Yes	2.25	Yes	Yes	2	4	26	Live birth	No	284	3440	Yes_Yes	NA	TRUE
+202287	7	2010	31	No	No	Yes	No	Yes	NA	LT 8 yrs 	N  	No	NA	Yes	2	Yes	Yes	0	5	7	Live birth	No	274	3580	No_No	NA	TRUE
+202295	8	2009	22	No	Yes	No	No	No	26	8-12 yrs 	N  	No	NA	Yes	2.5	Yes	Yes	2	7	6	Live birth	No	276	3580	Yes_Yes	NA	TRUE
+202303	1	2008	23	No	No	Yes	No	Yes	NA	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	27	Live birth	No	287	3190	NA_NA	TRUE	NA
+202311	3	2010	31	No	No	Yes	No	Yes	28	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	4	27	Live birth	No	283	2870	NA_NA	TRUE	NA
+202329	8	2010	24	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	28	Live birth	No	285	3370	NA_NA	TRUE	NA
+202337	11	2009	27	No	No	Yes	No	Yes	37	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	6	27	Live birth	No	290	3300	NA_NA	TRUE	NA
+202345	5	2009	30	No	No	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	Yes	3	Yes	Yes	0	2	21	Live birth	No	283	3380	No_No	NA	TRUE
+202352	2	2009	34	No	No	Yes	No	Yes	29	8-12 yrs 	N  	No	NA	Yes	2.5	Yes	Yes	0	1	11	Live birth	No	286	2950	Yes_Yes	NA	TRUE
+202378	2	2009	25	No	No	Yes	No	Yes	30	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	22	Live birth	No	278	3680	NA_NA	TRUE	NA
+202386	11	2009	22	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	Yes	2.583333333	Yes	Yes	4	11	16	Live birth	No	279	2060	Yes_Yes	NA	TRUE
+202394	7	2009	24	No	No	Yes	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	2	23	Live birth	No	292	3760	NA_NA	TRUE	NA
+202402	11	2010	33	No	No	Yes	No	Yes	28	LT 8 yrs 	N  	No	NA	Yes	2.75	Yes	Yes	0	7	20	Live birth	No	276	3730	Yes_Yes	NA	TRUE
+202410	7	2009	29	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	7	19	Live birth	No	271	3390	NA_NA	TRUE	NA
+202428	6	2010	31	No	No	Yes	No	Yes	32	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	23	Live birth	No	278	3520	NA_NA	TRUE	NA
+202436	1	2009	22	No	No	Yes	No	Yes	20	8-12 yrs 	N  	No	NA	Yes	2.25	Yes	Yes	0	7	25	Live birth	No	274	2920	Yes_Yes	NA	TRUE
+202444	4	2009	25	No	No	Yes	No	Yes	30	8-12 yrs 	N  	No	NA	Yes	2.5	Yes	No	1	11	14	Live birth	No	289	3240	No_No	NA	TRUE
+202451	3	2010	24	Yes	No	No	No	No	27	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	Yes	246	2720	NA_NA	TRUE	NA
+202469	10	2008	22	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	Yes	2.75	No	NA	NA	NA	22	Live birth	No	263	2760	Yes_Yes	NA	TRUE
+202477	11	2008	25	No	No	Yes	No	Yes	21	LT 8 yrs 	N  	No	NA	Yes	3	Yes	Yes	0	1	26	Live birth	No	274	2600	Yes_Yes	NA	TRUE
+202485	7	2009	33	No	No	Yes	No	Yes	31	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	20	Live birth	No	287	3890	NA_NA	TRUE	NA
+202493	12	2010	27	No	No	Yes	No	Yes	28	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	5	Live birth	No	266	3000	NA_NA	TRUE	NA
+202519	5	2010	35	No	Yes	Yes	No	Yes	18	8-12 yrs 	N  	No	NA	Yes	2.25	Yes	Yes	0	5	16	Elective abortion	Yes	131	186	Yes_Yes	NA	TRUE
+202527	9	2009	33	No	No	Yes	No	Yes	29	MT 12 yrs	N  	No	NA	Yes	3	No	NA	NA	NA	22	Live birth	No	267	3720	Yes_Yes	NA	TRUE
+202535	2	2009	23	No	No	Yes	No	Yes	24	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	8	Live birth	No	285	2920	NA_NA	TRUE	NA
+202543	8	2008	29	No	No	Yes	No	Yes	35	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	9	19	Live birth	No	278	3760	NA_NA	TRUE	NA
+202550	7	2008	44	No	No	Yes	No	Yes	28	LT 8 yrs 	N  	No	NA	Yes	2	Yes	Yes	0	3	14	Live birth	No	285	3725	No_No	NA	TRUE
+202568	1	2008	30	No	No	Yes	No	No	39	LT 8 yrs 	N  	Yes	Type II   	NA	NA	Yes	No	NA	NA	25	Live birth	No	276	4055	No_No	NA	TRUE
+202576	4	2008	25	No	No	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	5	7	Live birth	No	280	3500	NA_NA	TRUE	NA
+202584	6	2008	34	No	No	Yes	No	Yes	29	LT 8 yrs 	N  	No	NA	Yes	2	Yes	Yes	0	3	17	Live birth	No	275	3750	Yes_Yes	NA	TRUE
+202592	6	2010	31	No	No	No	No	Yes	31	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	5	21	Live birth	No	271	3260	NA_NA	TRUE	NA
+202600	9	2010	27	No	No	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	10	Live birth	Yes	241	2140	NA_NA	TRUE	NA
+202618	3	2008	35	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	Yes	2.25	Yes	Yes	1	2	16	Live birth	Yes	258	2360	Yes_Yes	NA	TRUE
+202626	12	2008	23	No	No	Yes	No	Yes	23	8-12 yrs 	N  	No	NA	Yes	2.916666667	Yes	Yes	0	5	27	Live birth	No	275	2725	Yes_Yes	NA	TRUE
+202634	9	2010	27	No	No	Yes	No	Yes	21	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	12	Live birth	No	276	4500	NA_NA	TRUE	NA
+202642	9	2008	25	No	No	Yes	No	Yes	25	LT 8 yrs 	N  	Yes	Type II   	NA	NA	Yes	Yes	0	2	8	Live birth	No	290	3940	NA_NA	TRUE	NA
+202659	8	2009	26	No	No	Yes	No	Yes	39	8-12 yrs 	N  	No	NA	Yes	2.25	Yes	Yes	0	1	27	Live birth	No	263	2850	Yes_Yes	NA	TRUE
+202667	7	2010	25	No	No	Yes	No	Yes	31	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	22	Live birth	No	292	3360	NA_NA	TRUE	NA
+202675	11	2009	36	No	No	Yes	No	Yes	21	8-12 yrs 	N  	No	NA	Yes	1.75	No	NA	NA	NA	7	Live birth	No	280	2920	No_No	NA	TRUE
+202683	11	2010	26	No	No	Yes	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	5	Live birth	No	272	3350	NA_NA	TRUE	NA
+202691	4	2009	27	No	No	Yes	No	Yes	20	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	6	Live birth	No	279	3430	NA_NA	TRUE	NA
+202709	8	2010	23	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	Yes	2.666666667	Yes	No	0	1	17	Live birth	No	289	3930	Yes_Yes	NA	TRUE
+202717	7	2010	25	No	No	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	3	7	6	Live birth	No	284	3220	NA_NA	TRUE	NA
+202725	5	2008	29	No	No	Yes	No	Yes	29	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	20	0	14	Live birth	No	282	3280	No_No	NA	TRUE
+202733	4	2009	40	Yes	No	Yes	No	No	29	MT 12 yrs	N  	Yes	Type II   	NA	NA	Yes	Yes	1	1	22	Live birth	No	269	2970	NA_NA	TRUE	NA
+202741	12	2009	25	No	No	Yes	No	Yes	20	8-12 yrs 	N  	No	NA	Yes	2	Yes	Yes	0	4	16	Live birth	No	284	3650	Yes_Yes	NA	TRUE
+202758	3	2010	25	No	No	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	Yes	2	Yes	Yes	0	12	6	Live birth	No	285	3630	No_No	NA	TRUE
+202766	2	2010	28	Yes	No	No	No	No	36	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	2	17	Live birth	No	269	1880	NA_NA	TRUE	NA
+202774	4	2010	26	No	Yes	No	No	No	24	MT 12 yrs	N  	No	NA	Yes	1	Yes	Yes	0	11	10	Live birth	No	275	3640	No_Yes	NA	TRUE
+202782	12	2008	21	No	No	No	Yes	No	21	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	5	22	Live birth	No	278	3380	NA_NA	TRUE	NA
+202790	5	2009	31	Yes	No	No	No	No	35	8-12 yrs 	N  	No	NA	No	1	Yes	No	NA	NA	25	Live birth	No	277	3177	Yes_Yes	NA	TRUE
+300018	1	2008	16	No	Yes	Yes	No	Yes	23	LT 8 yrs 	N  	No	NA	Und	2.333333333	No	NA	NA	NA	18	Live birth	No	288	3030	No_Yes	NA	TRUE
+300026	7	2008	18	Yes	No	No	No	NA	27	8-12 yrs 	N  	No	NA	Und	2.25	Yes	Yes	2	0	24	Live birth	No	280	3150	No_No	NA	TRUE
+300034	8	2008	23	No	Yes	No	No	Yes	NA	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	24	Lost to FU	NA	119	NA	NA_NA	TRUE	NA
+300059	4	2010	24	No	Yes	No	No	NA	42	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	0	19	Live birth	No	287	3960	NA_NA	TRUE	NA
+300067	6	2008	18	No	Yes	Yes	No	Yes	22	LT 8 yrs 	Y  	No	NA	Und	2.833333333	No	NA	NA	NA	24	Live birth	No	275	3520	Yes_No	NA	TRUE
+300075	7	2008	20	Yes	No	No	No	NA	24	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	5	Live birth	No	262	2948	NA_NA	TRUE	NA
+300083	1	2009	23	No	Yes	No	No	NA	19	8-12 yrs 	N  	No	NA	Und	3.666666667	No	NA	NA	NA	26	Live birth	No	276	3390	Yes_Yes	NA	TRUE
+300091	10	2008	16	No	Yes	No	No	NA	23	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	19	Live birth	No	279	3220	NA_NA	TRUE	NA
+300109	10	2008	35	No	No	No	Yes	NA	27	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	15	Live birth	No	274	2775	NA_NA	TRUE	NA
+300117	1	2008	23	No	Yes	No	No	NA	53	8-12 yrs 	Y  	No	NA	Und	2	No	NA	NA	NA	12	Live birth	No	272	3490	Yes_No	NA	TRUE
+300125	2	2010	23	No	Yes	Yes	No	Yes	24	8-12 yrs 	N  	No	NA	Und	2.25	No	NA	NA	NA	26	Live birth	No	267	2720	Yes_Yes	NA	TRUE
+300133	5	2010	31	No	Yes	Yes	No	Yes	25	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	11	Live birth	No	284	4140	NA_NA	TRUE	NA
+300141	9	2010	17	No	Yes	No	No	NA	27	8-12 yrs 	N  	No	NA	Und	1.833333333	No	NA	NA	NA	17	Live birth	No	265	3210	No_No	NA	TRUE
+300158	7	2010	25	No	Yes	Yes	No	Yes	30	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	Yes	239	1935	NA_NA	TRUE	NA
+300166	6	2010	28	No	Yes	Yes	No	Yes	31	MT 12 yrs	N  	No	NA	Und	1.333333333	Yes	Yes	0	2	12	Live birth	No	273	4260	Yes_No	NA	TRUE
+300174	1	2010	18	Yes	No	No	No	NA	19	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	15	Live birth	No	285	3130	NA_NA	TRUE	NA
+300182	8	2010	20	No	Yes	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	277	2990	NA_NA	TRUE	NA
+300190	8	2009	36	Yes	No	No	No	NA	24	MT 12 yrs	N  	No	NA	Und	2.333333333	No	NA	NA	NA	19	Live birth	No	273	5150	No_No	NA	TRUE
+300208	11	2008	23	No	Yes	No	No	NA	38	MT 12 yrs	N  	No	NA	Und	2.83333333	No	NA	NA	NA	9	Live birth	No	268	3760	No_No	NA	TRUE
+300216	5	2010	18	No	Yes	No	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	13	Live birth	No	275	3180	NA_NA	TRUE	NA
+300224	8	2008	22	No	Yes	No	No	NA	29	8-12 yrs 	N  	No	NA	Und	1.833333333	No	NA	NA	NA	10	Live birth	No	269	2815	Yes_Yes	NA	TRUE
+300232	11	2008	24	No	Yes	Yes	No	Yes	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	0	12	Live birth	No	296	4520	NA_NA	TRUE	NA
+300240	12	2010	23	No	Yes	No	No	NA	27	8-12 yrs 	N  	No	NA	Und	1.833333333	No	NA	NA	NA	17	Live birth	No	263	3050	No_No	NA	TRUE
+300257	1	2009	23	No	Yes	No	No	NA	22	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	7	Live birth	No	269	3230	NA_NA	TRUE	NA
+300265	3	2008	23	No	Yes	Yes	No	Yes	28	LT 8 yrs 	N  	No	NA	Und	2.333333333	No	NA	NA	NA	14	Live birth	No	276	3910	No_Yes	NA	TRUE
+300273	5	2010	23	No	Yes	No	No	NA	29	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	8	Non-live birth	Yes	213	1133	NA_NA	TRUE	NA
+300281	1	2009	31	Yes	No	No	No	NA	41	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	270	3985	NA_NA	TRUE	NA
+300299	10	2010	21	No	Yes	No	No	NA	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Live birth	No	282	4335	NA_NA	TRUE	NA
+300307	4	2009	20	No	Yes	No	No	NA	24	8-12 yrs 	N  	No	NA	Und	2.166666667	No	NA	NA	NA	7	Live birth	No	282	3680	Yes_Yes	NA	TRUE
+300315	9	2008	32	No	Yes	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	Und	3.833333333	No	NA	NA	NA	27	Live birth	No	278	3660	Yes_Yes	NA	TRUE
+300323	2	2009	19	No	Yes	Yes	No	Yes	25	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	15	Live birth	Yes	256	2680	NA_NA	TRUE	NA
+300349	5	2008	26	No	Yes	Yes	No	Yes	24	8-12 yrs 	N  	No	NA	Und	1.833333333	Yes	Yes	2	0	8	Live birth	No	271	3190	Yes_Yes	NA	TRUE
+300356	5	2009	39	No	Yes	Yes	No	Yes	24	8-12 yrs 	N  	No	NA	Und	3.416666667	No	NA	NA	NA	28	Live birth	Yes	231	1970	Yes_Yes	NA	TRUE
+300364	11	2010	23	No	Yes	No	No	No	30	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	6	Live birth	No	265	3290	NA_NA	TRUE	NA
+300372	1	2009	29	No	Yes	No	No	NA	27	8-12 yrs 	N  	No	NA	Und	3.583333333	Yes	Yes	0	0	24	Live birth	No	259	2970	Yes_Yes	NA	TRUE
+300380	8	2008	28	No	Yes	Yes	No	Yes	23	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	8	Live birth	No	278	3340	NA_NA	TRUE	NA
+300398	8	2010	24	No	Yes	No	No	NA	32	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	7	Live birth	No	270	3020	NA_NA	TRUE	NA
+300406	11	2010	35	No	Yes	Yes	No	Yes	24	MT 12 yrs	N  	No	NA	Und	3.5	Yes	Yes	0	1	12	Live birth	No	277	3189	Yes_Yes	NA	TRUE
+300414	1	2008	26	No	Yes	No	No	Yes	28	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	22	Live birth	No	283	3240	NA_NA	TRUE	NA
+300422	10	2010	19	No	Yes	No	No	NA	15	8-12 yrs 	N  	No	NA	Und	1	Yes	No	0	0	5	Live birth	No	260	2732	No_No	NA	TRUE
+300430	12	2008	20	No	Yes	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	277	3120	NA_NA	TRUE	NA
+300448	4	2010	20	No	Yes	Yes	No	Yes	20	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	21	Live birth	No	277	3025	NA_NA	TRUE	NA
+300455	7	2010	26	No	Yes	Yes	No	Yes	22	MT 12 yrs	N  	No	NA	Und	2.25	Yes	No	1	0	24	Live birth	No	273	3300	Yes_Yes	NA	TRUE
+300463	4	2010	20	No	Yes	No	No	NA	38	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	14	Live birth	No	263	3690	NA_NA	TRUE	NA
+300471	11	2009	23	No	Yes	No	No	NA	44	8-12 yrs 	N  	No	NA	Und	2.166666667	Yes	Yes	2	0	9	Live birth	No	264	3473	No_No	NA	TRUE
+300489	1	2009	24	No	Yes	Yes	No	Yes	30	LT 8 yrs 	N  	No	NA	Und	2.916666667	No	NA	NA	NA	26	Live birth	No	283	3625	Yes_Yes	NA	TRUE
+300497	9	2008	20	No	Yes	No	No	NA	20	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	0	13	Live birth	No	276	3365	NA_NA	TRUE	NA
+300505	6	2008	39	No	Yes	Yes	No	Yes	22	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	22	Non-live birth	Yes	130	170	NA_NA	TRUE	NA
+300513	11	2008	22	No	Yes	No	No	NA	23	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	285	3780	NA_NA	TRUE	NA
+300521	7	2008	21	Yes	No	No	No	NA	23	MT 12 yrs	N  	No	NA	Und	2.583333333	No	NA	NA	NA	22	Live birth	No	262	3630	No_No	NA	TRUE
+300547	2	2009	23	No	Yes	No	No	NA	32	8-12 yrs 	N  	No	NA	Und	2.333333333	Yes	Yes	0	1	16	Live birth	No	270	3140	No_No	NA	TRUE
+300554	4	2008	24	No	Yes	Yes	No	Yes	19	8-12 yrs 	N  	No	NA	Und	3.333333333	No	NA	NA	NA	25	Live birth	Yes	238	2860	Yes_Yes	NA	TRUE
+300562	6	2010	20	No	Yes	Yes	No	Yes	21	8-12 yrs 	N  	No	NA	Und	2.916666667	Yes	Yes	1	4	16	Live birth	No	281	3770	Yes_Yes	NA	TRUE
+300570	1	2010	20	No	Yes	Yes	No	Yes	19	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	0	8	Live birth	No	280	3040	NA_NA	TRUE	NA
+300588	4	2009	33	No	Yes	Yes	No	Yes	30	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	21	Live birth	No	270	2940	NA_NA	TRUE	NA
+300596	10	2010	20	No	Yes	No	No	NA	28	8-12 yrs 	N  	No	NA	Und	2	Yes	Yes	0	1	18	Live birth	No	267	3110	No_No	NA	TRUE
+300604	2	2010	24	No	Yes	No	No	Yes	34	8-12 yrs 	N  	No	NA	Und	2.25	No	NA	NA	NA	24	Lost to FU	NA	126	NA	Yes_Yes	NA	TRUE
+300620	1	2008	18	No	Yes	Yes	No	Yes	21	8-12 yrs 	N  	Yes	Type I    	Und	4.583333333	No	NA	NA	NA	28	Live birth	No	272	2860	Yes_Yes	NA	TRUE
+300638	9	2009	21	No	Yes	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	26	Live birth	No	277	3490	NA_NA	TRUE	NA
+300646	10	2010	21	No	Yes	Yes	No	Yes	23	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	15	Live birth	No	287	3300	NA_NA	TRUE	NA
+300653	12	2008	18	No	Yes	No	No	NA	19	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	3	10	Live birth	No	278	3320	NA_NA	TRUE	NA
+300687	6	2009	37	No	Yes	No	No	NA	32	LT 8 yrs 	N  	No	NA	Und	2.83333333	No	NA	NA	NA	17	Live birth	Yes	239	1800	Yes_Yes	NA	TRUE
+300695	2	2010	19	Yes	No	No	No	NA	16	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	0	28	Live birth	No	276	3552	NA_NA	TRUE	NA
+300711	2	2009	26	No	Yes	No	No	Yes	18	LT 8 yrs 	N  	No	NA	Und	3.5	Yes	Yes	1	0	11	Live birth	No	275	3270	Yes_Yes	NA	TRUE
+300729	10	2009	21	No	Yes	No	No	Yes	24	8-12 yrs 	N  	No	NA	Und	2.166666667	No	NA	NA	NA	18	Live birth	Yes	250	2145	No_No	NA	TRUE
+300737	9	2008	29	No	Yes	No	No	Yes	20	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	268	2863	NA_NA	TRUE	NA
+300745	4	2009	25	No	Yes	No	No	Yes	28	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	4	5	9	Live birth	No	285	3090	NA_NA	TRUE	NA
+300752	1	2010	21	No	Yes	No	No	Yes	21	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	0	21	Live birth	No	280	3720	NA_NA	TRUE	NA
+300778	2	2009	27	No	Yes	No	No	Yes	NA	LT 8 yrs 	N  	No	NA	Und	4.583333333	Yes	Yes	1	0	27	Live birth	No	268	3540	Yes_Yes	NA	TRUE
+300786	8	2009	42	No	Yes	No	No	No	22	8-12 yrs 	Y  	No	NA	Und	4	Yes	Yes	1	0	27	Live birth	Yes	239	2460	Yes_Yes	NA	TRUE
+300802	9	2009	35	No	Yes	No	No	No	35	8-12 yrs 	N  	No	NA	Und	1.833333333	Yes	Yes	2	1	15	Live birth	No	275	3355	Yes_Yes	NA	TRUE
+300810	10	2008	38	No	Yes	No	No	Yes	30	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	4	0	28	Live birth	No	275	3220	NA_NA	TRUE	NA
+300828	2	2008	27	No	Yes	No	No	Yes	25	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	1	0	10	Live birth	No	288	3675	NA_NA	TRUE	NA
+300836	10	2010	22	No	Yes	No	No	Yes	19	MT 12 yrs	N  	No	NA	Und	3.166666667	No	NA	NA	NA	22	Live birth	No	281	3300	No_No	NA	TRUE
+300844	5	2010	18	Yes	No	No	No	No	31	8-12 yrs 	N  	No	NA	Und	1.166666667	No	NA	NA	NA	9	Live birth	No	273	3500	No_No	NA	TRUE
+300851	9	2008	28	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	20	Non-live birth	Yes	206	700	NA_NA	TRUE	NA
+300869	7	2009	20	Yes	No	No	No	No	31	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	17	Live birth	No	265	2520	NA_NA	TRUE	NA
+300877	6	2009	23	No	No	Yes	No	Yes	24	LT 8 yrs 	N  	No	NA	Und	2	Yes	Yes	0	1	11	Live birth	No	278	3465	No_No	NA	TRUE
+300885	3	2008	28	No	No	Yes	No	Yes	28	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	25	Live birth	No	280	3610	NA_NA	TRUE	NA
+300893	8	2008	34	Yes	No	No	No	No	28	MT 12 yrs	N  	No	NA	Und	3	Yes	Yes	0	0	18	Live birth	Yes	161	640	No_No	NA	TRUE
+300901	8	2009	20	No	No	Yes	No	Yes	24	8-12 yrs 	N  	No	NA	Und	1.833333333	Yes	No	0	1	18	Live birth	No	277	4000	No_No	NA	TRUE
+300919	8	2009	21	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	Und	2.25	No	NA	NA	NA	15	Live birth	No	280	3170	Yes_Yes	NA	TRUE
+300935	6	2008	24	No	No	Yes	No	Yes	29	LT 8 yrs 	N  	No	NA	Und	2.666666667	No	NA	NA	NA	27	Live birth	No	280	3400	Yes_Yes	NA	TRUE
+300943	4	2009	26	No	Yes	No	No	No	28	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	0	19	Live birth	No	267	3935	NA_NA	TRUE	NA
+300950	5	2008	18	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	20	Live birth	No	267	2615	NA_NA	TRUE	NA
+300968	9	2010	29	Yes	No	No	No	No	26	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	0	21	Live birth	No	278	3340	NA_NA	TRUE	NA
+300976	9	2009	18	Yes	No	No	No	No	31	8-12 yrs 	N  	No	NA	Und	1.83333333	No	NA	NA	NA	18	Live birth	No	279	3140	No_No	NA	TRUE
+300984	12	2008	21	No	No	Yes	No	Yes	21	8-12 yrs 	N  	No	NA	Und	1.583333333	Yes	Yes	1	0	8	Live birth	No	285	3405	No_No	NA	TRUE
+300992	4	2008	21	Yes	No	No	No	No	25	8-12 yrs 	N  	No	NA	Und	1.9	No	NA	NA	NA	7	Live birth	No	276	3360	No_No	NA	TRUE
+301008	9	2009	21	Yes	No	No	No	No	34	8-12 yrs 	N  	No	NA	Und	1.25	No	NA	NA	NA	15	Live birth	No	279	3190	No_No	NA	TRUE
+301016	4	2008	24	No	No	Yes	No	Yes	18	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	0	21	Live birth	No	276	3080	NA_NA	TRUE	NA
+301024	2	2009	22	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	8	Live birth	No	279	3075	NA_NA	TRUE	NA
+301032	12	2008	23	No	Yes	No	No	No	34	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	0	9	Live birth	No	281	3433	NA_NA	TRUE	NA
+301057	6	2009	19	No	No	Yes	No	Yes	23	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	19	Live birth	No	271	3245	NA_NA	TRUE	NA
+301065	4	2009	22	Yes	No	No	No	No	35	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	2	0	17	Live birth	Yes	258	2625	NA_NA	TRUE	NA
+301073	12	2009	34	No	No	Yes	No	Yes	20	8-12 yrs 	N  	No	NA	Und	4.583333333	Yes	Yes	0	1	22	Live birth	No	273	2850	No_No	NA	TRUE
+301081	10	2008	26	No	No	Yes	No	Yes	23	8-12 yrs 	N  	No	NA	Und	2.333333333	No	NA	NA	NA	16	Live birth	No	278	3020	No_No	NA	TRUE
+301099	10	2009	26	No	No	Yes	No	Yes	30	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	21	Live birth	No	272	3440	NA_NA	TRUE	NA
+301107	5	2010	22	No	No	Yes	No	Yes	18	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	278	3610	NA_NA	TRUE	NA
+301115	2	2010	28	No	No	Yes	No	Yes	27	8-12 yrs 	N  	No	NA	Und	2	Yes	Yes	0	2	10	Live birth	No	270	2700	No_No	NA	TRUE
+301123	12	2010	23	No	Yes	No	No	No	42	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	7	Live birth	No	264	3740	NA_NA	TRUE	NA
+301131	5	2009	27	No	No	Yes	No	Yes	21	8-12 yrs 	N  	No	NA	Und	4.166666667	Yes	Yes	0	2	11	Live birth	No	275	3390	No_No	NA	TRUE
+301149	10	2008	38	No	No	Yes	No	Yes	30	LT 8 yrs 	N  	Yes	Type II   	Und	4.5	Yes	Yes	2	0	21	Live birth	No	268	3190	Yes_Yes	NA	TRUE
+301164	1	2010	21	No	No	Yes	No	Yes	20	LT 8 yrs 	N  	No	NA	Und	1.833333333	Yes	Yes	2	0	7	Live birth	No	273	2940	No_No	NA	TRUE
+301172	7	2008	17	No	Yes	No	No	No	44	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	280	4300	NA_NA	TRUE	NA
+301180	7	2008	20	No	No	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	Und	1.916666667	Yes	Yes	0	0	13	Live birth	No	265	3410	No_No	NA	TRUE
+301198	10	2009	24	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	Und	2.83333333	Yes	Yes	0	1	11	Live birth	No	265	3190	No_No	NA	TRUE
+301206	10	2008	36	No	No	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	7	0	13	Live birth	Yes	253	3040	NA_NA	TRUE	NA
+301222	3	2008	20	No	No	Yes	No	Yes	NA	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	3	13	Live birth	No	280	3550	NA_NA	TRUE	NA
+301230	9	2008	26	No	No	Yes	No	Yes	20	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	8	Live birth	No	266	2805	NA_NA	TRUE	NA
+301248	9	2009	18	No	Yes	Yes	No	No	42	LT 8 yrs 	N  	No	NA	Und	2.583333333	No	NA	NA	NA	18	Live birth	No	262	2800	Yes_Yes	NA	TRUE
+301263	8	2008	21	No	No	Yes	No	Yes	22	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	16	Live birth	No	281	2860	NA_NA	TRUE	NA
+301271	8	2009	17	Yes	No	No	No	No	35	8-12 yrs 	N  	No	NA	Und	1.75	No	NA	NA	NA	25	Live birth	No	285	3260	No_No	NA	TRUE
+301297	9	2008	22	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	267	3490	NA_NA	TRUE	NA
+301305	4	2010	29	Yes	No	No	No	No	30	8-12 yrs 	N  	No	NA	Und	2.83333333	Yes	Yes	1	0	19	Live birth	No	273	2610	No_No	NA	TRUE
+301313	10	2010	19	No	No	Yes	No	Yes	19	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	17	Live birth	No	271	3440	NA_NA	TRUE	NA
+301321	5	2009	24	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	Und	2.25	No	NA	NA	NA	18	Live birth	No	276	3335	Yes_Yes	NA	TRUE
+301339	1	2009	25	No	Yes	No	No	No	27	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	262	2765	NA_NA	TRUE	NA
+301347	11	2009	18	No	No	Yes	No	Yes	18	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Lost to FU	NA	126	NA	NA_NA	TRUE	NA
+301354	2	2010	24	No	No	Yes	No	Yes	38	8-12 yrs 	N  	No	NA	Yes	2.75	Yes	Yes	0	2	25	Live birth	No	280	3100	No_No	NA	TRUE
+301370	6	2008	19	No	No	Yes	No	Yes	23	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	277	3150	NA_NA	TRUE	NA
+301388	2	2008	26	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	Yes	2.25	Yes	No	0	0	13	Live birth	No	277	3285	No_No	NA	TRUE
+301396	6	2010	31	No	Yes	No	No	No	31	MT 12 yrs	N  	No	NA	Yes	1.25	No	NA	NA	NA	14	Live birth	No	266	3640	No_No	NA	TRUE
+301404	9	2009	20	No	Yes	No	No	No	18	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	2	17	Live birth	No	287	3290	NA_NA	TRUE	NA
+301412	12	2010	29	No	No	Yes	No	Yes	21	8-12 yrs 	N  	No	NA	Yes	3.5	Yes	Yes	0	0	22	Live birth	No	273	3130	Yes_Yes	NA	TRUE
+301420	3	2010	22	No	No	Yes	No	Yes	21	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	0	16	Live birth	No	281	3495	NA_NA	TRUE	NA
+301438	11	2010	24	No	No	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	Yes	1.333333333	Yes	Yes	4	0	15	Live birth	No	284	3650	No_Yes	NA	TRUE
+301446	4	2010	32	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	Yes	2.5	No	NA	NA	NA	26	Live birth	No	283	3165	Yes_Yes	NA	TRUE
+301453	9	2008	32	No	No	Yes	No	Yes	27	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	0	27	Non-live birth	Yes	244	2240	NA_NA	TRUE	NA
+301461	1	2010	19	No	Yes	No	No	No	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	0	13	Live birth	No	279	3920	NA_NA	TRUE	NA
+301479	9	2008	30	No	No	Yes	No	Yes	23	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	25	Live birth	No	282	3065	NA_NA	TRUE	NA
+301487	11	2008	22	No	No	Yes	No	Yes	28	LT 8 yrs 	N  	No	NA	Yes	2.166666667	No	NA	NA	NA	26	Live birth	No	289	3440	No_No	NA	TRUE
+301495	6	2008	21	No	No	Yes	No	Yes	23	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	2	7	Live birth	No	260	2310	NA_NA	TRUE	NA
+301503	9	2010	28	No	No	Yes	No	Yes	29	LT 8 yrs 	N  	No	NA	Yes	1.583333333	Yes	Yes	1	5	13	Live birth	No	273	2955	Yes_Yes	NA	TRUE
+301511	2	2010	24	No	Yes	No	No	No	34	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	25	Live birth	No	274	2765	NA_NA	TRUE	NA
+301529	8	2009	24	No	Yes	Yes	No	Yes	27	MT 12 yrs	N  	No	NA	No	1.25	No	NA	NA	NA	25	Live birth	No	283	3340	No_No	NA	TRUE
+301537	10	2010	16	No	No	Yes	No	Yes	17	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	11	Live birth	No	275	3340	NA_NA	TRUE	NA
+301545	3	2009	23	Yes	No	No	No	No	18	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	17	Live birth	No	280	3640	NA_NA	TRUE	NA
+301552	7	2009	27	No	Yes	No	No	No	17	8-12 yrs 	N  	No	NA	Yes	1.5	No	NA	NA	NA	15	Live birth	No	276	3390	No_No	NA	TRUE
+301560	5	2008	33	No	Yes	Yes	No	Yes	19	MT 12 yrs	N  	No	NA	Yes	1.25	No	NA	NA	NA	15	Live birth	Yes	246	2460	No_No	NA	TRUE
+301578	6	2009	29	No	No	Yes	No	Yes	21	8-12 yrs 	N  	No	NA	Yes	2.916666667	Yes	Yes	2	0	27	Live birth	No	284	3830	Yes_Yes	NA	TRUE
+301586	7	2010	25	No	Yes	No	No	No	19	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	1	15	Live birth	Yes	258	2930	NA_NA	TRUE	NA
+301594	2	2010	35	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	26	Live birth	No	277	3260	NA_NA	TRUE	NA
+301602	2	2008	33	No	No	Yes	No	Yes	24	MT 12 yrs	N  	No	NA	Yes	2.416666667	No	NA	NA	NA	11	Live birth	No	268	3715	Yes_Yes	NA	TRUE
+301628	2	2009	21	No	No	Yes	No	Yes	32	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	279	3000	NA_NA	TRUE	NA
+301644	7	2009	16	No	No	Yes	No	Yes	21	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	0	4	Live birth	No	283	3062	NA_NA	TRUE	NA
+301651	10	2010	21	Yes	No	No	No	No	37	MT 12 yrs	N  	No	NA	Yes	0.75	No	NA	NA	NA	7	Live birth	No	279	3380	No_No	NA	TRUE
+301669	10	2009	25	No	No	Yes	No	Yes	22	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	7	Live birth	No	265	2550	NA_NA	TRUE	NA
+301685	3	2008	20	No	No	Yes	No	Yes	26	LT 8 yrs 	N  	No	NA	Yes	1.916666667	No	NA	NA	NA	19	Live birth	No	270	3215	No_No	NA	TRUE
+301693	4	2009	25	No	No	Yes	No	Yes	20	8-12 yrs 	N  	No	NA	Yes	2	Yes	Yes	1	2	6	Live birth	No	273	3470	Yes_Yes	NA	TRUE
+301701	1	2008	31	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	13	Live birth	No	275	2930	NA_NA	TRUE	NA
+301719	5	2010	33	No	No	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	Yes	2.333333333	Yes	Yes	2	0	6	Live birth	Yes	256	2625	No_No	NA	TRUE
+301727	5	2009	25	No	No	Yes	No	Yes	21	8-12 yrs 	N  	No	NA	Yes	3.166666667	Yes	Yes	1	1	19	Live birth	No	276	3450	No_No	NA	TRUE
+301735	12	2008	30	No	No	Yes	No	Yes	34	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	18	Live birth	No	280	3625	NA_NA	TRUE	NA
+301743	9	2009	21	Yes	No	No	No	No	20	8-12 yrs 	N  	No	NA	No	1.83333333	No	NA	NA	NA	11	Live birth	No	283	3340	No_No	NA	TRUE
+301750	2	2009	27	No	No	Yes	No	Yes	24	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	7	Elective abortion	Yes	163	NA	NA_NA	TRUE	NA
+301768	3	2008	29	No	Yes	No	No	No	19	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	16	Live birth	No	266	3260	NA_NA	TRUE	NA
+301776	7	2008	19	No	No	Yes	No	Yes	19	LT 8 yrs 	N  	No	NA	Yes	2.83333333	No	NA	NA	NA	5	Live birth	No	281	3670	No_No	NA	TRUE
+301784	6	2008	20	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	0	15	Live birth	No	272	4180	NA_NA	TRUE	NA
+301792	12	2008	20	No	Yes	No	No	No	19	8-12 yrs 	N  	Yes	Type I    	Yes	1.916666667	No	NA	NA	NA	9	Live birth	No	273	4205	No_No	NA	TRUE
+301818	9	2009	33	No	Yes	No	No	No	28	MT 12 yrs	N  	Yes	Type II   	Yes	1.166666667	No	NA	NA	NA	12	Live birth	No	260	2495	No_Yes	NA	TRUE
+301826	5	2008	24	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	11	Live birth	No	273	3265	NA_NA	TRUE	NA
+301834	10	2008	37	No	No	Yes	No	Yes	18	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	1	4	Live birth	No	290	3403	NA_NA	TRUE	NA
+301859	2	2009	28	No	No	Yes	No	Yes	30	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	7	Live birth	No	282	3645	NA_NA	TRUE	NA
+301867	3	2008	28	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	Yes	1.583333333	Yes	No	0	0	11	Live birth	No	267	3190	No_No	NA	TRUE
+301875	1	2010	19	No	No	Yes	No	Yes	29	8-12 yrs 	N  	No	NA	Yes	1.666666667	No	NA	NA	NA	10	Live birth	No	280	2600	No_No	NA	TRUE
+301883	9	2008	29	No	Yes	No	No	Yes	18	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	1	0	26	Live birth	No	285	3520	NA_NA	TRUE	NA
+301891	7	2008	21	No	No	Yes	No	Yes	23	LT 8 yrs 	N  	No	NA	Yes	1.666666667	Yes	Yes	0	3	7	Live birth	No	269	2750	No_No	NA	TRUE
+301909	10	2008	18	No	No	Yes	No	Yes	24	8-12 yrs 	N  	No	NA	Yes	0.833333333	No	NA	NA	NA	5	Live birth	No	273	3870	No_No	NA	TRUE
+301917	11	2010	20	No	No	Yes	No	Yes	21	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	4	4	Live birth	No	263	2250	NA_NA	TRUE	NA
+301925	3	2009	17	Yes	No	No	No	No	27	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	5	Live birth	No	274	3430	NA_NA	TRUE	NA
+301933	12	2010	39	No	No	Yes	No	Yes	NA	8-12 yrs 	N  	No	NA	Yes	2.25	Yes	Yes	2	0	4	Live birth	Yes	236	2110	No_No	NA	TRUE
+301941	2	2009	23	No	No	Yes	No	Yes	20	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	21	Live birth	No	285	3360	NA_NA	TRUE	NA
+301958	4	2010	22	No	No	Yes	No	No	20	8-12 yrs 	N  	No	NA	Yes	1.25	Yes	Yes	0	1	5	Live birth	No	272	3140	Yes_Yes	NA	TRUE
+301966	6	2008	21	No	Yes	No	No	No	30	MT 12 yrs	N  	No	NA	Yes	2	No	NA	NA	NA	8	Live birth	No	276	3865	No_No	NA	TRUE
+301974	6	2008	29	No	No	Yes	No	Yes	34	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	27	Live birth	No	290	3725	NA_NA	TRUE	NA
+301982	5	2009	20	No	No	Yes	No	Yes	NA	8-12 yrs 	N  	No	NA	Yes	2.416666667	No	NA	NA	NA	11	Live birth	No	272	3190	No_No	NA	TRUE
+301990	9	2009	24	No	Yes	No	No	No	23	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	1	12	Live birth	No	277	3430	NA_NA	TRUE	NA
+302006	2	2010	22	No	No	Yes	No	Yes	23	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	18	Live birth	No	282	3580	NA_NA	TRUE	NA
+302014	10	2010	24	Yes	No	No	No	No	25	MT 12 yrs	N  	No	NA	Yes	2.333333333	No	NA	NA	NA	5	Live birth	Yes	255	3300	No_No	NA	TRUE
+302022	12	2010	33	No	No	Yes	No	Yes	27	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	271	3040	NA_NA	TRUE	NA
+302030	4	2009	30	No	No	Yes	No	Yes	30	LT 8 yrs 	N  	No	NA	Yes	1.916666667	No	NA	NA	NA	4	Live birth	No	264	3280	Yes_Yes	NA	TRUE
+302048	4	2008	28	No	No	Yes	No	Yes	22	8-12 yrs 	N  	No	NA	Yes	3.166666667	No	NA	NA	NA	6	Live birth	No	276	3250	No_No	NA	TRUE
+302055	8	2010	28	No	Yes	No	No	No	18	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Live birth	No	262	2910	NA_NA	TRUE	NA
+302063	5	2010	35	No	Yes	No	No	No	35	MT 12 yrs	N  	No	NA	Yes	1.166666667	Yes	No	0	0	8	Live birth	No	274	3544	No_No	NA	TRUE
+302071	11	2008	26	No	No	Yes	No	Yes	30	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	12	Live birth	No	272	2775	NA_NA	TRUE	NA
+302089	6	2010	27	No	No	Yes	No	Yes	21	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	22	Live birth	No	282	3135	NA_NA	TRUE	NA
+302097	10	2009	19	No	No	Yes	No	Yes	20	8-12 yrs 	N  	No	NA	Yes	2.166666667	Yes	Yes	1	1	4	Live birth	No	280	3335	No_No	NA	TRUE
+302105	1	2008	33	No	No	No	Yes	No	18	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	19	Live birth	No	275	3285	NA_NA	TRUE	NA
+302113	10	2010	28	No	Yes	No	No	No	40	8-12 yrs 	N  	No	NA	Yes	2	Yes	No	0	4	10	Live birth	No	266	2470	No_No	NA	TRUE
+302139	6	2010	22	No	Yes	No	No	No	21	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	Yes	257	2495	NA_NA	TRUE	NA
+302147	5	2008	23	No	No	Yes	No	Yes	28	LT 8 yrs 	N  	No	NA	Yes	2.333333333	Yes	Yes	1	0	4	Live birth	No	273	3600	No_No	NA	TRUE
+302154	5	2008	23	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	Yes	4.416666667	Yes	Yes	0	2	19	Live birth	No	281	3500	No_No	NA	TRUE
+302162	3	2010	33	No	No	Yes	No	Yes	35	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Live birth	No	270	3630	NA_NA	TRUE	NA
+302188	10	2009	29	No	No	Yes	No	Yes	28	LT 8 yrs 	N  	No	NA	Yes	2.833333333	Yes	Yes	10	1	7	Live birth	No	279	3360	Yes_Yes	NA	TRUE
+302196	5	2010	24	No	Yes	No	No	No	32	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	6	Live birth	No	287	3285	NA_NA	TRUE	NA
+302204	3	2009	25	No	No	Yes	No	Yes	22	LT 8 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	18	Live birth	No	276	2975	NA_NA	TRUE	NA
+302212	5	2009	26	No	No	Yes	No	Yes	NA	8-12 yrs 	N  	No	NA	Yes	2	Yes	No	0	2	5	Live birth	No	273	3485	No_No	NA	TRUE
+302220	6	2009	17	No	No	Yes	No	Yes	30	8-12 yrs 	N  	No	NA	Yes	2	No	NA	NA	NA	6	Live birth	No	273	4400	No_No	NA	TRUE
+302238	12	2008	18	No	No	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	5	Live birth	No	277	2910	NA_NA	TRUE	NA
+302246	6	2009	36	No	No	Yes	No	Yes	30	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	0	0	5	Live birth	No	268	2825	NA_NA	TRUE	NA
+302253	12	2008	26	No	No	Yes	No	Yes	29	LT 8 yrs 	N  	No	NA	Yes	1.916666667	No	NA	NA	NA	15	Live birth	No	278	3325	Yes_Yes	NA	TRUE
+302279	11	2008	24	No	No	Yes	No	Yes	21	LT 8 yrs 	N  	No	NA	Yes	5	Yes	Yes	0	2	22	Live birth	No	259	3030	Yes_Yes	NA	TRUE
+302295	1	2010	34	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	15	Live birth	No	266	3940	NA_NA	TRUE	NA
+302303	12	2009	27	No	Yes	No	No	No	34	8-12 yrs 	N  	No	NA	Yes	1.416666667	No	NA	NA	NA	8	Live birth	No	288	3975	No_No	NA	TRUE
+302311	11	2009	32	No	No	Yes	No	Yes	30	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	7	Live birth	No	270	3300	NA_NA	TRUE	NA
+302337	8	2010	22	No	No	Yes	No	Yes	24	8-12 yrs 	N  	No	NA	Yes	2.666666667	No	NA	NA	NA	6	Live birth	No	271	3670	No_No	NA	TRUE
+302345	10	2008	20	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	279	3240	NA_NA	TRUE	NA
+302352	4	2009	22	No	No	Yes	No	Yes	25	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	279	3080	NA_NA	TRUE	NA
+302378	8	2009	27	No	No	Yes	No	Yes	28	8-12 yrs 	N  	No	NA	Yes	0.833333333	Yes	Yes	0	2	5	Live birth	No	278	3250	No_No	NA	TRUE
+302410	3	2009	22	No	No	Yes	No	Yes	38	8-12 yrs 	N  	No	NA	Yes	2	Yes	No	0	0	5	Live birth	No	274	3990	No_No	NA	TRUE
+400018	12	2010	30	Yes	No	No	No	NA	17	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	6	6	17	Live birth	No	294	3660	NA_NA	TRUE	NA
+400026	9	2009	30	Yes	No	No	No	NA	32	MT 12 yrs	N  	No	NA	Und	0.966666667	Yes	Yes	0	17	11	Non-live birth	Yes	137	101	No_No	NA	TRUE
+400034	4	2010	19	No	Yes	No	No	NA	31	8-12 yrs 	Y  	No	NA	Und	1.166666667	Yes	No	1	15	22	Live birth	No	267	3405	Yes_Yes	NA	TRUE
+400042	12	2008	27	Yes	No	No	No	NA	25	MT 12 yrs	N  	No	NA	NA	NA	NA	NA	NA	NA	18	Non-live birth	Yes	130	246	NA_NA	TRUE	NA
+400059	5	2008	24	Yes	No	No	No	NA	47	8-12 yrs 	N  	No	NA	Und	1.233333333	Yes	Yes	3	7	16	Live birth	No	282	3410	No_Yes	NA	TRUE
+400067	5	2008	32	Yes	No	No	No	NA	32	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	1	14	Live birth	No	272	3365	NA_NA	TRUE	NA
+400075	9	2008	19	Yes	No	No	No	NA	23	LT 8 yrs 	N  	No	NA	Und	1.116666667	Yes	Yes	0	1	12	Live birth	No	283	3525	No_No	NA	TRUE
+400083	2	2009	23	Yes	No	No	No	NA	29	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	3	9	8	Non-live birth	Yes	145	530	NA_NA	TRUE	NA
+400091	8	2008	33	No	Yes	No	No	NA	30	MT 12 yrs	N  	No	NA	Und	0.916666667	Yes	Yes	0	2	17	Live birth	No	275	3465	No_No	NA	TRUE
+400109	3	2010	18	Yes	No	No	No	NA	32	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	22	Live birth	No	281	3040	No_No	NA	TRUE
+400117	1	2010	30	Yes	No	No	No	NA	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	1	9	Live birth	No	274	3570	NA_NA	TRUE	NA
+400125	8	2008	24	Yes	No	No	No	NA	42	MT 12 yrs	N  	Yes	Type II   	NA	NA	Yes	Yes	0	1	21	Non-live birth	Yes	147	NA	NA_NA	TRUE	NA
+400133	1	2009	25	No	Yes	No	No	NA	24	MT 12 yrs	N  	No	NA	Und	2.383333333	Yes	No	2	0	24	Live birth	No	265	2595	No_Yes	NA	TRUE
+400141	4	2009	20	Yes	No	No	No	NA	19	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	269	2670	NA_NA	TRUE	NA
+400158	8	2010	23	Yes	No	No	No	NA	35	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	3	13	Live birth	No	296	3650	NA_NA	TRUE	NA
+400190	1	2009	30	No	Yes	No	No	NA	33	8-12 yrs 	Y  	No	NA	Und	0.75	Yes	No	1	0	6	Live birth	Yes	240	2300	No_Yes	NA	TRUE
+400208	12	2008	22	Yes	No	No	No	NA	37	8-12 yrs 	N  	No	NA	Und	0.916666667	No	NA	NA	NA	12	Live birth	No	298	3610	No_No	NA	TRUE
+400216	2	2010	20	No	Yes	No	No	NA	22	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	2	0	14	Live birth	Yes	245	2055	NA_NA	TRUE	NA
+400224	3	2008	39	Yes	No	No	No	NA	51	MT 12 yrs	Y  	Yes	Type II   	Und	2.516666667	Yes	Yes	1	0	25	Live birth	Yes	257	3660	No_Yes	NA	TRUE
+400232	11	2008	20	No	Yes	No	No	NA	18	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	261	2750	NA_NA	TRUE	NA
+400281	4	2010	23	Yes	No	No	No	NA	37	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	12	Live birth	No	259	2385	NA_NA	TRUE	NA
+400299	5	2009	30	Yes	No	No	No	NA	25	8-12 yrs 	N  	No	NA	Und	0.916666667	Yes	Yes	0	2	9	Live birth	No	283	3118	No_No	NA	TRUE
+400307	8	2008	32	Yes	No	No	No	NA	44	LT 8 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	6	Non-live birth	Yes	135	253	NA_NA	TRUE	NA
+400315	11	2009	25	Yes	No	No	No	NA	23	8-12 yrs 	N  	No	NA	Und	0.833333333	Yes	Yes	0	1	10	Live birth	No	286	4200	No_No	NA	TRUE
+400331	3	2008	31	Yes	No	No	No	NA	62	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	1	20	Live birth	No	265	3770	NA_NA	TRUE	NA
+400349	9	2010	20	No	Yes	No	No	NA	32	8-12 yrs 	N  	No	NA	Und	0.833333333	No	NA	NA	NA	15	Live birth	No	284	3285	No_No	NA	TRUE
+400356	6	2008	25	Yes	No	No	No	NA	24	MT 12 yrs	N  	No	NA	Und	0.666666667	Yes	Yes	3	0	9	Live birth	Yes	232	2002	No_No	NA	TRUE
+400364	10	2009	22	Yes	No	No	No	NA	41	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	12	Live birth	No	271	3660	NA_NA	TRUE	NA
+400372	3	2008	30	Yes	No	No	No	NA	29	8-12 yrs 	Y  	No	NA	NA	NA	No	NA	NA	NA	16	Live birth	Yes	240	1685	NA_NA	TRUE	NA
+400380	1	2010	21	Yes	No	No	No	NA	26	MT 12 yrs	N  	No	NA	Und	0.75	Yes	No	1	1	9	Live birth	No	264	2140	No_No	NA	TRUE
+400406	12	2008	19	Yes	No	No	No	NA	29	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	4	23	Live birth	No	280	3930	NA_NA	TRUE	NA
+400414	8	2010	20	Yes	No	No	No	NA	25	MT 12 yrs	N  	No	NA	Und	1.116666667	No	NA	NA	NA	10	Live birth	No	291	3475	No_No	NA	TRUE
+400455	8	2008	21	Yes	No	No	No	NA	36	8-12 yrs 	Y  	No	NA	NA	NA	Yes	No	1	3	25	Live birth	No	264	3425	NA_NA	TRUE	NA
+400471	2	2010	36	Yes	No	No	No	NA	28	MT 12 yrs	Y  	No	NA	Und	2.666666667	Yes	Yes	1	0	12	Live birth	No	268	3505	No_Yes	NA	TRUE
+400489	5	2008	23	Yes	No	No	No	NA	28	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	270	2950	NA_NA	TRUE	NA
+400513	6	2010	21	Yes	No	No	No	NA	36	MT 12 yrs	N  	No	NA	Und	1.83333333	No	NA	NA	NA	19	Live birth	No	296	3285	No_No	NA	TRUE
+400539	3	2008	30	Yes	No	No	No	NA	16	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	12	Live birth	No	278	3055	NA_NA	TRUE	NA
+400547	2	2008	18	No	Yes	No	No	NA	18	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	0	0	22	Live birth	No	270	3039	NA_NA	TRUE	NA
+400562	11	2010	35	Yes	No	No	No	NA	28	MT 12 yrs	N  	No	NA	Und	2.583333333	No	NA	NA	NA	17	Live birth	No	269	2670	Yes_Yes	NA	TRUE
+400570	4	2008	22	Yes	No	No	No	NA	38	8-12 yrs 	N  	No	NA	Und	1.83333333	Yes	Yes	1	1	17	Live birth	No	285	3855	No_No	NA	TRUE
+400588	11	2010	24	Yes	No	No	No	NA	20	8-12 yrs 	N  	No	NA	Und	1.25	Yes	No	1	2	12	Live birth	No	273	3105	No_No	NA	TRUE
+400604	10	2010	22	Yes	No	No	No	NA	54	8-12 yrs 	N  	No	NA	Und	1.333333333	Yes	No	0	0	18	Non-live birth	Yes	157	435	No_No	NA	TRUE
+400612	1	2009	21	Yes	No	No	No	NA	23	8-12 yrs 	Y  	No	NA	NA	NA	No	NA	NA	NA	13	Live birth	Yes	246	2755	NA_NA	TRUE	NA
+400646	3	2008	19	Yes	No	No	No	No	23	8-12 yrs 	N  	No	NA	Und	0.916666667	Yes	Yes	0	0	18	Live birth	No	293	3250	No_No	NA	TRUE
+400653	6	2010	18	No	Yes	No	No	No	43	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	7	Live birth	No	276	2881	NA_NA	TRUE	NA
+400661	1	2009	20	Yes	No	No	No	NA	29	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	2	0	14	Live birth	No	275	3629	NA_NA	TRUE	NA
+400695	9	2008	21	Yes	No	No	No	No	24	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	2	1	5	Live birth	No	283	2985	NA_NA	TRUE	NA
+400703	10	2008	22	Yes	No	No	No	No	24	MT 12 yrs	N  	No	NA	Und	2.583333333	No	NA	NA	NA	14	Live birth	No	283	2948	No_Yes	NA	TRUE
+400729	7	2008	28	No	Yes	No	No	No	50	MT 12 yrs	N  	Yes	Type II   	NA	NA	Yes	No	0	1	22	Live birth	Yes	240	2895	NA_NA	TRUE	NA
+400745	10	2010	26	No	Yes	No	No	No	21	8-12 yrs 	N  	No	NA	Und	1.25	No	NA	NA	NA	7	Live birth	No	280	3715	No_Yes	NA	TRUE
+400752	1	2009	22	Yes	No	No	No	No	27	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	2	11	Live birth	No	272	3062	NA_NA	TRUE	NA
+400778	11	2010	29	Yes	No	No	No	No	21	MT 12 yrs	N  	No	NA	Und	1.83333333	Yes	Yes	2	0	17	Live birth	No	277	3530	No_No	NA	TRUE
+400786	7	2010	35	No	Yes	No	No	No	24	8-12 yrs 	N  	No	NA	Und	3.5	Yes	Yes	1	0	15	Live birth	No	279	3995	No_Yes	NA	TRUE
+400794	12	2008	24	Yes	No	No	No	No	19	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	15	Live birth	No	289	3985	NA_NA	TRUE	NA
+400802	6	2009	25	Yes	No	No	No	No	27	MT 12 yrs	N  	No	NA	Und	1.233333333	Yes	No	3	3	16	Live birth	No	267	3800	No_Yes	NA	TRUE
+400836	11	2008	38	No	Yes	No	No	No	42	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	3	0	7	Live birth	No	260	3045	NA_NA	TRUE	NA
+400844	9	2008	19	Yes	No	No	No	No	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	1	16	Live birth	No	275	3290	NA_NA	TRUE	NA
+400869	6	2008	21	Yes	No	No	No	No	48	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	0	1	22	Live birth	No	291	3705	NA_NA	TRUE	NA
+400877	3	2010	35	Yes	No	No	No	No	27	MT 12 yrs	N  	No	NA	Und	2.133333333	Yes	Yes	1	0	18	Live birth	No	265	2958	No_Yes	NA	TRUE
+400885	10	2009	27	No	Yes	No	No	No	31	MT 12 yrs	N  	No	NA	Und	1.25	Yes	Yes	1	6	18	Live birth	No	259	3515	No_Yes	NA	TRUE
+400901	5	2009	26	Yes	No	No	No	No	19	MT 12 yrs	N  	No	NA	Und	0.833333333	No	NA	NA	NA	12	Live birth	No	278	3410	No_Yes	NA	TRUE
+400919	8	2009	23	Yes	No	No	No	No	38	MT 12 yrs	N  	No	NA	Und	1.25	No	NA	NA	NA	12	Live birth	No	269	3555	No_Yes	NA	TRUE
+400927	8	2009	26	Yes	No	No	No	No	38	MT 12 yrs	Y  	No	NA	NA	NA	Yes	No	1	3	7	Live birth	Yes	246	3015	NA_NA	TRUE	NA
+400935	1	2008	32	Yes	No	No	No	No	32	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	1	0	13	Live birth	Yes	253	3110	NA_NA	TRUE	NA
+400943	6	2010	21	No	Yes	No	No	No	19	8-12 yrs 	N  	No	NA	Und	1.166666667	Yes	No	1	1	5	Live birth	No	278	3430	No_Yes	NA	TRUE
+400950	11	2008	34	Yes	No	No	No	No	30	MT 12 yrs	Y  	No	NA	NA	NA	Yes	Yes	1	3	10	Live birth	Yes	170	570	NA_NA	TRUE	NA
+400968	6	2009	28	No	No	Yes	No	No	50	8-12 yrs 	N  	Yes	Type II   	Und	0.916666667	Yes	Yes	4	0	10	Live birth	Yes	216	2365	No_No	NA	TRUE
+400976	2	2010	23	Yes	No	No	No	No	27	MT 12 yrs	N  	No	NA	Und	1.416666667	Yes	Yes	1	0	7	Live birth	No	274	3770	No_Yes	NA	TRUE
+400992	3	2010	27	No	Yes	No	No	No	20	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	267	2977	NA_NA	TRUE	NA
+401008	12	2010	17	Yes	No	No	No	No	30	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	10	Live birth	No	271	4095	NA_NA	TRUE	NA
+401016	10	2010	21	Yes	No	No	No	No	20	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	2	11	Live birth	No	271	2750	NA_NA	TRUE	NA
+401024	10	2010	25	Yes	No	No	No	No	20	8-12 yrs 	N  	No	NA	Und	3.416666667	No	NA	NA	NA	21	Live birth	No	290	4100	No_Yes	NA	TRUE
+401032	1	2008	26	No	Yes	No	No	No	28	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	4	0	9	Live birth	Yes	248	2480	NA_NA	TRUE	NA
+401057	6	2009	16	Yes	No	No	No	No	36	8-12 yrs 	N  	No	NA	Yes	3.116666667	Yes	No	2	1	13	Live birth	No	290	3620	Yes_Yes	NA	TRUE
+401065	7	2008	25	Yes	No	No	No	No	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	20	Live birth	No	270	3315	No_No	NA	TRUE
+401073	9	2009	30	Yes	No	No	No	No	41	MT 12 yrs	Y  	No	NA	Und	2.466666667	Yes	No	0	0	13	Live birth	No	261	2315	No_Yes	NA	TRUE
+401081	11	2009	22	Yes	No	No	No	No	21	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	3	2	10	Non-live birth	Yes	142	344	NA_NA	TRUE	NA
+401099	2	2009	25	Yes	No	No	No	No	35	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	0	19	Live birth	No	291	3485	NA_NA	TRUE	NA
+401107	12	2009	31	Yes	No	No	No	No	19	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	0	0	22	Live birth	No	273	3175	NA_NA	TRUE	NA
+401123	6	2010	22	Yes	No	No	No	No	21	MT 12 yrs	N  	No	NA	No	0.766666667	Yes	No	NA	NA	16	Live birth	Yes	248	2260	No_Yes	NA	TRUE
+401149	3	2009	18	Yes	No	No	No	No	23	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	2	0	10	Live birth	No	284	3920	NA_NA	TRUE	NA
+401156	8	2008	23	Yes	No	No	No	No	34	8-12 yrs 	N  	No	NA	Yes	3.916666667	No	NA	NA	NA	25	Live birth	No	277	2770	Yes_Yes	NA	TRUE
+401164	1	2010	23	Yes	No	No	No	No	22	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	19	Live birth	No	271	3203	NA_NA	TRUE	NA
+401180	7	2009	23	Yes	No	No	No	No	30	MT 12 yrs	N  	No	NA	Yes	2.55	No	NA	NA	NA	12	Live birth	No	260	3118	No_Yes	NA	TRUE
+401198	3	2010	27	Yes	No	No	No	No	40	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	0	9	Live birth	Yes	252	3370	NA_NA	TRUE	NA
+401206	9	2009	23	Yes	No	No	No	No	39	8-12 yrs 	Y  	Yes	Type I    	NA	NA	Yes	No	1	0	12	Live birth	Yes	197	2030	NA_NA	TRUE	NA
+401214	3	2010	25	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	24	Live birth	No	283	2565	NA_NA	TRUE	NA
+401222	1	2009	23	No	Yes	No	No	No	33	8-12 yrs 	N  	No	NA	Yes	1.333333333	No	NA	NA	NA	13	Live birth	No	282	3459	No_No	NA	TRUE
+401230	7	2008	36	No	Yes	No	No	No	34	MT 12 yrs	Y  	No	NA	NA	NA	No	NA	NA	NA	17	Live birth	No	268	3180	NA_NA	TRUE	NA
+401248	2	2008	22	Yes	No	No	No	No	31	8-12 yrs 	N  	No	NA	Yes	1.566666667	No	NA	NA	NA	8	Live birth	No	285	3695	No_Yes	NA	TRUE
+401255	8	2010	31	Yes	No	No	No	No	37	8-12 yrs 	N  	Yes	Type II   	Yes	4.15	No	NA	NA	NA	15	Live birth	No	270	4355	No_Yes	NA	TRUE
+401263	3	2008	26	No	Yes	Yes	No	No	23	MT 12 yrs	N  	No	NA	Yes	1.466666667	Yes	No	0	0	10	Live birth	Yes	228	2095	Yes_Yes	NA	TRUE
+401271	6	2008	21	Yes	No	No	No	No	46	MT 12 yrs	Y  	No	NA	Yes	1.466666667	Yes	Yes	1	0	14	Live birth	No	291	3465	No_No	NA	TRUE
+401289	2	2010	20	Yes	No	No	No	No	39	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	21	Live birth	No	262	2740	NA_NA	TRUE	NA
+401313	5	2008	28	No	Yes	No	No	No	21	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	14	Live birth	No	264	2495	NA_NA	TRUE	NA
+401321	4	2010	28	Yes	No	No	No	No	36	MT 12 yrs	N  	No	NA	Yes	1.25	No	NA	NA	NA	7	Live birth	No	270	3000	No_No	NA	TRUE
+401347	2	2008	27	Yes	No	No	No	No	19	8-12 yrs 	N  	No	NA	Yes	2.183333333	Yes	No	0	0	10	Live birth	No	267	3011	No_Yes	NA	TRUE
+401362	8	2008	18	Yes	No	No	No	No	26	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	1	0	14	Live birth	No	272	3430	NA_NA	TRUE	NA
+401370	11	2009	27	Yes	No	No	No	No	27	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	1	0	12	Live birth	No	280	3870	NA_NA	TRUE	NA
+401388	8	2009	24	Yes	No	No	No	No	38	8-12 yrs 	N  	No	NA	Yes	2.25	Yes	Yes	2	0	21	Live birth	No	277	3390	No_Yes	NA	TRUE
+401396	8	2008	22	Yes	Yes	No	No	No	23	8-12 yrs 	N  	No	NA	Yes	2.666666667	Yes	Yes	1	0	6	Live birth	No	267	3628	Yes_Yes	NA	TRUE
+401412	12	2008	36	Yes	No	No	No	No	56	MT 12 yrs	Y  	No	NA	NA	NA	No	NA	NA	NA	18	Live birth	Yes	258	2540	NA_NA	TRUE	NA
+401420	7	2009	18	No	Yes	No	No	No	24	8-12 yrs 	N  	No	NA	Yes	1.2	No	NA	NA	NA	14	Live birth	No	276	2723	No_No	NA	TRUE
+401446	7	2009	28	Yes	No	No	No	No	50	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	18	Live birth	No	277	3960	NA_NA	TRUE	NA
+401453	6	2009	29	Yes	No	No	No	No	33	8-12 yrs 	N  	No	NA	Yes	1.2	Yes	Yes	0	1	10	Live birth	No	276	2812	No_Yes	NA	TRUE
+401461	9	2009	30	No	Yes	No	No	No	28	MT 12 yrs	N  	No	NA	No	1.416666667	Yes	Yes	2	0	15	Live birth	No	281	3445	No_Yes	NA	TRUE
+401479	6	2009	21	Yes	No	No	No	No	19	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	19	Live birth	No	281	3430	NA_NA	TRUE	NA
+401487	1	2008	20	Yes	No	No	No	No	33	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	13	Live birth	No	279	3220	No_No	NA	TRUE
+401503	10	2009	37	Yes	No	No	No	No	50	8-12 yrs 	Y  	Yes	Type II   	Yes	3.133333333	Yes	Yes	3	2	20	Live birth	Yes	256	3025	Yes_Yes	NA	TRUE
+401511	3	2009	29	No	Yes	No	No	No	20	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	2	0	11	Live birth	No	281	3350	NA_NA	TRUE	NA
+401537	11	2010	27	No	Yes	No	No	No	21	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	18	Live birth	No	269	3492	NA_NA	TRUE	NA
+401545	8	2009	22	Yes	No	No	No	No	42	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	16	Live birth	No	276	2750	NA_NA	TRUE	NA
+401552	3	2008	26	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	Yes	3.283333333	No	NA	NA	NA	8	Live birth	No	267	3180	No_Yes	NA	TRUE
+401560	11	2008	28	No	Yes	No	No	No	40	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	11	Live birth	No	285	4185	NA_NA	TRUE	NA
+401578	1	2008	30	Yes	No	No	No	No	42	8-12 yrs 	N  	Yes	Type I    	Yes	4.816666667	Yes	No	0	0	27	Live birth	No	260	3075	Yes_Yes	NA	TRUE
+401586	6	2010	22	Yes	No	No	No	No	27	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	14	Live birth	No	270	3220	NA_NA	TRUE	NA
+401594	3	2010	26	Yes	No	No	No	No	22	MT 12 yrs	N  	No	NA	Yes	1.5	Yes	No	2	0	22	Live birth	No	275	2977	No_Yes	NA	TRUE
+401602	9	2008	28	Yes	No	No	No	No	37	MT 12 yrs	N  	Yes	Type II   	Yes	1.416666667	No	NA	NA	NA	14	Live birth	Yes	251	4025	No_Yes	NA	TRUE
+401610	6	2008	26	Yes	No	No	No	No	41	MT 12 yrs	Y  	No	NA	NA	NA	No	NA	NA	NA	15	Live birth	No	260	2345	NA_NA	TRUE	NA
+401636	8	2009	20	Yes	No	No	No	No	20	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	13	Live birth	No	270	3084	NA_NA	TRUE	NA
+401651	9	2009	21	Yes	No	No	No	No	26	MT 12 yrs	N  	No	NA	Yes	1.3	No	NA	NA	NA	10	Live birth	No	270	2812	No_Yes	NA	TRUE
+401669	12	2008	24	Yes	No	No	No	No	25	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	0	0	10	Live birth	No	267	2948	NA_NA	TRUE	NA
+401677	12	2009	28	Yes	No	No	No	No	35	MT 12 yrs	N  	No	NA	Yes	1.416666667	Yes	Yes	1	0	13	Live birth	No	273	2993	No_Yes	NA	TRUE
+401685	8	2008	19	Yes	No	No	No	No	36	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	0	18	Live birth	No	276	3682	NA_NA	TRUE	NA
+401693	5	2010	23	No	Yes	No	No	No	40	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	13	Live birth	No	272	3125	NA_NA	TRUE	NA
+401701	10	2008	26	Yes	No	No	No	No	28	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	0	0	9	Live birth	No	277	3190	NA_NA	TRUE	NA
+401719	9	2008	23	Yes	No	No	No	No	34	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	0	13	Live birth	No	271	3250	NA_NA	TRUE	NA
+401727	9	2010	25	Yes	No	No	No	No	20	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	8	Live birth	No	260	2340	NA_NA	TRUE	NA
+401735	1	2010	19	Yes	No	No	No	No	30	8-12 yrs 	N  	No	NA	Yes	0.833333333	No	NA	NA	NA	16	Live birth	Yes	252	2270	No_No	NA	TRUE
+401743	9	2010	30	Yes	No	No	No	No	29	8-12 yrs 	N  	No	NA	Yes	1.583333333	Yes	No	3	0	7	Live birth	No	268	3070	No_Yes	NA	TRUE
+401750	4	2009	21	Yes	No	No	No	Yes	27	MT 12 yrs	N  	No	NA	Yes	1.283333333	No	NA	NA	NA	11	Live birth	No	280	3628	No_No	NA	TRUE
+401768	4	2010	22	Yes	No	No	No	No	27	8-12 yrs 	N  	No	NA	Yes	0.916666667	No	NA	NA	NA	12	Live birth	No	278	3180	No_Yes	NA	TRUE
+401776	4	2009	33	Yes	No	No	No	No	68	MT 12 yrs	N  	No	NA	Yes	3.333333333	Yes	Yes	2	1	21	Live birth	No	278	3400	Yes_Yes	NA	TRUE
+401784	2	2009	21	Yes	Yes	No	No	No	24	8-12 yrs 	N  	No	NA	NA	NA	NA	NA	NA	NA	11	Live birth	No	278	4451	No_No	NA	TRUE
+401792	11	2010	38	Yes	No	No	No	No	23	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	0	20	Live birth	No	278	3225	NA_NA	TRUE	NA
+401800	12	2008	18	Yes	No	No	No	No	38	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	NA	NA	24	Live birth	No	265	3266	NA_NA	TRUE	NA
+401818	7	2008	22	Yes	No	No	No	No	31	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	0	8	Live birth	No	259	3425	NA_NA	TRUE	NA
+401834	1	2008	28	Yes	No	No	No	No	20	8-12 yrs 	N  	No	NA	Yes	2.883333333	Yes	No	1	5	19	Live birth	No	262	3255	No_Yes	NA	TRUE
+401842	12	2010	20	Yes	No	No	No	No	33	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	14	Live birth	No	266	3190	NA_NA	TRUE	NA
+401859	6	2008	29	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	Yes	2.183333333	Yes	Yes	4	1	12	Live birth	No	270	2785	No_Yes	NA	TRUE
+401867	4	2010	25	Yes	No	No	No	No	26	8-12 yrs 	N  	No	NA	Yes	2.95	Yes	No	2	0	16	Live birth	No	280	3395	Yes_Yes	NA	TRUE
+401875	7	2010	21	Yes	No	No	No	No	25	8-12 yrs 	N  	No	NA	Yes	3.16666667	No	NA	NA	NA	15	Live birth	No	277	2771	Yes_Yes	NA	TRUE
+401883	10	2008	25	Yes	No	No	No	No	25	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	19	Live birth	No	288	3195	NA_NA	TRUE	NA
+401909	2	2009	33	Yes	No	No	No	No	28	MT 12 yrs	N  	No	NA	Yes	4.783333333	No	NA	NA	NA	15	Live birth	No	275	3505	Yes_Yes	NA	TRUE
+401917	9	2008	31	Yes	No	No	No	No	27	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	1	0	7	Live birth	No	276	3175	NA_NA	TRUE	NA
+401925	9	2010	28	Yes	No	No	No	No	24	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	3	0	17	Live birth	No	289	3375	NA_NA	TRUE	NA
+401933	4	2009	23	Yes	No	No	No	No	37	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	0	0	14	Live birth	No	265	2160	NA_NA	TRUE	NA
+401941	8	2010	29	Yes	No	No	No	No	24	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	14	Live birth	No	272	2977	NA_NA	TRUE	NA
+401982	1	2009	20	Yes	No	No	No	No	22	MT 12 yrs	N  	Yes	Type I    	Yes	2.83333333	Yes	Yes	1	0	11	Live birth	No	260	3465	No_Yes	NA	TRUE
+401990	7	2008	23	Yes	No	No	No	No	28	8-12 yrs 	N  	No	NA	Yes	1.45	Yes	No	0	2	13	Live birth	Yes	217	1780	No_Yes	NA	TRUE
+402006	5	2008	23	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	11	Live birth	No	276	3030	NA_NA	TRUE	NA
+402014	5	2010	40	Yes	No	No	No	No	27	MT 12 yrs	N  	No	NA	Yes	1.333333333	No	NA	NA	NA	7	Live birth	No	289	3705	No_Yes	NA	TRUE
+402030	3	2008	21	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	1	10	Live birth	No	271	2545	No_No	NA	TRUE
+402048	1	2010	35	Yes	No	No	No	No	23	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	13	Live birth	No	288	3454	NA_NA	TRUE	NA
+402055	8	2010	24	No	Yes	No	No	No	39	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	3	0	20	Live birth	No	271	2989	NA_NA	TRUE	NA
+402063	10	2010	21	No	Yes	No	No	No	18	8-12 yrs 	N  	No	NA	Yes	1.45	No	NA	NA	NA	15	Live birth	No	280	3630	No_Yes	NA	TRUE
+402071	6	2010	27	Yes	No	No	No	No	26	MT 12 yrs	N  	No	NA	Yes	1.333333333	No	NA	NA	NA	14	Live birth	Yes	258	3665	No_No	NA	TRUE
+402089	7	2008	19	Yes	No	No	No	No	25	MT 12 yrs	N  	No	NA	Yes	2.166666667	Yes	No	1	0	12	Live birth	No	266	2551	Yes_Yes	NA	TRUE
+402097	12	2009	24	Yes	No	No	No	No	35	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	2	0	16	Live birth	No	261	3289	NA_NA	TRUE	NA
+402105	2	2008	26	No	Yes	No	No	No	36	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	6	10	Live birth	Yes	256	2845	NA_NA	TRUE	NA
+402113	2	2010	22	Yes	No	No	No	No	30	8-12 yrs 	N  	No	NA	Yes	3.383333333	Yes	Yes	1	0	16	Live birth	No	278	2917	Yes_Yes	NA	TRUE
+402121	11	2008	28	Yes	No	No	No	No	33	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	0	13	Live birth	No	286	4105	NA_NA	TRUE	NA
+402139	4	2008	28	Yes	No	No	No	No	52	MT 12 yrs	N  	Yes	Type II   	Yes	1.25	No	NA	NA	NA	8	Live birth	Yes	258	2995	No_No	NA	TRUE
+402147	11	2009	22	Yes	No	No	No	No	24	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	9	Live birth	No	281	3375	NA_NA	TRUE	NA
+402162	11	2008	40	Yes	No	No	No	No	37	MT 12 yrs	Y  	No	NA	Yes	2.416666667	No	NA	NA	NA	11	Live birth	No	265	3380	No_Yes	NA	TRUE
+402170	1	2010	30	Yes	No	No	No	No	26	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	3	0	11	Live birth	No	284	3270	NA_NA	TRUE	NA
+402188	10	2009	26	Yes	No	No	No	No	29	MT 12 yrs	N  	No	NA	NA	NA	Yes	No	0	0	14	Live birth	No	279	3805	NA_NA	TRUE	NA
+402196	6	2008	21	Yes	No	No	No	No	32	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	17	Live birth	No	274	3260	NA_NA	TRUE	NA
+402204	11	2008	21	Yes	No	No	No	No	30	MT 12 yrs	N  	No	NA	Yes	4.25	Yes	Yes	2	0	14	Live birth	No	261	2915	Yes_Yes	NA	TRUE
+402212	5	2008	24	No	Yes	No	No	No	21	8-12 yrs 	N  	No	NA	Yes	1.5	Yes	Yes	2	2	11	Live birth	No	281	3625	No_No	NA	TRUE
+402220	9	2010	25	Yes	No	No	No	No	36	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	0	8	Live birth	No	274	3165	NA_NA	TRUE	NA
+402238	1	2010	27	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	1	0	11	Live birth	Yes	232	1785	NA_NA	TRUE	NA
+402246	5	2010	23	Yes	No	No	No	No	25	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	2	0	10	Live birth	No	269	3085	NA_NA	TRUE	NA
+402261	9	2010	20	Yes	No	No	No	No	40	MT 12 yrs	N  	Yes	Type I    	Yes	3.666666667	Yes	Yes	1	2	11	Live birth	No	274	3530	Yes_Yes	NA	TRUE
+402279	12	2008	25	Yes	No	No	No	No	32	8-12 yrs 	N  	No	NA	Yes	3.916666667	Yes	Yes	1	0	15	Live birth	No	272	3000	Yes_Yes	NA	TRUE
+402287	10	2010	26	Yes	No	No	No	No	33	MT 12 yrs	N  	No	NA	NA	NA	NA	NA	NA	NA	13	Live birth	No	271	2810	No_No	NA	TRUE
+402303	2	2010	26	Yes	No	No	No	No	65	MT 12 yrs	Y  	No	NA	Yes	5.833333333	Yes	Yes	2	0	15	Live birth	No	269	3625	Yes_Yes	NA	TRUE
+402311	7	2008	28	Yes	Yes	No	No	No	34	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	1	2	12	Live birth	No	272	3846	NA_NA	TRUE	NA
+402329	7	2009	25	Yes	No	No	No	No	51	8-12 yrs 	N  	No	NA	Yes	5.616666667	Yes	Yes	3	0	23	Live birth	No	274	4015	Yes_Yes	NA	TRUE
+402337	10	2009	33	Yes	No	No	No	No	30	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	2	0	26	Live birth	No	268	2990	NA_NA	TRUE	NA
+402345	8	2010	17	Yes	No	No	No	No	23	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	0	0	18	Live birth	No	275	3685	NA_NA	TRUE	NA
+402352	1	2009	19	Yes	No	No	No	No	25	MT 12 yrs	N  	No	NA	Yes	2.916666667	No	NA	NA	NA	24	Live birth	No	273	4145	No_Yes	NA	TRUE
+402360	10	2008	25	Yes	No	No	No	No	22	MT 12 yrs	N  	No	NA	Yes	3.616666667	Yes	No	2	0	9	Live birth	Yes	255	2240	Yes_Yes	NA	TRUE
+402378	8	2008	22	Yes	No	No	No	No	24	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	10	Live birth	No	282	3062	NA_NA	TRUE	NA
+402386	10	2010	19	Yes	No	No	No	No	35	8-12 yrs 	N  	No	NA	Yes	1.5	Yes	Yes	1	1	14	Live birth	No	276	3185	No_Yes	NA	TRUE
+402394	9	2008	17	Yes	No	No	No	No	29	8-12 yrs 	N  	No	NA	Yes	1.416666667	No	NA	NA	NA	10	Live birth	No	267	3005	No_Yes	NA	TRUE
+402410	11	2010	20	Yes	No	No	No	No	34	8-12 yrs 	N  	No	NA	NA	NA	No	NA	NA	NA	11	Live birth	No	268	2715	NA_NA	TRUE	NA
+402428	2	2009	22	Yes	No	No	No	No	31	8-12 yrs 	N  	No	NA	Yes	4.16666667	No	NA	NA	NA	13	Live birth	No	274	3640	Yes_Yes	NA	TRUE
+402436	7	2010	23	Yes	No	No	No	No	28	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	12	Live birth	No	277	3147	NA_NA	TRUE	NA
+402451	7	2008	29	Yes	No	No	No	No	36	MT 12 yrs	N  	Yes	Type II   	NA	NA	Yes	No	1	5	12	Live birth	No	266	3295	NA_NA	TRUE	NA
+402469	5	2010	20	Yes	No	No	No	No	20	8-12 yrs 	N  	No	NA	Yes	3.483333333	Yes	Yes	3	0	11	Live birth	No	274	2565	No_Yes	NA	TRUE
+402477	7	2009	24	Yes	No	No	No	No	18	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	1	0	11	Live birth	No	263	3230	NA_NA	TRUE	NA
+300406	8	2009	35	No	Yes	Yes	No	Yes	24	MT 12 yrs	N  	No	NA	Und	3.5	Yes	Yes	0	1	12	Live birth	No	277	3189	Yes_Yes	NA	TRUE
+202097	12	2008	38	Yes	No	No	No	No	35	MT 12 yrs	N  	No	NA	NA	NA	No	NA	NA	NA	19	Live birth	No	284	3640	NA_NA	TRUE	NA
+101230	7	2009	26	Yes	No	No	No	No	38	8-12 yrs 	N  	No	NA	NA	NA	Yes	No	2	0	12	Live birth	No	266	3575	NA_NA	TRUE	NA
+202477	5	2008	25	No	No	Yes	No	Yes	21	LT 8 yrs 	N  	No	NA	Yes	3	Yes	Yes	0	1	26	Live birth	No	274	2600	Yes_Yes	NA	TRUE
+202543	5	2009	29	No	No	Yes	No	Yes	35	8-12 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	9	19	Live birth	No	278	3760	NA_NA	TRUE	NA
+101586	9	2010	34	No	Yes	No	No	Yes	NA	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	0	11	Live birth	No	284	5160	NA_NA	TRUE	NA
+202774	3	2009	26	No	Yes	No	No	No	24	MT 12 yrs	N  	No	NA	Yes	1	Yes	Yes	0	11	10	Live birth	No	275	3640	No_Yes	NA	TRUE
+202204	6	2010	23	Yes	No	No	No	No	21	MT 12 yrs	N  	No	NA	Yes	2	Yes	Yes	0	5	13	Live birth	No	263	4140	Yes_Yes	NA	TRUE
+301446	4	2009	32	No	No	Yes	No	Yes	26	8-12 yrs 	N  	No	NA	Yes	2.5	No	NA	NA	NA	26	Live birth	No	283	3165	Yes_Yes	NA	TRUE
+200323	12	2008	24	Yes	No	Yes	No	NA	24	8-12 yrs 	N  	No	NA	Und	1.916666667	No	NA	NA	NA	5	Live birth	No	293	3550	No_No	NA	TRUE
+100174	1	2010	34	Yes	No	No	No	NA	32	MT 12 yrs	N  	No	NA	NA	NA	Yes	Yes	0	0	16	Live birth	No	274	4645	NA_NA	TRUE	NA
+101313	4	2008	28	Yes	No	No	No	No	NA	LT 8 yrs 	N  	No	NA	NA	NA	Yes	Yes	0	2	6	Live birth	No	278	4160	NA_NA	TRUE	NA
