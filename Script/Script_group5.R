@@ -13,3 +13,11 @@ OurData <-
          Preg.ended_bf37 = `Preg.ended<37wk`)
 
 glimpse(OurData)
+OurData
+
+#Variable type changes
+##PID, mounth, year and age to integer
+##Black, white, Nat.Am, Asian, Hisp to logical
+##BMI to integer
+##Hypertension, diabetes to logical
+##BL.Diab.Type to factor
