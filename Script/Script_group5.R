@@ -10,5 +10,8 @@ head(OurData)
 tail(OurData)
 view(OurData)
 
+#Remove duplicates
 OurData <- OurData %>%
   distinct()
+
+#Endret fra 835 til 834 rader
