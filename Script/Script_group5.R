@@ -93,4 +93,3 @@ OurData <-
   OurData %>%
   select(-year, -month)
 
-view(OurData)
