@@ -16,7 +16,7 @@ glimpse(OurData)
 View(OurData)        
 skimr::skim(OurData) 
 naniar::gg_miss_var(OurData)
-  
+
 #Piped the commands
 OurData <- OurData %>%
   rename(BMI = `BMI kg/m2`,
@@ -32,7 +32,6 @@ OurData <- OurData %>%
 OurData <- OurData %>% 
   rename(Group = C)
 View(OurData)
-
 
 # Remove columns `year` and `month` and 'T'
 OurData <-
@@ -79,9 +78,6 @@ OurData %>%
 # Variables:
 # All variable with answer "Yes/No" should be logical "TRUE/FALSE"
 # tx.time value should be integer
-
-#<<<<<<< Branch_Mathilde
-
 
 #Variable type changes
 ##PID, mounth, year and age to integer
