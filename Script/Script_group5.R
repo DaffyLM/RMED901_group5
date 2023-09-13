@@ -1,4 +1,4 @@
-#<<<<Joanna branch>>>>>>
+
 # Script_group5
 # Created 2023-09-12
 # exam_data.txt file
@@ -6,7 +6,6 @@
 
 library(tidyverse)
 library(here)
-#<<<<<<< Joanna
 here()
 
 read_tsv(here("Data", "exam_data.txt"))
@@ -17,7 +16,28 @@ glimpse(OurData)
 View(OurData)        
 skimr::skim(OurData) 
 
-naniar::gg_miss_var(OurData)
+#Piped the commands
+OurData <- OurData %>%
+  rename(BMI = `BMI kg/m2`,
+         Preg.ended_bf37 = `Preg.ended<37wk`) %>% #renamed variables
+  naniar::gg_miss_var() %>%
+  separate(col = Local_Topical.Anest, into = c("LocalAnesthetic", "TopicalAnesthetic"), sep = "_") %>% # Changed column Local_Topical.Anest with combined variables to two different variables. 
+  distinct() #Removed duplicates #Endret fra 835 til 834 rader
+
+#Converted coloumn C to either C or T
+OurData <- OurData %>%
+  mutate(C = case_when(C == "TRUE" ~ "C",
+                       TRUE ~ "T"))
+
+OurData <- OurData %>% 
+  rename(Group = C)
+View(OurData)
+
+# Remove columns `year` and `month` and 'T'
+OurData <-
+  OurData %>%
+  select(-year, -month, -T)
+=======
 
 #There are 28 columns and 835 rows
 #Column type frequency:            
@@ -36,11 +56,6 @@ naniar::gg_miss_var(OurData)
 
 #<<<<<<< Branch_Mathilde
 
-OurData <-
-  OurData %>%
-  rename(BMI = `BMI kg/m2`,
-         Preg.ended_bf37 = `Preg.ended<37wk`)
-
 
 #Variable type changes
 ##PID, mounth, year and age to integer
@@ -48,27 +63,6 @@ OurData <-
 ##BMI to integer
 ##Hypertension, diabetes to logical
 ##BL.Diab.Type to factor
-
-OurData %>% 
-  glimpse()
-# Local_Topical.Anest is also combined, with information on both Local and Topical Anesthetic 
-
-OurData <- OurData %>%
-  separate (col = Local_Topical.Anest, into = c("LocalAnesthetic", "TopicalAnesthetic"),
-            sep = "_")
-# Changed column Local_Topical.Anest with combined variables to two different variables. 
-
-OurData %>% 
-  glimpse()
-
-
-#Remove duplicates
-OurData <- OurData %>%
-  distinct()
-
-#Endret fra 835 til 834 rader
-#Endret fra 835 til 834 rader
-
 #Variable types
 #There are 28 variables
 #Local and topical anestetics should be split into two variables and should be binary (logical)
@@ -77,19 +71,3 @@ OurData <- OurData %>%
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
-
-OurData <-
-  OurData %>%
-  mutate(C = if_else(C == "TRUE", "C", "T"))
-view(OurData)
-OurData <-
-  OurData %>%
-  mutate(T = if_else(T == "TRUE", "T", "C"))
-view(OurData)
-
-# Remove columns `year` and `month`
-
-OurData <-
-  OurData %>%
-  select(-year, -month)
-
