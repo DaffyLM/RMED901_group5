@@ -15,7 +15,7 @@ summary(OurData)
 glimpse(OurData)
 View(OurData)        
 skimr::skim(OurData) 
-naniar::gg_miss_var()
+naniar::gg_miss_var(OurData)
   
 #Piped the commands
 OurData <- OurData %>%
