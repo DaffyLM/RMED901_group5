@@ -77,3 +77,8 @@ OurData <- OurData %>%
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
+
+OurData <-
+  OurData %>%
+  mutate(C = if_else(C == "TRUE", "C", "T"))
+
