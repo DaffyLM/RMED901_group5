@@ -36,7 +36,7 @@ View(OurData)
 # Remove columns `year` and `month` and 'T'
 OurData <-
   OurData %>%
-  select(-year, -month, -T)
+  select(-year, -month, -'T')
 
 #Cannot merge the race variables as they are not dependent of each other
 OurData <- OurData %>%
@@ -63,6 +63,14 @@ OurData <-
 
 OurData %>% 
   glimpse()
+
+#A column showing whether "number of qualifying teeth" was less than 15
+OurData <- OurData %>% 
+  mutate("NoQualTeeth<15" = if_else(N.qualifying.teeth <15, 0, 1))
+
+#Arrange PID column in order of increasing number alphabetically
+OurData %>%
+  arrange(desc(PID))
 
 #There are 28 columns and 835 rows
 #Column type frequency:            
