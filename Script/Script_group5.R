@@ -23,7 +23,6 @@ OurData %>%
 #There are 28 variables
 #Local and topical anestetics should be split into two variables and should be binary (logical)
 #Preg.ended…37.wk should be logical not string
-#Birth.outcome should be logical not string
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
@@ -46,3 +45,53 @@ OurData <-
 
 OurData %>% 
   glimpse()
+
+#Count the different objects in different variables to see what to change to TRUE, FALSE, and see what values have NAs.
+OurData %>%
+  count(Asian)
+
+OurData <- OurData %>%
+  mutate(`Preg.ended<37wk` = case_when(
+    `Preg.ended<37wk` == "Yes" ~ TRUE,
+    `Preg.ended<37wk` == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(Completed.EDC = case_when(
+    Completed.EDC == "Yes" ~ TRUE,
+    Completed.EDC == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(EDC.necessary. = case_when(
+    EDC.necessary. == "Yes" ~ TRUE,
+    EDC.necessary. == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(TopicalAnesthetic = case_when(
+    TopicalAnesthetic == "Yes" ~ TRUE,
+    TopicalAnesthetic == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(LocalAnesthetic = case_when(
+    LocalAnesthetic == "Yes" ~ TRUE,
+    LocalAnesthetic == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(Hypertension = case_when(
+    Hypertension == "Y" ~ TRUE,
+    Hypertension == "N" ~ FALSE)) %>%
+  mutate(Diabetes = case_when(
+    Diabetes == "Yes" ~ TRUE,
+    Diabetes == "No" ~ FALSE)) %>%
+  mutate(Black = case_when(
+    Black == "Yes" ~ TRUE,
+    Black == "No" ~ FALSE)) %>%
+  mutate(White = case_when(
+    White == "Yes" ~ TRUE,
+    White == "No" ~ FALSE)) %>%
+  mutate(Nat.Am = case_when(
+    Nat.Am == "Yes" ~ TRUE,
+    Nat.Am == "No" ~ FALSE)) %>%
+  mutate(Hisp = case_when(
+    Hisp == "Yes" ~ TRUE,
+    Hisp == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(Asian = case_when(
+    Asian == "Yes" ~ TRUE,
+    Asian == "No" ~ FALSE,
+  ))
+
