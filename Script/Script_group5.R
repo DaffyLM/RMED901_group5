@@ -32,6 +32,11 @@ OurData <- OurData %>%
 OurData <- OurData %>% 
   rename(Group = C)
 View(OurData)
+
+# Remove columns `year` and `month` and 'T'
+OurData <-
+  OurData %>%
+  select(-year, -month, -T)
 =======
 
 #There are 28 columns and 835 rows
@@ -66,4 +71,3 @@ View(OurData)
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
-
