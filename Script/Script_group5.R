@@ -15,12 +15,12 @@ summary(OurData)
 glimpse(OurData)
 View(OurData)        
 skimr::skim(OurData) 
+naniar::gg_miss_var(OurData)
 
 #Piped the commands
 OurData <- OurData %>%
   rename(BMI = `BMI kg/m2`,
          Preg.ended_bf37 = `Preg.ended<37wk`) %>% #renamed variables
-  naniar::gg_miss_var() %>%
   separate(col = Local_Topical.Anest, into = c("LocalAnesthetic", "TopicalAnesthetic"), sep = "_") %>% # Changed column Local_Topical.Anest with combined variables to two different variables. 
   distinct() #Removed duplicates #Endret fra 835 til 834 rader
 
@@ -32,7 +32,6 @@ OurData <- OurData %>%
 OurData <- OurData %>% 
   rename(Group = C)
 View(OurData)
-=======
 
 #There are 28 columns and 835 rows
 #Column type frequency:            
