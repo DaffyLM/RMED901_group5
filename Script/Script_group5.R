@@ -64,6 +64,52 @@ OurData <-
 OurData %>% 
   glimpse()
 
+#Changes in variable types
+OurData <- OurData %>%
+  mutate(`Preg.ended<37wk` = case_when(
+    `Preg.ended<37wk` == "Yes" ~ TRUE,
+    `Preg.ended<37wk` == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(Completed.EDC = case_when(
+    Completed.EDC == "Yes" ~ TRUE,
+    Completed.EDC == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(EDC.necessary. = case_when(
+    EDC.necessary. == "Yes" ~ TRUE,
+    EDC.necessary. == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(TopicalAnesthetic = case_when(
+    TopicalAnesthetic == "Yes" ~ TRUE,
+    TopicalAnesthetic == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(LocalAnesthetic = case_when(
+    LocalAnesthetic == "Yes" ~ TRUE,
+    LocalAnesthetic == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(Hypertension = case_when(
+    Hypertension == "Y" ~ TRUE,
+    Hypertension == "N" ~ FALSE)) %>%
+  mutate(Diabetes = case_when(
+    Diabetes == "Yes" ~ TRUE,
+    Diabetes == "No" ~ FALSE)) %>%
+  mutate(Black = case_when(
+    Black == "Yes" ~ TRUE,
+    Black == "No" ~ FALSE)) %>%
+  mutate(White = case_when(
+    White == "Yes" ~ TRUE,
+    White == "No" ~ FALSE)) %>%
+  mutate(Nat.Am = case_when(
+    Nat.Am == "Yes" ~ TRUE,
+    Nat.Am == "No" ~ FALSE)) %>%
+  mutate(Hisp = case_when(
+    Hisp == "Yes" ~ TRUE,
+    Hisp == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(Asian = case_when(
+    Asian == "Yes" ~ TRUE,
+    Asian == "No" ~ FALSE,
+  ))
+
 #A column showing whether "number of qualifying teeth" was less than 15
 OurData <- OurData %>% 
   mutate("NoQualTeeth<15" = if_else(N.qualifying.teeth <15, 0, 1))
