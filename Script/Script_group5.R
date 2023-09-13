@@ -3,12 +3,12 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
+#Last updated 2023-09-13 19:00
 
 library(tidyverse)
 library(here)
 here()
 
-read_tsv(here("Data", "exam_data.txt"))
 OurData <- read_tsv(here("Data", "exam_data.txt"))
 OurData
 summary(OurData)
@@ -77,52 +77,15 @@ OurData <- OurData %>%
     Asian == "Yes" ~ TRUE,
     Asian == "No" ~ FALSE,
   )) %>% 
-  OurData <- OurData %>% 
   mutate("NoQualTeeth<15" = if_else(N.qualifying.teeth <15, 0, 1)) %>% #A column showing whether "number of qualifying teeth" was less than 15
-  separate_wider_position(PID, widths = c(Enroll.Center= 1, PID = 5)) %>% #New column for enrollment center
+  separate_wider_position(PID, widths = c(Enroll.Center = 1, PID = 5)) %>% #New column for enrollment center
   mutate(Enroll.Center = case_when(Enroll.Center == "1" ~ "NY",
                                    Enroll.Center == "2" ~ "MN",
                                    Enroll.Center == "3" ~ "KY",
                                    Enroll.Center == "4" ~ "MS")) %>% #Rename enrollment center as a character 
   select(PID, Enroll.Center, Group, BMI, Age, everything()) %>% # Order of columns: PID, Enroll.Center, Group, BMI, Age
-  OurData %>%
   arrange(desc(PID)) #Arrange PID column in order of increasing number alphabetically
-  
-#Cannot merge the race variables as they are not dependent of each other
  
 
 
 
-
-
-
-
-#There are 28 columns and 835 rows
-#Column type frequency:            
-# character                15     
-# logical                  2      
-# numeric                  11  
-
-# Comments: 
-# C and T change NA to FALSE to remove missing data or combine C and T as one column 
-# Education should be split and logical 
-# Month and year should be combine as a date
-
-# Variables:
-# All variable with answer "Yes/No" should be logical "TRUE/FALSE"
-# tx.time value should be integer
-
-#Variable type changes
-##PID, mounth, year and age to integer
-##Black, white, Nat.Am, Asian, Hisp to logical
-##BMI to integer
-##Hypertension, diabetes to logical
-##BL.Diab.Type to factor
-#Variable types
-#There are 28 variables
-#Local and topical anestetics should be split into two variables and should be binary (logical)
-#Preg.ended…37.wk should be logical not string
-#Birth.outcome should be logical not string
-#Completed.EDC should be logical not string
-#EDC.necessary should be logical not string
-#Same for ALL binary/factor/logical variables
