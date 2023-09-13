@@ -67,9 +67,9 @@ OurData %>%
 
 #Changes in variable types
 OurData <- OurData %>%
-  mutate(`Preg.ended<37wk` = case_when(
-    `Preg.ended<37wk` == "Yes" ~ TRUE,
-    `Preg.ended<37wk` == "No" ~ FALSE,
+  mutate(`Preg.ended_bf37` = case_when(
+    `Preg.ended_bf37` == "Yes" ~ TRUE,
+    `Preg.ended_bf37` == "No" ~ FALSE,
     TRUE ~ NA)) %>%
   mutate(Completed.EDC = case_when(
     Completed.EDC == "Yes" ~ TRUE,
