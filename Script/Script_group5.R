@@ -15,8 +15,8 @@ summary(OurData)
 glimpse(OurData)
 View(OurData)        
 skimr::skim(OurData) 
-naniar::gg_miss_var() %>%
-  
+naniar::gg_miss_var(OurData)
+
 #Piped the commands
 OurData <- OurData %>%
   rename(BMI = `BMI kg/m2`,
@@ -33,18 +33,10 @@ OurData <- OurData %>%
   rename(Group = C)
 View(OurData)
 
-#Variable types
-#There are 28 variables
-#Local and topical anestetics should be split into two variables and should be binary (logical)
-#Preg.ended…37.wk should be logical not string
-#Completed.EDC should be logical not string
-#EDC.necessary should be logical not string
-#Same for ALL binary/factor/logical variables
-
 # Remove columns `year` and `month` and 'T'
 OurData <-
   OurData %>%
-  select(-year, -month, -T)
+  select(-year, -month, -'T')
 
 #Cannot merge the race variables as they are not dependent of each other
 OurData <- OurData %>%
@@ -72,10 +64,7 @@ OurData <-
 OurData %>% 
   glimpse()
 
-#Count the different objects in different variables to see what to change to TRUE, FALSE, and see what values have NAs.
-OurData %>%
-  count(Asian)
-
+#Changes in variable types
 OurData <- OurData %>%
   mutate(`Preg.ended<37wk` = case_when(
     `Preg.ended<37wk` == "Yes" ~ TRUE,
@@ -120,4 +109,43 @@ OurData <- OurData %>%
     Asian == "Yes" ~ TRUE,
     Asian == "No" ~ FALSE,
   ))
+
+#A column showing whether "number of qualifying teeth" was less than 15
+OurData <- OurData %>% 
+  mutate("NoQualTeeth<15" = if_else(N.qualifying.teeth <15, 0, 1))
+
+#Arrange PID column in order of increasing number alphabetically
+OurData %>%
+  arrange(desc(PID))
+
+#There are 28 columns and 835 rows
+#Column type frequency:            
+# character                15     
+# logical                  2      
+# numeric                  11  
+
+# Comments: 
+# C and T change NA to FALSE to remove missing data or combine C and T as one column 
+# Education should be split and logical 
+# Month and year should be combine as a date
+
+# Variables:
+# All variable with answer "Yes/No" should be logical "TRUE/FALSE"
+# tx.time value should be integer
+
+#Variable type changes
+##PID, mounth, year and age to integer
+##Black, white, Nat.Am, Asian, Hisp to logical
+##BMI to integer
+##Hypertension, diabetes to logical
+##BL.Diab.Type to factor
+#Variable types
+#There are 28 variables
+#Local and topical anestetics should be split into two variables and should be binary (logical)
+#Preg.ended…37.wk should be logical not string
+#Birth.outcome should be logical not string
+#Completed.EDC should be logical not string
+#EDC.necessary should be logical not string
+#Same for ALL binary/factor/logical variables
+
 
