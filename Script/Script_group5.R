@@ -15,12 +15,12 @@ summary(OurData)
 glimpse(OurData)
 View(OurData)        
 skimr::skim(OurData) 
+naniar::gg_miss_var(OurData)
 
 #Piped the commands
 OurData <- OurData %>%
   rename(BMI = `BMI kg/m2`,
          Preg.ended_bf37 = `Preg.ended<37wk`) %>% #renamed variables
-  naniar::gg_miss_var() %>%
   separate(col = Local_Topical.Anest, into = c("LocalAnesthetic", "TopicalAnesthetic"), sep = "_") %>% # Changed column Local_Topical.Anest with combined variables to two different variables. 
   distinct() #Removed duplicates #Endret fra 835 til 834 rader
 
@@ -36,40 +36,84 @@ View(OurData)
 # Remove columns `year` and `month` and 'T'
 OurData <-
   OurData %>%
-  select(-year, -month, -T)
 
-#There are 28 columns and 835 rows
-#Column type frequency:            
-# character                15     
-# logical                  2      
-# numeric                  11  
+  select(-year, -month, -'T')
 
-# Comments: 
-# C and T change NA to FALSE to remove missing data or combine C and T as one column 
-# Education should be split and logical 
-# Month and year should be combine as a date
+#Cannot merge the race variables as they are not dependent of each other
+OurData <- OurData %>%
+  mutate(Education=str_replace(Education, "yrs", "")) %>%
+  mutate(Education=str_replace(Education, "MT", ">")) %>%
+  mutate(Education=str_replace(Education, "LT", "<"))
+view(OurData)
 
-# Variables:
-# All variable with answer "Yes/No" should be logical "TRUE/FALSE"
-# tx.time value should be integer
+#Read the join data
+OurData_join <- read_tsv(here("Data", "exam_data_join.txt"))
 
-#<<<<<<< Branch_Mathilde
+#Join the new dataset with the "old"
+OurData <- OurData %>%
+  full_join(OurData_join, by = join_by(PID))
 
+#Rename the new variables O61 and O81
+OurData <- 
+  OurData %>%
+  rename(IL6_baseline = O61)
 
-#Variable type changes
-##PID, mounth, year and age to integer
-##Black, white, Nat.Am, Asian, Hisp to logical
-##BMI to integer
-##Hypertension, diabetes to logical
-##BL.Diab.Type to factor
-#Variable types
-#There are 28 variables
-#Local and topical anestetics should be split into two variables and should be binary (logical)
-#Preg.ended…37.wk should be logical not string
-#Birth.outcome should be logical not string
-#Completed.EDC should be logical not string
-#EDC.necessary should be logical not string
-#Same for ALL binary/factor/logical variables
+OurData <-
+  OurData %>%
+  rename(IL8_baseline = O81)
+
+OurData %>% 
+  glimpse()
+
+#Changes in variable types
+OurData <- OurData %>%
+  mutate(`Preg.ended<37wk` = case_when(
+    `Preg.ended<37wk` == "Yes" ~ TRUE,
+    `Preg.ended<37wk` == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(Completed.EDC = case_when(
+    Completed.EDC == "Yes" ~ TRUE,
+    Completed.EDC == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(EDC.necessary. = case_when(
+    EDC.necessary. == "Yes" ~ TRUE,
+    EDC.necessary. == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(TopicalAnesthetic = case_when(
+    TopicalAnesthetic == "Yes" ~ TRUE,
+    TopicalAnesthetic == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(LocalAnesthetic = case_when(
+    LocalAnesthetic == "Yes" ~ TRUE,
+    LocalAnesthetic == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(Hypertension = case_when(
+    Hypertension == "Y" ~ TRUE,
+    Hypertension == "N" ~ FALSE)) %>%
+  mutate(Diabetes = case_when(
+    Diabetes == "Yes" ~ TRUE,
+    Diabetes == "No" ~ FALSE)) %>%
+  mutate(Black = case_when(
+    Black == "Yes" ~ TRUE,
+    Black == "No" ~ FALSE)) %>%
+  mutate(White = case_when(
+    White == "Yes" ~ TRUE,
+    White == "No" ~ FALSE)) %>%
+  mutate(Nat.Am = case_when(
+    Nat.Am == "Yes" ~ TRUE,
+    Nat.Am == "No" ~ FALSE)) %>%
+  mutate(Hisp = case_when(
+    Hisp == "Yes" ~ TRUE,
+    Hisp == "No" ~ FALSE,
+    TRUE ~ NA)) %>%
+  mutate(Asian = case_when(
+    Asian == "Yes" ~ TRUE,
+    Asian == "No" ~ FALSE,
+  ))
+
+#A column showing whether "number of qualifying teeth" was less than 15
+OurData <- OurData %>% 
+  mutate("NoQualTeeth<15" = if_else(N.qualifying.teeth <15, 0, 1))
 
 #New column for enrollment center
 OurData <-
@@ -90,6 +134,36 @@ OurData <-
   OurData %>%
   select(PID, Enroll.Center, Group, BMI, Age, everything())
 
+#Arrange PID column in order of increasing number alphabetically
+OurData %>%
+  arrange(desc(PID))
 
+#There are 28 columns and 835 rows
+#Column type frequency:            
+# character                15     
+# logical                  2      
+# numeric                  11  
 
+# Comments: 
+# C and T change NA to FALSE to remove missing data or combine C and T as one column 
+# Education should be split and logical 
+# Month and year should be combine as a date
 
+# Variables:
+# All variable with answer "Yes/No" should be logical "TRUE/FALSE"
+# tx.time value should be integer
+
+#Variable type changes
+##PID, mounth, year and age to integer
+##Black, white, Nat.Am, Asian, Hisp to logical
+##BMI to integer
+##Hypertension, diabetes to logical
+##BL.Diab.Type to factor
+#Variable types
+#There are 28 variables
+#Local and topical anestetics should be split into two variables and should be binary (logical)
+#Preg.ended…37.wk should be logical not string
+#Birth.outcome should be logical not string
+#Completed.EDC should be logical not string
+#EDC.necessary should be logical not string
+#Same for ALL binary/factor/logical variables
