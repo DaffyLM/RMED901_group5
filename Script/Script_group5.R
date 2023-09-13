@@ -37,7 +37,6 @@ View(OurData)
 OurData <-
   OurData %>%
   select(-year, -month, -T)
-=======
 
 #There are 28 columns and 835 rows
 #Column type frequency:            
@@ -71,3 +70,26 @@ OurData <-
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
+
+#New column for enrollment center
+OurData <-
+  OurData %>%
+  separate_wider_position(PID, widths = c(Enroll.Center= 1, PID = 5))
+#Rename enrollment center as a character 
+
+OurData <- 
+  OurData %>%
+  mutate(Enroll.Center = case_when(Enroll.Center == "1" ~ "NY",
+                                    Enroll.Center == "2" ~ "MN",
+                                    Enroll.Center == "3" ~ "KY",
+                                    Enroll.Center == "4" ~ "MS"))
+
+# Order of columns: PID, Enroll.Center, Group, BMI, Age
+
+OurData <-
+  OurData %>%
+  select(PID, Enroll.Center, Group, BMI, Age, everything())
+
+
+
+
