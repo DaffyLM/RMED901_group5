@@ -36,6 +36,7 @@ View(OurData)
 # Remove columns `year` and `month` and 'T'
 OurData <-
   OurData %>%
+
   select(-year, -month, -'T')
 
 #Cannot merge the race variables as they are not dependent of each other
@@ -114,6 +115,25 @@ OurData <- OurData %>%
 OurData <- OurData %>% 
   mutate("NoQualTeeth<15" = if_else(N.qualifying.teeth <15, 0, 1))
 
+#New column for enrollment center
+OurData <-
+  OurData %>%
+  separate_wider_position(PID, widths = c(Enroll.Center= 1, PID = 5))
+#Rename enrollment center as a character 
+
+OurData <- 
+  OurData %>%
+  mutate(Enroll.Center = case_when(Enroll.Center == "1" ~ "NY",
+                                    Enroll.Center == "2" ~ "MN",
+                                    Enroll.Center == "3" ~ "KY",
+                                    Enroll.Center == "4" ~ "MS"))
+
+# Order of columns: PID, Enroll.Center, Group, BMI, Age
+
+OurData <-
+  OurData %>%
+  select(PID, Enroll.Center, Group, BMI, Age, everything())
+
 #Arrange PID column in order of increasing number alphabetically
 OurData %>%
   arrange(desc(PID))
@@ -147,5 +167,3 @@ OurData %>%
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
-
-
