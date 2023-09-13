@@ -64,6 +64,10 @@ OurData <-
 OurData %>% 
   glimpse()
 
+#A coloumn showing whether "number of qualifying teeth" was less than 15
+OurData <- OurData %>% 
+  mutate("NoQualTeeth<15" = if_else(N.qualifying.teeth <15, 0, 1))
+
 #There are 28 columns and 835 rows
 #Column type frequency:            
 # character                15     
