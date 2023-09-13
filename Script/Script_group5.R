@@ -77,16 +77,20 @@ OurData <- OurData %>%
     Asian == "Yes" ~ TRUE,
     Asian == "No" ~ FALSE,
   )) %>% 
-  OurData <- OurData %>% 
   mutate("NoQualTeeth<15" = if_else(N.qualifying.teeth <15, 0, 1)) %>% #A column showing whether "number of qualifying teeth" was less than 15
-  separate_wider_position(PID, widths = c(Enroll.Center= 1, PID = 5)) %>% #New column for enrollment center
+  separate(PID, into = c("Enroll.Center", "PID"), sep = 1) %>% #New column for enrollment center
   mutate(Enroll.Center = case_when(Enroll.Center == "1" ~ "NY",
                                    Enroll.Center == "2" ~ "MN",
                                    Enroll.Center == "3" ~ "KY",
                                    Enroll.Center == "4" ~ "MS")) %>% #Rename enrollment center as a character 
   select(PID, Enroll.Center, Group, BMI, Age, everything()) %>% # Order of columns: PID, Enroll.Center, Group, BMI, Age
-  OurData %>%
+  mutate(BMI_Quartile = cut(BMI, 
+                            breaks = quantile(BMI, probs = c(0, 0.25, 0.5, 0.75, 1), na.rm = TRUE),
+                            labels = c("Q1", "Q2", "Q3", "Q4"), 
+                            include.lowest = TRUE))
   arrange(desc(PID)) #Arrange PID column in order of increasing number alphabetically
+ 
+
   
 #Cannot merge the race variables as they are not dependent of each other
  
