@@ -82,3 +82,12 @@ view(OurData)
 OurData <-
   OurData %>%
   mutate(BW.over.GA = Birthweight/GA.at.outcome)
+
+#New Column BW IQR
+OurData <-
+  OurData %>%
+  mutate(BW.IQR = cut(Birthweight, quantile(Birthweight, na.rm = TRUE)))
+OurData %>%
+  count(BW.IQR)
+                  
+
