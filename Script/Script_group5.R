@@ -3,12 +3,12 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
+#Last updated 2023-09-13 19:00
 
 library(tidyverse)
 library(here)
 here()
 
-read_tsv(here("Data", "exam_data.txt"))
 OurData <- read_tsv(here("Data", "exam_data.txt"))
 OurData
 summary(OurData)
@@ -87,46 +87,14 @@ OurData <- OurData %>%
   mutate(BMI_Quartile = cut(BMI, 
                             breaks = quantile(BMI, probs = c(0, 0.25, 0.5, 0.75, 1), na.rm = TRUE),
                             labels = c("Q1", "Q2", "Q3", "Q4"), 
-                            include.lowest = TRUE))
-  arrange(desc(PID)) #Arrange PID column in order of increasing number alphabetically
- 
+                            include.lowest = TRUE)) %>% 
+  arrange(desc(PID)) #Arrange PID column in order of increasing number alphabetically 
+  
 
   
 #Cannot merge the race variables as they are not dependent of each other
+
  
 
 
 
-
-
-
-
-#There are 28 columns and 835 rows
-#Column type frequency:            
-# character                15     
-# logical                  2      
-# numeric                  11  
-
-# Comments: 
-# C and T change NA to FALSE to remove missing data or combine C and T as one column 
-# Education should be split and logical 
-# Month and year should be combine as a date
-
-# Variables:
-# All variable with answer "Yes/No" should be logical "TRUE/FALSE"
-# tx.time value should be integer
-
-#Variable type changes
-##PID, mounth, year and age to integer
-##Black, white, Nat.Am, Asian, Hisp to logical
-##BMI to integer
-##Hypertension, diabetes to logical
-##BL.Diab.Type to factor
-#Variable types
-#There are 28 variables
-#Local and topical anestetics should be split into two variables and should be binary (logical)
-#Preg.ended…37.wk should be logical not string
-#Birth.outcome should be logical not string
-#Completed.EDC should be logical not string
-#EDC.necessary should be logical not string
-#Same for ALL binary/factor/logical variables
