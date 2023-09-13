@@ -86,6 +86,6 @@ OurData <- OurData %>%
   select(PID, Enroll.Center, Group, BMI, Age, everything()) %>% # Order of columns: PID, Enroll.Center, Group, BMI, Age
   arrange(desc(PID)) #Arrange PID column in order of increasing number alphabetically
  
-
+View(OurData)
 
 
