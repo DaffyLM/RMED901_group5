@@ -78,3 +78,7 @@ view(OurData)
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
 
+#New column showing division of "Birthweight" over "GA.at.outcome"
+OurData <-
+  OurData %>%
+  mutate(BW.over.GA = Birthweight/GA.at.outcome)
