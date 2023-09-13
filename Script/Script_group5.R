@@ -36,7 +36,7 @@ View(OurData)
 # Remove columns `year` and `month` and 'T'
 OurData <-
   OurData %>%
-  select(-year, -month, -T)
+  select(-year, -month, -'T')
 
 #Cannot merge the race variables as they are not dependent of each other
 OurData <- OurData %>%
