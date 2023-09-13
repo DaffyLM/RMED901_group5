@@ -33,6 +33,37 @@ OurData <- OurData %>%
   rename(Group = C)
 View(OurData)
 
+# Remove columns `year` and `month` and 'T'
+OurData <-
+  OurData %>%
+  select(-year, -month, -T)
+
+#Cannot merge the race variables as they are not dependent of each other
+OurData <- OurData %>%
+  mutate(Education=str_replace(Education, "yrs", "")) %>%
+  mutate(Education=str_replace(Education, "MT", ">")) %>%
+  mutate(Education=str_replace(Education, "LT", "<"))
+view(OurData)
+
+#Read the join data
+OurData_join <- read_tsv(here("Data", "exam_data_join.txt"))
+
+#Join the new dataset with the "old"
+OurData <- OurData %>%
+  full_join(OurData_join, by = join_by(PID))
+
+#Rename the new variables O61 and O81
+OurData <- 
+  OurData %>%
+  rename(IL6_baseline = O61)
+
+OurData <-
+  OurData %>%
+  rename(IL8_baseline = O81)
+
+OurData %>% 
+  glimpse()
+
 #There are 28 columns and 835 rows
 #Column type frequency:            
 # character                15     
@@ -48,9 +79,6 @@ View(OurData)
 # All variable with answer "Yes/No" should be logical "TRUE/FALSE"
 # tx.time value should be integer
 
-#<<<<<<< Branch_Mathilde
-
-
 #Variable type changes
 ##PID, mounth, year and age to integer
 ##Black, white, Nat.Am, Asian, Hisp to logical
@@ -65,4 +93,5 @@ View(OurData)
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
+
 
