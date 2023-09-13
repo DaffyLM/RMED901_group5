@@ -33,6 +33,7 @@ OurData <- OurData %>%
   rename(Group = C)
 View(OurData)
 
+
 # Remove columns `year` and `month` and 'T'
 OurData <-
   OurData %>%
@@ -44,6 +45,25 @@ OurData <- OurData %>%
   mutate(Education=str_replace(Education, "MT", ">")) %>%
   mutate(Education=str_replace(Education, "LT", "<"))
 view(OurData)
+
+#Read the join data
+OurData_join <- read_tsv(here("Data", "exam_data_join.txt"))
+
+#Join the new dataset with the "old"
+OurData <- OurData %>%
+  full_join(OurData_join, by = join_by(PID))
+
+#Rename the new variables O61 and O81
+OurData <- 
+  OurData %>%
+  rename(IL6_baseline = O61)
+
+OurData <-
+  OurData %>%
+  rename(IL8_baseline = O81)
+
+OurData %>% 
+  glimpse()
 
 #There are 28 columns and 835 rows
 #Column type frequency:            
@@ -77,4 +97,5 @@ view(OurData)
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
+
 
