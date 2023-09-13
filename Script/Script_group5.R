@@ -37,7 +37,13 @@ View(OurData)
 OurData <-
   OurData %>%
   select(-year, -month, -T)
-=======
+
+#Cannot merge the race variables as they are not dependent of each other
+OurData <- OurData %>%
+  mutate(Education=str_replace(Education, "yrs", "")) %>%
+  mutate(Education=str_replace(Education, "MT", ">")) %>%
+  mutate(Education=str_replace(Education, "LT", "<"))
+view(OurData)
 
 #There are 28 columns and 835 rows
 #Column type frequency:            
@@ -71,3 +77,4 @@ OurData <-
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
+
