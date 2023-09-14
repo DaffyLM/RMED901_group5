@@ -3,7 +3,9 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
-#Last updated 2023-09-14 11:00
+# Day 6 Tidy, adjust, and explore
+# Day 7 Plots
+#Last updated 2023-09-14 14.36
 
 library(tidyverse)
 library(here)
@@ -127,7 +129,25 @@ head(OurData)
 
   # Are there any correlated measurements?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
+
+OurData <- OurData %>%
+  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
+                          !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
+                          !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
+                          !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
+                          !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
+                          TRUE ~ "Mixed")
+  )
+view(OurData)  
+
+ggplot(data=OurData) +
+  aes(y = IL6_baseline) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race)) +
+  coord_cartesian(ylim= c(0, 100))
+
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
+
   #Does whether patient required essential dental care change with age of the patients?
 
 # Calculate proportion for each age
