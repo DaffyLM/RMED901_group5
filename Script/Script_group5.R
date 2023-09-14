@@ -3,7 +3,7 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
-#Last updated 2023-09-14 12:00
+#Last updated 2023-09-14 11:00
 
 library(tidyverse)
 library(here)
@@ -117,10 +117,31 @@ OurData %>%
 View(OurData)
 
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
-#Are there any correlated measurements?
+
+  # Are there any correlated measurements?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
   #Does whether patient required essential dental care change with age of the patients?
+
+# Calculate proportion for each age
+data_for_plot <- OurData %>% 
+  filter(EDC.necessary. == TRUE) %>%
+  group_by(Age) %>%
+  summarise(count = n()) %>%
+  mutate(proportionEDC = count/sum(count))  
+
+# Plotting
+ggplot(data_for_plot, aes(x=Age, y=proportionEDC)) + 
+  geom_bar(stat="identity", fill="orange") + 
+  labs(title="Proportion of Patients Requiring EDC by Age",
+       x="Age",
+       y="Proportion of Patients") +
+  theme_minimal()
+
+
+
+
+
+
   #Do BMI and age have a linear relationship?
   
-
