@@ -3,7 +3,7 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
-#Last updated 2023-09-14 11:00
+#Last updated 2023-09-14 12:00
 
 library(tidyverse)
 library(here)
@@ -117,10 +117,10 @@ OurData %>%
 View(OurData)
 
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
-
 #Are there any correlated measurements?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
   #Does whether patient required essential dental care change with age of the patients?
   #Do BMI and age have a linear relationship?
   
+
