@@ -3,17 +3,16 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 #Last updated 2023-09-14 11:00
-=======
+
 #Last updated 2023-09-14 12:00
->>>>>>> 7f8595b14575364fef7f16aebe4d3f1bbb35b3b8
-=======
+
+
 # Day 6 Tidy, adjust, and explore
 # Day 7 Plots
 #Last updated 2023-09-14 14.36
->>>>>>> 4acfd23671112ea2839e51d475bf82ba7b4458ae
+
 
 library(tidyverse)
 library(here)
@@ -100,7 +99,6 @@ OurData <- OurData %>%
                             labels = c("Q1", "Q2", "Q3", "Q4"), 
                             include.lowest = TRUE)) %>% 
   arrange(desc(PID)) #Arrange PID column in order of increasing number alphabetically 
-<<<<<<< HEAD
 
   
 #Cannot merge the race variables as they are not dependent of each other
@@ -137,7 +135,7 @@ head(OurData)
 
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
 
-<<<<<<< HEAD
+
 
   
 #Cannot merge the race variables as they are not dependent of each other
@@ -194,9 +192,7 @@ View(OurData)
 
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
 #Are there any correlated measurements?
-=======
   # Are there any correlated measurements?
->>>>>>> 4acfd23671112ea2839e51d475bf82ba7b4458ae
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
 
 OurData <- OurData %>%
@@ -218,7 +214,6 @@ ggplot(data=OurData) +
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
 
   #Does whether patient required essential dental care change with age of the patients?
-<<<<<<< HEAD
   #Do BMI and age have a linear relationship?
   
 
@@ -239,7 +234,7 @@ ggplot(data=OurData) +
   geom_boxplot(aes(color = race)) +
   facet_grid(rows = vars(race)) +
   coord_cartesian(ylim= c(0, 100))
-=======
+
 
 # Calculate proportion for each age
 data_for_plot <- OurData %>% 
@@ -285,9 +280,3 @@ scatter_plot_BMI_Age
 
 
 
-
-
-
-
-
->>>>>>> 4acfd23671112ea2839e51d475bf82ba7b4458ae
