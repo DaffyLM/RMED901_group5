@@ -332,5 +332,11 @@ ggplot(data=OurData) +
   geom_bar(aes(color = BMI_Quartile)) +
   facet_grid(rows = vars(BMI_Quartile))
 
+#Does the birth outcome depend on the center?
 
-
+Enroll.Center_birthweight <- ggplot(OurData,
+                                aes(x = Enroll.Center, y = Birthweight, fill = Enroll.Center)) +
+  geom_boxplot(aes(color = Enroll.Center)) +
+  theme_minimal() +
+  labs(title = "Enroll.Center vs. birthweight")
+Enroll.Center_birthweight
