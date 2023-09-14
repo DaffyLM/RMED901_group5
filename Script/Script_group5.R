@@ -171,3 +171,18 @@ scatter_plot_BMI_Age <- ggplot(OurData,
   labs(title = "Scatter Plot of Age vs. BMI")
 
 scatter_plot_BMI_Age
+
+OurData <- OurData %>%
+  mutate(
+    Race_combined = case_when(
+      Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
+      !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
+      Nat.Am ~ "Native American",
+      Asian ~ "Asian",
+      Hisp ~ "Hispanic",
+      Black & White ~ "Black & White",
+      TRUE ~ "Other/multiple"  # This captures all other combinations
+    )
+  )
+View(OurData)
+#count(Race_combined)
