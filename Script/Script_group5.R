@@ -3,12 +3,20 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
+
+#Last updated 2023-09-14 11:00
+
+#Last updated 2023-09-14 12:00
+
+
 # Day 6 Tidy, adjust, and explore
 # Day 7 Plots
 #Last updated 2023-09-14 14.36
 
+
 library(tidyverse)
 library(here)
+library(patchwork)
 here()
 
 OurData <- read_tsv(here("Data", "exam_data.txt"))
@@ -127,6 +135,63 @@ head(OurData)
 
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
 
+
+
+  
+#Cannot merge the race variables as they are not dependent of each other
+
+
+#Are there any correlated measurements?
+  #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
+  #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
+  #Does whether patient required essential dental care change with age of the patients?
+  #Do BMI and age have a linear relationship
+
+glimpse(OurData)
+#Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
+OurData <- OurData %>%
+  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
+                  !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
+                 !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
+                 !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
+                 !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
+                 TRUE ~ "Mixed")
+                 )
+view(OurData)  
+
+ggplot(data=OurData) +
+  aes(y = IL6_baseline) +
+  geom_boxplot(aes(color = race)) +
+    facet_grid(rows = vars(race)) +
+  coord_cartesian(ylim= c(0, 100))
+               
+
+
+#Explore your data.
+#Explore and comment on the missing variables.
+#Stratify your data by a categorical column and report 
+summary(OurData)
+
+OurData %>% 
+  filter(BMI <= 30) %>% 
+  group_by(White) %>%
+  summarise(min_age = min(Age, na.rm = TRUE),
+            max_age = max(Age, na.rm = TRUE),
+            mean_age = mean(Age, na.rm = TRUE),
+            sd_age = sd(Age, na.rm = TRUE)) 
+OurData %>% 
+  summarise_all(~sum(is.na(.))) %>% 
+  gather(variable, na_count) %>%
+  filter(na_count > 0)  #Explore (and comment) on the missing variables
+
+#Use two categorical columns in your dataset to create a table (hint: ?count)
+OurData %>% 
+  count(Enroll.Center, Group)
+ 
+View(OurData)
+
+##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
+#Are there any correlated measurements?
   # Are there any correlated measurements?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
 
@@ -149,6 +214,27 @@ ggplot(data=OurData) +
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
 
   #Does whether patient required essential dental care change with age of the patients?
+  #Do BMI and age have a linear relationship?
+  
+
+#Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
+OurData <- OurData %>%
+  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
+                          !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
+                          !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
+                          !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
+                          !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
+                          TRUE ~ "Mixed")
+  )
+
+view(OurData)  
+
+ggplot(data=OurData) +
+  aes(y = IL6_baseline) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race)) +
+  coord_cartesian(ylim= c(0, 100))
+
 
 # Calculate proportion for each age
 data_for_plot <- OurData %>% 
@@ -192,10 +278,9 @@ scatter_plot_BMI_Age <- ggplot(OurData,
 
 scatter_plot_BMI_Age
 
-
-
-
-
-
-
+#Does the birth outcome depend on BMI of the patient?
+ggplot(data=OurData) +
+  aes(y = Birth.outcome) +
+  geom_bar(aes(color = BMI_Quartile)) +
+  facet_grid(rows = vars(BMI_Quartile))
 
