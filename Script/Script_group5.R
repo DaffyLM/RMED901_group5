@@ -171,3 +171,11 @@ scatter_plot_BMI_Age <- ggplot(OurData,
   labs(title = "Scatter Plot of Age vs. BMI")
 
 scatter_plot_BMI_Age
+
+
+
+
+
+
+
+
