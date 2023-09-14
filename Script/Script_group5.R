@@ -3,10 +3,20 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
+
+#Last updated 2023-09-14 11:00
+
 #Last updated 2023-09-14 12:00
+
+
+# Day 6 Tidy, adjust, and explore
+# Day 7 Plots
+#Last updated 2023-09-14 14.36
+
 
 library(tidyverse)
 library(here)
+library(patchwork)
 here()
 
 OurData <- read_tsv(here("Data", "exam_data.txt"))
@@ -124,29 +134,124 @@ naniar::gg_miss_var(OurData)
 head(OurData)
 
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
+
+
+
+  
+#Cannot merge the race variables as they are not dependent of each other
+
+
 #Are there any correlated measurements?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
   #Does whether patient required essential dental care change with age of the patients?
+  #Do BMI and age have a linear relationship
+
+glimpse(OurData)
+#Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
+OurData <- OurData %>%
+  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
+                  !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
+                 !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
+                 !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
+                 !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
+                 TRUE ~ "Mixed")
+                 )
+view(OurData)  
+
+ggplot(data=OurData) +
+  aes(y = IL6_baseline) +
+  geom_boxplot(aes(color = race)) +
+    facet_grid(rows = vars(race)) +
+  coord_cartesian(ylim= c(0, 100))
+               
+
+
+#Explore your data.
+#Explore and comment on the missing variables.
+#Stratify your data by a categorical column and report 
+summary(OurData)
+
+OurData %>% 
+  filter(BMI <= 30) %>% 
+  group_by(White) %>%
+  summarise(min_age = min(Age, na.rm = TRUE),
+            max_age = max(Age, na.rm = TRUE),
+            mean_age = mean(Age, na.rm = TRUE),
+            sd_age = sd(Age, na.rm = TRUE)) 
+OurData %>% 
+  summarise_all(~sum(is.na(.))) %>% 
+  gather(variable, na_count) %>%
+  filter(na_count > 0)  #Explore (and comment) on the missing variables
+
+#Use two categorical columns in your dataset to create a table (hint: ?count)
+OurData %>% 
+  count(Enroll.Center, Group)
+ 
+View(OurData)
+
+##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
+#Are there any correlated measurements?
+  # Are there any correlated measurements?
+  #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
+
+OurData <- OurData %>%
+  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
+                          !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
+                          !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
+                          !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
+                          !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
+                          TRUE ~ "Mixed")
+  )
+view(OurData)  
+
+ggplot(data=OurData) +
+  aes(y = IL6_baseline) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race)) +
+  coord_cartesian(ylim= c(0, 100))
+
+  #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
+
+  #Does whether patient required essential dental care change with age of the patients?
   #Do BMI and age have a linear relationship?
   
 
-<<<<<<< HEAD
-#Variable type changes
-##PID, mounth, year and age to integer
-##Black, white, Nat.Am, Asian, Hisp to logical
-##BMI to integer
-##Hypertension, diabetes to logical
-##BL.Diab.Type to factor
-#Variable types
-#There are 28 variables
-#Local and topical anestetics should be split into two variables and should be binary (logical)
-#Preg.ended…37.wk should be logical not string
-#Birth.outcome should be logical not string
-#Completed.EDC should be logical not string
-#EDC.necessary should be logical not string
-#Same for ALL binary/factor/logical variables
+#Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
+OurData <- OurData %>%
+  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
+                          !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
+                          !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
+                          !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
+                          !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
+                          TRUE ~ "Mixed")
+  )
 
+view(OurData)  
+
+ggplot(data=OurData) +
+  aes(y = IL6_baseline) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race)) +
+  coord_cartesian(ylim= c(0, 100))
+
+
+# Calculate proportion for each age
+data_for_plot <- OurData %>% 
+  filter(EDC.necessary. == TRUE) %>%
+  group_by(Age) %>%
+  summarise(count = n()) %>%
+  mutate(proportionEDC = count/sum(count))  
+
+# Plotting
+ggplot(data_for_plot, aes(x=Age, y=proportionEDC)) + 
+  geom_bar(stat="identity", fill="orange") + 
+  labs(title="Proportion of Patients Requiring EDC by Age",
+       x="Age",
+       y="Proportion of Patients") +
+  theme_minimal()
+
+##Do BMI and age have a linear relationship?
 
 install.packages("GGally")
 library(ggplot2)
@@ -172,6 +277,7 @@ scatter_plot_BMI_Age <- ggplot(OurData,
   labs(title = "Scatter Plot of Age vs. BMI")
 
 scatter_plot_BMI_Age
+
 
 ##Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
 ## Interleukin(IL)-6 vs. Age
@@ -204,3 +310,27 @@ Treatment_birthweight <- ggplot(OurData,
                                 theme_minimal() +
                                 labs(title = "Treatment vs. birthweight")
 Treatment_birthweight
+
+#Was there a difference of birthweight between different race categories? 
+ggplot(data=OurData) +
+  aes(x = Birthweight) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race))
+
+ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
+  geom_boxplot() +
+  stat_summary(fun = mean, geom = "point", shape = 20, size = 3, color = "red", position = position_dodge(0.75)) +
+  stat_summary(fun = mean, geom = "line", aes(group = 1), color = "red", position = position_dodge(0.75)) +
+  labs(title = "Comparison of Birthweight between Groups C and T",
+       x = "Group",
+       y = "Birthweight") +
+  theme_minimal()
+
+#Does the birth outcome depend on BMI of the patient?
+ggplot(data=OurData) +
+  aes(y = Birth.outcome) +
+  geom_bar(aes(color = BMI_Quartile)) +
+  facet_grid(rows = vars(BMI_Quartile))
+
+
+
