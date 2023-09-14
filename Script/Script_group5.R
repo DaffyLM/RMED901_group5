@@ -17,9 +17,6 @@ View(OurData)
 skimr::skim(OurData) 
 naniar::gg_miss_var(OurData)
 OurData_join <- read_tsv(here("Data", "exam_data_join.txt")) #Read the join data
-#Join the new dataset with the "old"
-OurData <- OurData %>%
-  full_join(OurData_join, by = join_by(PID))
 
 #Piped the commands
 OurData <- OurData %>%
@@ -79,6 +76,7 @@ OurData <- OurData %>%
   mutate(Asian = case_when(
     Asian == "Yes" ~ TRUE,
     Asian == "No" ~ FALSE,
+  )) %>% 
   mutate("NoQualTeeth<15" = if_else(N.qualifying.teeth <15, 0, 1)) %>% #A column showing whether "number of qualifying teeth" was less than 15
   separate(PID, into = c("Enroll.Center", "PID"), sep = 1) %>% #New column for enrollment center
   mutate(Enroll.Center = case_when(Enroll.Center == "1" ~ "NY",
@@ -92,45 +90,6 @@ OurData <- OurData %>%
                             include.lowest = TRUE)) %>% 
   arrange(desc(PID)) #Arrange PID column in order of increasing number alphabetically 
 
-
-# Explore and comment on the missing variables:
-naniar::gg_miss_var(OurData)
-# See which variables have missing values with naniar. BL.Diab.Type has the most. Tx.time, Tx.comp. and so on have also many missing. 
-OurData %>%
-  count(BL.Diab.Type)
-#Use count to see exactly how many missing in the different variables.
-naniar::gg_miss_var(OurData, facet = Diabetes)
-#Explore missing variables by different cat. All missing values in BL.Diab.Type are in participants without diabetes.
-
-OurData %>%
-  group_by(EDC.necessary.) %>%
-  summarise(min(Birthweight, na.rm = T),
-          max(Birthweight, na.rm = T),
-          mean(Birthweight, na.rm = T),
-          sd(Birthweight, na.rm = T))
-
-OurData %>%
-  group_by(EDC.necessary.) %>%
-  filter(substr(PID, 1, 1) == 1) %>%
-  filter(BMI <= 30) %>%
-  filter(Age > 25) %>%
-  filter(Black = TRUE) %>%
-  summarise(min(Birthweight, na.rm = T),
-            max(Birthweight, na.rm = T),
-            mean(Birthweight, na.rm = T),
-            sd(Birthweight, na.rm = T))
-
-count_table <- OurData %>%
-  count(EDC.necessary., Black)
-count_table
-#A column showing whether "number of qualifying teeth" was less than 15
-OurData <- OurData %>% 
-  mutate("NoQualTeeth<15" = if_else(N.qualifying.teeth <15, 0, 1))
-
-#Arrange PID column in order of increasing number alphabetically
-OurData %>%
-  arrange(desc(PID))
-  
   
 #Cannot merge the race variables as they are not dependent of each other
 
