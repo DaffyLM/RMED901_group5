@@ -278,5 +278,9 @@ scatter_plot_BMI_Age <- ggplot(OurData,
 
 scatter_plot_BMI_Age
 
-
+#Does the birth outcome depend on BMI of the patient?
+ggplot(data=OurData) +
+  aes(y = Birth.outcome) +
+  geom_bar(aes(color = BMI_Quartile)) +
+  facet_grid(rows = vars(BMI_Quartile))
 
