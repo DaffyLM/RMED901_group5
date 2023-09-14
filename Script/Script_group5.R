@@ -177,3 +177,30 @@ OurData %>%
 #Completed.EDC should be logical not string
 #EDC.necessary should be logical not string
 #Same for ALL binary/factor/logical variables
+
+
+install.packages("GGally")
+library(ggplot2)
+library(GGally)
+
+#Visualize multiple correlations.
+multiple_correlations_plot <- ggpairs(OurData[c("BMI", 
+                    "Age", 
+                    "Education", 
+                    "GA.at.outcome", 
+                    "Birthweight",
+                    "IL6_baseline",
+                    "IL8_baseline")])
+
+multiple_correlations_plot
+
+# Check for linear relationship between age and BMI
+scatter_plot_BMI_Age <- ggplot(OurData, 
+       aes(x = Age, y = BMI))+
+  geom_point()+
+  geom_smooth(method = "lm", color = "red") +
+  theme_minimal() +
+  labs(title = "Scatter Plot of Age vs. BMI")
+
+scatter_plot_BMI_Age
+
