@@ -3,7 +3,7 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
-#Last updated 2023-09-13 19:00
+#Last updated 2023-09-14 11:00
 
 library(tidyverse)
 library(here)
@@ -24,7 +24,7 @@ OurData <- OurData %>%
          Preg.ended_bf37 = `Preg.ended<37wk`) %>% #renamed variables
   separate(col = Local_Topical.Anest, into = c("LocalAnesthetic", "TopicalAnesthetic"), sep = "_") %>% # Changed column Local_Topical.Anest with combined variables to two different variables. 
   distinct() %>% #Removed duplicates #Endret fra 835 til 834 rader
-  mutate(C = case_when(C == "TRUE" ~ "C",
+  mutate(C = case_when(C == TRUE ~ "C",
                      TRUE ~ "T")) %>% #Converted coloumn C to either C or T
   rename(Group = C) %>% 
   select(-year, -month, -'T') %>%  # Remove columns `year` and `month` and 'T
@@ -89,12 +89,38 @@ OurData <- OurData %>%
                             labels = c("Q1", "Q2", "Q3", "Q4"), 
                             include.lowest = TRUE)) %>% 
   arrange(desc(PID)) #Arrange PID column in order of increasing number alphabetically 
-  
 
   
 #Cannot merge the race variables as they are not dependent of each other
 
+#Explore your data.
+#Explore and comment on the missing variables.
+#Stratify your data by a categorical column and report 
+summary(OurData)
+
+OurData %>% 
+  filter(BMI <= 30) %>% 
+  group_by(White) %>%
+  summarise(min_age = min(Age, na.rm = TRUE),
+            max_age = max(Age, na.rm = TRUE),
+            mean_age = mean(Age, na.rm = TRUE),
+            sd_age = sd(Age, na.rm = TRUE)) 
+OurData %>% 
+  summarise_all(~sum(is.na(.))) %>% 
+  gather(variable, na_count) %>%
+  filter(na_count > 0)  #Explore (and comment) on the missing variables
+
+#Use two categorical columns in your dataset to create a table (hint: ?count)
+OurData %>% 
+  count(Enroll.Center, Group)
  
 View(OurData)
 
+##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
 
+#Are there any correlated measurements?
+  #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
+  #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
+  #Does whether patient required essential dental care change with age of the patients?
+  #Do BMI and age have a linear relationship?
+  
