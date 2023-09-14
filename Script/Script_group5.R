@@ -278,6 +278,12 @@ scatter_plot_BMI_Age <- ggplot(OurData,
 
 scatter_plot_BMI_Age
 
+#Was there a difference of birthweight between different race categories? 
+ggplot(data=OurData) +
+  aes(x = Birthweight) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race))
+
 ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
   geom_boxplot() +
   stat_summary(fun = mean, geom = "point", shape = 20, size = 3, color = "red", position = position_dodge(0.75)) +
