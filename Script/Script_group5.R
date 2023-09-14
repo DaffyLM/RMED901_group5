@@ -3,7 +3,7 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
-#Last updated 2023-09-13 19:00
+#Last updated 2023-09-14 11:00
 
 library(tidyverse)
 library(here)
@@ -113,6 +113,8 @@ OurData %>%
 #Use two categorical columns in your dataset to create a table (hint: ?count)
 OurData %>% 
   count(Enroll.Center, Group)
+ 
+View(OurData)
 
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
 
