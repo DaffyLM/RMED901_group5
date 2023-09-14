@@ -116,6 +116,13 @@ OurData %>%
  
 View(OurData)
 
+#Exploring data
+summary(OurData)
+glimpse(OurData)
+skimr::skim(OurData)
+naniar::gg_miss_var(OurData)
+head(OurData)
+
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
 #Are there any correlated measurements?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
