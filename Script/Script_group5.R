@@ -124,3 +124,47 @@ View(OurData)
   #Do BMI and age have a linear relationship?
   
 
+<<<<<<< HEAD
+#Variable type changes
+##PID, mounth, year and age to integer
+##Black, white, Nat.Am, Asian, Hisp to logical
+##BMI to integer
+##Hypertension, diabetes to logical
+##BL.Diab.Type to factor
+#Variable types
+#There are 28 variables
+#Local and topical anestetics should be split into two variables and should be binary (logical)
+#Preg.ended…37.wk should be logical not string
+#Birth.outcome should be logical not string
+#Completed.EDC should be logical not string
+#EDC.necessary should be logical not string
+#Same for ALL binary/factor/logical variables
+
+
+install.packages("GGally")
+library(ggplot2)
+library(GGally)
+
+#Visualize multiple correlations.
+multiple_correlations_plot <- ggpairs(OurData[c("BMI", 
+                    "Age", 
+                    "Education", 
+                    "GA.at.outcome", 
+                    "Birthweight",
+                    "IL6_baseline",
+                    "IL8_baseline")])
+
+multiple_correlations_plot
+
+# Check for linear relationship between age and BMI
+scatter_plot_BMI_Age <- ggplot(OurData, 
+       aes(x = Age, y = BMI))+
+  geom_point()+
+  geom_smooth(method = "lm", color = "red") +
+  theme_minimal() +
+  labs(title = "Scatter Plot of Age vs. BMI")
+
+scatter_plot_BMI_Age
+
+=======
+>>>>>>> 43b798c84e4fa7464d8910ad264eb14e345909de
