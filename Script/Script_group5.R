@@ -3,7 +3,11 @@
 # Created 2023-09-12
 # exam_data.txt file
 # Day5 Exploring, Tidying 
+<<<<<<< HEAD
 #Last updated 2023-09-14 11:00
+=======
+#Last updated 2023-09-14 12:00
+>>>>>>> 7f8595b14575364fef7f16aebe4d3f1bbb35b3b8
 
 library(tidyverse)
 library(here)
@@ -90,6 +94,7 @@ OurData <- OurData %>%
                             labels = c("Q1", "Q2", "Q3", "Q4"), 
                             include.lowest = TRUE)) %>% 
   arrange(desc(PID)) #Arrange PID column in order of increasing number alphabetically 
+<<<<<<< HEAD
 
   
 #Cannot merge the race variables as they are not dependent of each other
@@ -118,13 +123,13 @@ OurData %>%
 View(OurData)
 
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
+=======
+>>>>>>> 7f8595b14575364fef7f16aebe4d3f1bbb35b3b8
 
-#There are 28 columns and 835 rows
-#Column type frequency:            
-# character                15     
-# logical                  2      
-# numeric                  11  
+  
+#Cannot merge the race variables as they are not dependent of each other
 
+<<<<<<< HEAD
 #Are there any correlated measurements?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
@@ -150,4 +155,36 @@ ggplot(data=OurData) +
   coord_cartesian(ylim= c(0, 100))
                
 
+=======
+#Explore your data.
+#Explore and comment on the missing variables.
+#Stratify your data by a categorical column and report 
+summary(OurData)
+
+OurData %>% 
+  filter(BMI <= 30) %>% 
+  group_by(White) %>%
+  summarise(min_age = min(Age, na.rm = TRUE),
+            max_age = max(Age, na.rm = TRUE),
+            mean_age = mean(Age, na.rm = TRUE),
+            sd_age = sd(Age, na.rm = TRUE)) 
+OurData %>% 
+  summarise_all(~sum(is.na(.))) %>% 
+  gather(variable, na_count) %>%
+  filter(na_count > 0)  #Explore (and comment) on the missing variables
+
+#Use two categorical columns in your dataset to create a table (hint: ?count)
+OurData %>% 
+  count(Enroll.Center, Group)
+ 
+View(OurData)
+
+##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
+#Are there any correlated measurements?
+  #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
+  #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
+  #Does whether patient required essential dental care change with age of the patients?
+  #Do BMI and age have a linear relationship?
+  
+>>>>>>> 7f8595b14575364fef7f16aebe4d3f1bbb35b3b8
 
