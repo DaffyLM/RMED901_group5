@@ -278,9 +278,19 @@ scatter_plot_BMI_Age <- ggplot(OurData,
 
 scatter_plot_BMI_Age
 
+ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
+  geom_boxplot() +
+  stat_summary(fun = mean, geom = "point", shape = 20, size = 3, color = "red", position = position_dodge(0.75)) +
+  stat_summary(fun = mean, geom = "line", aes(group = 1), color = "red", position = position_dodge(0.75)) +
+  labs(title = "Comparison of Birthweight between Groups C and T",
+       x = "Group",
+       y = "Birthweight") +
+  theme_minimal()
+
 #Does the birth outcome depend on BMI of the patient?
 ggplot(data=OurData) +
   aes(y = Birth.outcome) +
   geom_bar(aes(color = BMI_Quartile)) +
   facet_grid(rows = vars(BMI_Quartile))
+
 
