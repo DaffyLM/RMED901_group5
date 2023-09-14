@@ -173,5 +173,34 @@ scatter_plot_BMI_Age <- ggplot(OurData,
 
 scatter_plot_BMI_Age
 
-=======
->>>>>>> 43b798c84e4fa7464d8910ad264eb14e345909de
+##Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
+## Interleukin(IL)-6 vs. Age
+IL_6_baseline_Age <- ggplot(OurData,
+                            aes(x = as.factor(Age), y = IL6_baseline)) +
+  geom_point()+
+  theme_minimal()+
+  labs(title = "Interleukin(IL)-6 distribution vs. Age")
+IL_6_baseline_Age
+
+## Interleukin(IL)-6 vs. Age_group
+
+OurData$Age_group <- cut(OurData$Age, breaks = c(0, 16, 21, 26, 31, 36, 41), 
+                         labels = c("16-20", "21-25", "26-30", "31-35", "36-40", "41-44"))
+
+IL_6_baseline_Age_group <- ggplot(OurData %>%
+                                    filter(!is.na(Age_group)),
+                           aes(x = as.factor(Age_group), y = IL6_baseline)) +
+  geom_boxplot(aes(color = Age_group))+
+  theme_minimal()+
+  labs(title = "Interleukin(IL)-6 distribution vs. Age_group")
+IL_6_baseline_Age_group
+
+
+#Treatment vs. birthweight
+
+Treatment_birthweight <- ggplot(OurData,
+                                aes(x = Group, y = Birthweight)) +
+                                geom_boxplot(aes(color = Group)) +
+                                theme_minimal() +
+                                labs(title = "Treatment vs. birthweight")
+Treatment_birthweight
