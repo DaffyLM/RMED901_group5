@@ -4,10 +4,16 @@
 # exam_data.txt file
 # Day5 Exploring, Tidying 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Last updated 2023-09-14 11:00
 =======
 #Last updated 2023-09-14 12:00
 >>>>>>> 7f8595b14575364fef7f16aebe4d3f1bbb35b3b8
+=======
+# Day 6 Tidy, adjust, and explore
+# Day 7 Plots
+#Last updated 2023-09-14 14.36
+>>>>>>> 4acfd23671112ea2839e51d475bf82ba7b4458ae
 
 library(tidyverse)
 library(here)
@@ -122,8 +128,16 @@ OurData %>%
  
 View(OurData)
 
+#Exploring data
+summary(OurData)
+glimpse(OurData)
+skimr::skim(OurData)
+naniar::gg_miss_var(OurData)
+head(OurData)
+
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
 
+<<<<<<< HEAD
 
   
 #Cannot merge the race variables as they are not dependent of each other
@@ -180,9 +194,31 @@ View(OurData)
 
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
 #Are there any correlated measurements?
+=======
+  # Are there any correlated measurements?
+>>>>>>> 4acfd23671112ea2839e51d475bf82ba7b4458ae
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
+
+OurData <- OurData %>%
+  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
+                          !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
+                          !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
+                          !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
+                          !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
+                          TRUE ~ "Mixed")
+  )
+view(OurData)  
+
+ggplot(data=OurData) +
+  aes(y = IL6_baseline) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race)) +
+  coord_cartesian(ylim= c(0, 100))
+
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
+
   #Does whether patient required essential dental care change with age of the patients?
+<<<<<<< HEAD
   #Do BMI and age have a linear relationship?
   
 
@@ -203,3 +239,55 @@ ggplot(data=OurData) +
   geom_boxplot(aes(color = race)) +
   facet_grid(rows = vars(race)) +
   coord_cartesian(ylim= c(0, 100))
+=======
+
+# Calculate proportion for each age
+data_for_plot <- OurData %>% 
+  filter(EDC.necessary. == TRUE) %>%
+  group_by(Age) %>%
+  summarise(count = n()) %>%
+  mutate(proportionEDC = count/sum(count))  
+
+# Plotting
+ggplot(data_for_plot, aes(x=Age, y=proportionEDC)) + 
+  geom_bar(stat="identity", fill="orange") + 
+  labs(title="Proportion of Patients Requiring EDC by Age",
+       x="Age",
+       y="Proportion of Patients") +
+  theme_minimal()
+
+##Do BMI and age have a linear relationship?
+
+install.packages("GGally")
+library(ggplot2)
+library(GGally)
+
+#Visualize multiple correlations.
+multiple_correlations_plot <- ggpairs(OurData[c("BMI", 
+                    "Age", 
+                    "Education", 
+                    "GA.at.outcome", 
+                    "Birthweight",
+                    "IL6_baseline",
+                    "IL8_baseline")])
+
+multiple_correlations_plot
+
+# Check for linear relationship between age and BMI
+scatter_plot_BMI_Age <- ggplot(OurData, 
+       aes(x = Age, y = BMI))+
+  geom_point()+
+  geom_smooth(method = "lm", color = "red") +
+  theme_minimal() +
+  labs(title = "Scatter Plot of Age vs. BMI")
+
+scatter_plot_BMI_Age
+
+
+
+
+
+
+
+
+>>>>>>> 4acfd23671112ea2839e51d475bf82ba7b4458ae
