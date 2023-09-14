@@ -116,6 +116,13 @@ OurData %>%
  
 View(OurData)
 
+#Exploring data
+summary(OurData)
+glimpse(OurData)
+skimr::skim(OurData)
+naniar::gg_miss_var(OurData)
+head(OurData)
+
 ##Day 7: Create plots that would help answer these questions:(each person chooses min.one question)_
 
   # Are there any correlated measurements?
@@ -138,10 +145,29 @@ ggplot(data_for_plot, aes(x=Age, y=proportionEDC)) +
        y="Proportion of Patients") +
   theme_minimal()
 
+##Do BMI and age have a linear relationship?
 
+install.packages("GGally")
+library(ggplot2)
+library(GGally)
 
+#Visualize multiple correlations.
+multiple_correlations_plot <- ggpairs(OurData[c("BMI", 
+                    "Age", 
+                    "Education", 
+                    "GA.at.outcome", 
+                    "Birthweight",
+                    "IL6_baseline",
+                    "IL8_baseline")])
 
+multiple_correlations_plot
 
+# Check for linear relationship between age and BMI
+scatter_plot_BMI_Age <- ggplot(OurData, 
+       aes(x = Age, y = BMI))+
+  geom_point()+
+  geom_smooth(method = "lm", color = "red") +
+  theme_minimal() +
+  labs(title = "Scatter Plot of Age vs. BMI")
 
-  #Do BMI and age have a linear relationship?
-  
+scatter_plot_BMI_Age
