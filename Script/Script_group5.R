@@ -181,8 +181,8 @@ OurData <- OurData %>%
       Asian ~ "Asian",
       Hisp ~ "Hispanic",
       Black & White ~ "Black & White",
-      TRUE ~ "Other/multiple"  # This captures all other combinations
+      TRUE ~ "Other/multiple"  
     )
   )
 View(OurData)
-#count(Race_combined)
+count(Race_combined)
