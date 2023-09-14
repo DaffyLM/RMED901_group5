@@ -14,9 +14,7 @@ OurData
 summary(OurData)
 glimpse(OurData)
 View(OurData)        
-skimr::skim(OurData) 
-naniar::gg_miss_var() %>%
-  
+
 #Piped the commands
 OurData <- OurData %>%
   rename(BMI = `BMI kg/m2`,
@@ -77,9 +75,9 @@ OurData %>%
   count(Asian)
 
 OurData <- OurData %>%
-  mutate(`Preg.ended<37wk` = case_when(
-    `Preg.ended<37wk` == "Yes" ~ TRUE,
-    `Preg.ended<37wk` == "No" ~ FALSE,
+  mutate(Preg.ended_bf37 = case_when(
+    Preg.ended_bf37 == "Yes" ~ TRUE,
+    Preg.ended_bf37 == "No" ~ FALSE,
     TRUE ~ NA)) %>%
   mutate(Completed.EDC = case_when(
     Completed.EDC == "Yes" ~ TRUE,
@@ -121,3 +119,33 @@ OurData <- OurData %>%
     Asian == "No" ~ FALSE,
   ))
 
+# Explore and comment on the missing variables:
+naniar::gg_miss_var(OurData)
+# See which variables have missing values with naniar. BL.Diab.Type has the most. Tx.time, Tx.comp. and so on have also many missing. 
+OurData %>%
+  count(BL.Diab.Type)
+#Use count to see exactly how many missing in the different variables.
+naniar::gg_miss_var(OurData, facet = Diabetes)
+#Explore missing variables by different cat. All missing values in BL.Diab.Type are in participants without diabetes.
+
+OurData %>%
+  group_by(EDC.necessary.) %>%
+  summarise(min(Birthweight, na.rm = T),
+          max(Birthweight, na.rm = T),
+          mean(Birthweight, na.rm = T),
+          sd(Birthweight, na.rm = T))
+
+OurData %>%
+  group_by(EDC.necessary.) %>%
+  filter(substr(PID, 1, 1) == 1) %>%
+  filter(BMI <= 30) %>%
+  filter(Age > 25) %>%
+  filter(Black = TRUE) %>%
+  summarise(min(Birthweight, na.rm = T),
+            max(Birthweight, na.rm = T),
+            mean(Birthweight, na.rm = T),
+            sd(Birthweight, na.rm = T))
+
+count_table <- OurData %>%
+  count(EDC.necessary., Black)
+count_table
