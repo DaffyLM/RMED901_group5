@@ -11,3 +11,5 @@ Renamed variables containg symbols
 Commented on variable types for variable 1-14
 
 Day6
+Created 2023-09-07 IHF
+
