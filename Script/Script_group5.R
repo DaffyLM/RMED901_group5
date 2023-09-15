@@ -343,6 +343,11 @@ Enroll.Center_birthweight <- ggplot(OurData,
   labs(title = "Enroll.Center vs. birthweight")
 Enroll.Center_birthweight
 
+#ANOVA for Enroll.Center and Birthweight
+OurData %>%
+  aov(Birthweight~Enroll.Center, data = .) %>%
+  broom::tidy()
+
 #Was there a difference of birthweight between different race categories? 
 ##Check for normality
 OurData %>%
