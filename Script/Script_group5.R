@@ -331,6 +331,10 @@ ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
        y = "Birthweight") +
   theme_minimal()
 
+df %>% 
+  t.test(Group~Birhweight, data = .) %>%
+  broom::tidy()
+
 #Does the birth outcome depend on BMI of the patient?
 ggplot(data=OurData) +
   aes(y = Birth.outcome) +
