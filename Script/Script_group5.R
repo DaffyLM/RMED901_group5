@@ -100,6 +100,17 @@ OurData <- OurData %>%
                             include.lowest = TRUE)) %>% 
   arrange(desc(PID)) #Arrange PID column in order of increasing number alphabetically 
 
+
+OurData <- OurData %>%
+  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
+                          !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
+                          !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
+                          !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
+                          !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
+                          TRUE ~ "Mixed")
+  )
+
+write_delim(OurData, file = here("Data", "tidy_exam_data.txt"))
   
 #Cannot merge the race variables as they are not dependent of each other
 
@@ -149,14 +160,6 @@ head(OurData)
 
 glimpse(OurData)
 #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
-OurData <- OurData %>%
-  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
-                  !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
-                 !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
-                 !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
-                 !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
-                 TRUE ~ "Mixed")
-                 )
 view(OurData)  
 
 ggplot(data=OurData) +
@@ -195,14 +198,6 @@ View(OurData)
   # Are there any correlated measurements?
   #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
 
-OurData <- OurData %>%
-  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
-                          !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
-                          !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
-                          !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
-                          !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
-                          TRUE ~ "Mixed")
-  )
 view(OurData)  
 
 ggplot(data=OurData) +
@@ -234,15 +229,6 @@ plot_BirthOutcome_by_Center <- ggplot(OurData, aes(x=center, fill=Birth.outcome)
 plot_BirthOutcome_by_Center
 
 #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
-OurData <- OurData %>%
-  mutate(race = case_when(Black & !White & !Nat.Am & !Asian & !Hisp ~ "Black",
-                          !Black & White & !Nat.Am & !Asian & !Hisp ~ "White",
-                          !Black & !White & Nat.Am & !Asian & !Hisp ~ "Nat.Am",
-                          !Black & !White & !Nat.Am & Asian & !Hisp ~ "Asian",
-                          !Black & !White & !Nat.Am & !Asian & Hisp ~ "Hisp",
-                          TRUE ~ "Mixed")
-  )
-
 view(OurData)  
 
 ggplot(data=OurData) +
@@ -268,8 +254,6 @@ ggplot(data_for_plot, aes(x=Age, y=proportionEDC)) +
   theme_minimal()
 
 ##Do BMI and age have a linear relationship?
-
-install.packages("GGally")
 library(ggplot2)
 library(GGally)
 

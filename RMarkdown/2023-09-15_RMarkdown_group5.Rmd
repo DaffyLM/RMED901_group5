@@ -22,6 +22,25 @@ library(GGally)
 ## Wrangling data
 
 ## Plotting data
+### Exploring correlated measurements
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(GGally)
+library(here)
+
+OurData <- read_delim(here("Data", "tidy_exam_data.txt"))
+
+multiple_correlations_plot <- ggpairs(OurData[c("BMI", 
+                    "Age", 
+                    "Education", 
+                    "GA.at.outcome", 
+                    "Birthweight",
+                    "IL6_baseline",
+                    "IL8_baseline")])
+
+multiple_correlations_plot
+```
+
 
 ## Analysis
 ```{r}
