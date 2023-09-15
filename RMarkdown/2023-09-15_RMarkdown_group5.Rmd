@@ -1,6 +1,6 @@
 ---
 title: "Group 5 Report"
-author: "Dagfinn, Mathilde, Johanna, Ingvild"
+author: "Dagfinn, Mathilde, Joanna, Ingvild"
 date: "2023-09-15"
 output: html_document
 ---
@@ -9,15 +9,17 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Description of the Data
+## Description of data
 
-```{r cars}
-summary(cars)
+### Tidying data
+
+## Wrangling data
+
+## Plotting data
+
+## Analysis
+```{r}
+sessionInfo()
 ```
 
-## 
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
 
