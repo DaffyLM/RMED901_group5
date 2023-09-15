@@ -33,14 +33,13 @@ Table of Contents:
 |--Requirements
 
 ---
-Data description: The objective of this randomized controlled trial was to determine whether treatment of maternal periodontal disease can reduce risk of preterm birth and low birth weight.Dataset Description:
-The data in this script is primarily extracted from the exam_data.txt file, and subsequently joined with exam_data_join.txt. 
+Data description: 
+The data are derived from a randomized controlled trial examining whether treatment of maternal periodontal disease can reduce risk of preterm birth and low birth weight.
 ---
 Script Overview:
 Data Import:
-The main dataset (exam_data.txt) is imported into R.
-Data exploration is performed using functions like summary(), glimpse(), and View().
-An additional dataset (exam_data_join.txt) is imported and joined with the main dataset based on the Patient ID (PID).
+The main dataset was exam_data.txt. An additional dataset (exam_data_join.txt) was imported and joined with the main dataset based on the Patient ID (PID). After cleaning the merged dataset, a new file called tidy_exam_data.txt was created and subsequent analyses were conducted using this dataset.
+
 ---
 Data Cleaning and Manipulation:
 Several variables are renamed for clarity and consistency.
