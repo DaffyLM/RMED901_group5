@@ -9,7 +9,7 @@ RMED901_group5 project for RMED901 Data science with R for medical researchers
 
 File structure:
 -RMED901_group5
-|--README.txt
+|--Readme.txt
 |--Data
 |---exam_data_join.txt
 |---exam_data.txt
@@ -52,6 +52,5 @@ here
 patchwork
 skimr
 naniar
-ggplot2
 GGally
 
