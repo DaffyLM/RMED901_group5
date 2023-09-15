@@ -42,26 +42,35 @@ multiple_correlations_plot
 ```
 
 
-## Analysis
-Lastly, we analyzed our data focusing on birthweight and birth outcome. First we checked whether birth outcome was dependent of the enrollment center. It was not (p=XXX) 
+## Analyses
 
-```{r}
-knitr::opts_chunk$set(echo = F,
-                      warning = F)
+Lastly, we analyzed our data focusing on birthweight and birth outcome. First, we checked whether birth outcome was dependent of the enrollment center. There was a significant difference between the different enrollment centers (p=.0286).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+OurData %>%
+  aov(Birthweight~Enroll.Center, data = .) %>%
+  broom::tidy()
+
+
 Enroll.Center_birthweight <- ggplot(OurData,
                                 aes(x = Enroll.Center, y = Birthweight, fill = Enroll.Center)) +
   geom_boxplot(aes(color = Enroll.Center)) +
   theme_minimal() +
   labs(title = "Enroll.Center vs. birthweight")
 Enroll.Center_birthweight
-
-OurData %>%
-  aov(Birthweight~Enroll.Center, data = .) %>%
-  broom::tidy()
 ```
 
-Second, birth outcome was neither dependent of BMI of the patient (p=).
-```{r}
+
+
+
+Second, birth outcome was also dependent of BMI of the patient (p=.0458).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+OurData %>% 
+  kruskal.test(Birth.outcome~BMI, data = .) %>%
+  broom::tidy()
+
+
 Hist_BMI_Birth.outcome <- ggplot(OurData, aes(x=BMI)) +
   geom_histogram(aes(fill=Birth.outcome), bins=30, alpha=0.7, position="identity") + 
   facet_wrap(~ Birth.outcome, scales="free_y") +
@@ -70,15 +79,47 @@ Hist_BMI_Birth.outcome <- ggplot(OurData, aes(x=BMI)) +
   theme_minimal()
 
 print(Hist_BMI_Birth.outcome)
-
-OurData %>% 
-  kruskal.test(BMI~Birth.outcome, data = .) %>%
-  broom::tidy()
 ```
 
-Third, 
 
-##Session Info
+
+
+However, there was no difference in birthweight between different race categories (p=.546).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+ANOVAresultraceBW <- OurData %>%
+    aov(Birthweight~ race, data = .)
+ANOVAresultraceBW %>%
+  broom::tidy()
+
+
+ggplot(data=OurData) +
+  aes(x = Birthweight) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race))
+```
+
+
+
+
+Sadly, the treatment intervention did neither affect the birthweight (p=.566)
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+OurData %>% 
+  t.test(Birthweight~Group, data = .) %>%
+  broom::tidy()
+
+
+ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
+  geom_boxplot() +
+  labs(title = "Comparison of Birthweight between Groups C and T",
+       x = "Group",
+       y = "Birthweight") +
+  theme_minimal()
+```
+
+
+## Session Info
 ```{r}
 sessionInfo()
 ```
