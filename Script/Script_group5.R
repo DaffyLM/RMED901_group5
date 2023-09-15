@@ -324,7 +324,7 @@ ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
        y = "Birthweight") +
   theme_minimal()
 
-df %>% 
+OurData %>% 
   t.test(Group~Birhweight, data = .) %>%
   broom::tidy()
 
