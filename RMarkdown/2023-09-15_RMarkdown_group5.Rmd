@@ -1,0 +1,23 @@
+---
+title: "Group 5 Report"
+author: "Dagfinn, Mathilde, Johanna, Ingvild"
+date: "2023-09-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Description of the Data
+
+```{r cars}
+summary(cars)
+```
+
+## 
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
