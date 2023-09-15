@@ -43,6 +43,42 @@ multiple_correlations_plot
 
 
 ## Analysis
+Lastly, we analyzed our data focusing on birthweight and birth outcome. First we checked whether birth outcome was dependent of the enrollment center. It was not (p=XXX) 
+
+```{r}
+knitr::opts_chunk$set(echo = F,
+                      warning = F)
+Enroll.Center_birthweight <- ggplot(OurData,
+                                aes(x = Enroll.Center, y = Birthweight, fill = Enroll.Center)) +
+  geom_boxplot(aes(color = Enroll.Center)) +
+  theme_minimal() +
+  labs(title = "Enroll.Center vs. birthweight")
+Enroll.Center_birthweight
+
+OurData %>%
+  aov(Birthweight~Enroll.Center, data = .) %>%
+  broom::tidy()
+```
+
+Second, birth outcome was neither dependent of BMI of the patient (p=).
+```{r}
+Hist_BMI_Birth.outcome <- ggplot(OurData, aes(x=BMI)) +
+  geom_histogram(aes(fill=Birth.outcome), bins=30, alpha=0.7, position="identity") + 
+  facet_wrap(~ Birth.outcome, scales="free_y") +
+  labs(title="Distribution of BMI by Birth Outcome", 
+       x="BMI", y="Count") +
+  theme_minimal()
+
+print(Hist_BMI_Birth.outcome)
+
+OurData %>% 
+  kruskal.test(BMI~Birth.outcome, data = .) %>%
+  broom::tidy()
+```
+
+Third, 
+
+##Session Info
 ```{r}
 sessionInfo()
 ```
