@@ -216,6 +216,22 @@ ggplot(data=OurData) +
   #Does whether patient required essential dental care change with age of the patients?
   #Do BMI and age have a linear relationship?
   
+#Check if birth outcome is dependent on the center using plots
+
+OurData$center <- substr(OurData$PID, 1, 1)
+
+plot_BirthOutcome_by_Center <- ggplot(OurData, aes(x=center, fill=Birth.outcome)) +
+  geom_bar(position="dodge") +
+  labs(title="Birth Outcomes in Different Centers", 
+       x="Center", y="Count", fill="Outcome") +
+  scale_fill_manual(values=c("Non-live birth" = "#d7191c", 
+                             "Lost to FU" = "#f1b6da", 
+                             "Live birth" = "#2c7bb6", 
+                             "Elective abortion" = "#fdae61")) +
+  theme_minimal()
+
+
+plot_BirthOutcome_by_Center
 
 #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
 OurData <- OurData %>%
