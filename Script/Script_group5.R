@@ -324,8 +324,9 @@ ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
        y = "Birthweight") +
   theme_minimal()
 
+#T-test
 OurData %>% 
-  t.test(Group~Birhweight, data = .) %>%
+  t.test(Birthweight~Group, data = .) %>%
   broom::tidy()
 
 #Does the birth outcome depend on BMI of the patient?
@@ -346,6 +347,21 @@ Enroll.Center_birthweight
 #ANOVA for Enroll.Center and Birthweight
 OurData %>%
   aov(Birthweight~Enroll.Center, data = .) %>%
+  broom::tidy()
+
+#Does birth outcome depend on BMI? Check distribution of BMI
+Hist_BMI_Birth.outcome <- ggplot(OurData, aes(x=BMI)) +
+  geom_histogram(aes(fill=Birth.outcome), bins=30, alpha=0.7, position="identity") + 
+  facet_wrap(~ Birth.outcome, scales="free_y") +
+  labs(title="Distribution of BMI by Birth Outcome", 
+       x="BMI", y="Count") +
+  theme_minimal()
+
+print(Hist_BMI_Birth.outcome)
+
+#BMI is not normally distributed - use Kruskal-Wallis test
+OurData %>% 
+  kruskal.test(BMI~Birth.outcome, data = .) %>%
   broom::tidy()
 
 #Was there a difference of birthweight between different race categories? 
@@ -370,3 +386,4 @@ ggplot(data=OurData) +
   aes(x = Birthweight) +
   geom_boxplot(aes(color = race)) +
   facet_grid(rows = vars(race))
+
