@@ -48,7 +48,7 @@ Several variables are renamed for clarity and consistency.
 
 
 ## Plotting data
-### Exploring correlated measurements
+### Exploring correlated measurements.
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 multiple_correlations_plot <- ggpairs(OurData[c("BMI", 
                     "Age", 
@@ -59,6 +59,56 @@ multiple_correlations_plot <- ggpairs(OurData[c("BMI",
                     "IL8_baseline")])
 
 multiple_correlations_plot
+```
+
+### Correlation between IL-6 and Race, and IL-6 and Age.
+```{r, echo=FALSE, warning=FALSE}
+ggplot(data=OurData) +
+  aes(y = IL6_baseline) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race)) +
+  coord_cartesian(ylim= c(0, 100))
+
+OurData$Age_group <- cut(OurData$Age, breaks = c(0, 16, 21, 26, 31, 36, 41), 
+                         labels = c("16-20", "21-25", "26-30", "31-35", "36-40", "41-44"))
+
+IL_6_baseline_Age_group <- ggplot(OurData %>%
+                                    filter(!is.na(Age_group)),
+                           aes(x = as.factor(Age_group), y = IL6_baseline)) +
+  geom_boxplot(aes(color = Age_group))+
+  theme_minimal()+
+  labs(title = "Interleukin(IL)-6 distribution vs. Age_group")
+IL_6_baseline_Age_group
+
+```
+
+### Checked proportion of Patients Requiring EDC by Age
+```{r, echo=FALSE}
+data_for_plot <- OurData %>% 
+  filter(EDC.necessary. == TRUE) %>%
+  group_by(Age) %>%
+  summarise(count = n()) %>%
+  mutate(proportionEDC = count/sum(count)) 
+
+ggplot(data_for_plot, aes(x=Age, y=proportionEDC)) + 
+  geom_bar(stat="identity", fill="orange") + 
+  labs(title="Proportion of Patients Requiring EDC by Age",
+       x="Age",
+       y="Proportion of Patients") +
+  theme_minimal()
+```
+
+
+### Checked for linear relationship between age and BMI
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+scatter_plot_BMI_Age <- ggplot(OurData, 
+       aes(x = Age, y = BMI))+
+  geom_point()+
+  geom_smooth(method = "lm", color = "red") +
+  theme_minimal() +
+  labs(title = "Scatter Plot of Age vs. BMI")
+
+scatter_plot_BMI_Age
 ```
 
 
