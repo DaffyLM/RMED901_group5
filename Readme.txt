@@ -46,13 +46,14 @@ Data Cleaning and Manipulation:
 Several variables are renamed for clarity and consistency.
 The column Local_Topical.Anest which had combined variables, is separated into two distinct variables: LocalAnesthetic and TopicalAnesthetic.
 Duplicate entries are identified and removed.
-The C column is transformed to have values "C" or "T" and subsequently renamed to "Group".
-Unwanted columns like year, month, and T are removed.
+The treatment groups were represented in two coloumns, C and T. The C column is transformed to have values "C" or "T" and subsequently renamed to "Group".
+Unwanted columns like year, month, and T were removed.
 Values in the Education column are modified for clarity, removing "yrs" and replacing "MT" and "LT" with ">" and "<" respectively.
 Boolean columns are created or modified, transforming string values like "Yes" and "No" to TRUE and FALSE respectively.
 New columns are derived, such as one indicating if the number of qualifying teeth is less than 15.
 The PID is separated to also include the enrollment center.
 Variables like BMI are grouped into quartiles.
+Finally the cleaned dataset was saved as tidy_exam_data.txt
 ---
 Data Exploration:
 Missing data points are analyzed and reported.
@@ -79,3 +80,4 @@ skimr
 naniar
 ggplot2
 GGally
+
