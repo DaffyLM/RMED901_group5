@@ -91,7 +91,7 @@ OurData %>%
             sd_birthweight = sd(Birthweight, na.rm = TRUE)) 
 ```
 
-### Number of participants in `C` and `T` groups for each of enrollment center.
+### Number of participants in `C` and `T` group for each of enrollment center.
 
 ```{r, echo=FALSE, message = FALSE}
 OurData %>% 
