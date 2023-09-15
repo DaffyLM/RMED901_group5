@@ -49,16 +49,16 @@ Several variables are renamed for clarity and consistency.
 
 ## Exploring data
 
-OurData contains 834 rows (patients) and 34 columns (variable). The columns types is character (9 values), factor (2 values), logical (12) values and numeric (11 values). 
+OurData contains 834 rows (participants) and 34 columns (variable). The columns types are character (9 values), factor (2 values), logical (12) values and numeric (11 values). 
 
-```{r}
+```{r, echo=FALSE, message = FALSE}
 summary(OurData)
 skimr::skim(OurData)
 ```
 ### Exploring missing values 
 There are 810 missing values in the category "BL.Diab.Type". Only the person with diabetes could report diabetes type. 
 
-```{r}
+```{r, echo=FALSE, message = FALSE}
 OurData %>% 
   summarise_all(~sum(is.na(.))) %>% 
   gather(variable, na_count) %>%
@@ -67,7 +67,7 @@ OurData %>%
 
 ### Raport of min, max, mean and sd of `Age`.
 
-```{r}
+```{r, echo=FALSE, message = FALSE}
 OurData %>% 
   group_by(Group) %>%
   summarise(min_age = min(Age, na.rm = TRUE),
@@ -76,9 +76,9 @@ OurData %>%
             sd_age = sd(Age, na.rm = TRUE))
 ```
 
-### Raport of min, max, mean and sd of `Birthweight` filtered by BMI <= 30, Age > 25, race "Black" and Enroll.center "NY"
+### Raport of min, max, mean and sd of `Birthweight` filtered by `BMI` <= 30, `Age` > 25, race "Black" and `Enroll.center` "NY".
 
-```{r}
+```{r, echo=FALSE, message = FALSE}
 OurData %>% 
   filter(BMI <= 30) %>%
   filter(Age > 25) %>%
@@ -91,9 +91,9 @@ OurData %>%
             sd_birthweight = sd(Birthweight, na.rm = TRUE)) 
 ```
 
-### Number of participants of controll and treatment groups in each of enrollment centers.
+### Number of participants in `C` and `T` group for each of enrollment center.
 
-```{r}
+```{r, echo=FALSE, message = FALSE}
 OurData %>% 
   count(Enroll.Center, Group)
 ```
