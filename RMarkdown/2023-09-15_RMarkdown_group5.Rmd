@@ -5,7 +5,8 @@ date: "2023-09-15"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+Load library
+```{r, echo=FALSE, message = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(here)
@@ -13,6 +14,11 @@ library(patchwork)
 library(skimr)
 library(naniar)
 library(GGally)
+```
+
+Read file
+```{r, echo=FALSE, message=FALSE}
+OurData <- read_delim(here("Data", "tidy_exam_data.txt"))
 ```
 
 ## Description of data
@@ -24,12 +30,6 @@ library(GGally)
 ## Plotting data
 ### Exploring correlated measurements
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
-library(tidyverse)
-library(GGally)
-library(here)
-
-OurData <- read_delim(here("Data", "tidy_exam_data.txt"))
-
 multiple_correlations_plot <- ggpairs(OurData[c("BMI", 
                     "Age", 
                     "Education", 
