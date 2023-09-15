@@ -7,6 +7,12 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+library(patchwork)
+library(skimr)
+library(naniar)
+library(GGally)
 ```
 
 ## Description of data
