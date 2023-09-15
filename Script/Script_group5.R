@@ -120,12 +120,23 @@ write_delim(OurData, file = here("Data", "tidy_exam_data.txt"))
 summary(OurData)
 
 OurData %>% 
-  filter(BMI <= 30) %>% 
-  group_by(White) %>%
+  group_by(Group) %>%
   summarise(min_age = min(Age, na.rm = TRUE),
             max_age = max(Age, na.rm = TRUE),
             mean_age = mean(Age, na.rm = TRUE),
-            sd_age = sd(Age, na.rm = TRUE)) 
+            sd_age = sd(Age, na.rm = TRUE))
+
+#Stratify your data by a categorical column and report 
+OurData %>% 
+  filter(BMI <= 30) %>%
+  filter(Age > 25) %>%
+  filter(race == "Black") %>%
+  filter(Enroll.Center == "NY" ) %>%
+  group_by(Group) %>%
+  summarise(min_birthweight = min(Birthweight, na.rm = TRUE),
+            max_birthweight = max(Birthweight, na.rm = TRUE),
+            mean_birthweight = mean(Birthweight, na.rm = TRUE),
+            sd_birthweight = sd(Birthweight, na.rm = TRUE)) 
 OurData %>% 
   summarise_all(~sum(is.na(.))) %>% 
   gather(variable, na_count) %>%
@@ -289,7 +300,7 @@ IL_6_baseline_Age
 
 ## Interleukin(IL)-6 vs. Age_group
 
-OurData$Age_group <- cut(OurData$Age, breaks = c(0, 16, 21, 26, 31, 36, 41), 
+OurData$Age_group <- cut(OurData$Age, breaks = c(0, 16, 21, 26, 31, 36, 44), 
                          labels = c("16-20", "21-25", "26-30", "31-35", "36-40", "41-44"))
 
 IL_6_baseline_Age_group <- ggplot(OurData %>%
@@ -345,7 +356,7 @@ print(Hist_BMI_Birth.outcome)
 
 #BMI is not normally distributed - use Kruskal-Wallis test
 OurData %>% 
-  kruskal.test(BMI~Birth.outcome, data = .) %>%
+  kruskal.test(Birth.outcome~BMI, data = .) %>%
   broom::tidy()
 
 #Was there a difference of birthweight between different race categories? 
