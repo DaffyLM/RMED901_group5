@@ -9,16 +9,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Description of the Data
+## Description of data
 
-```{r cars}
-summary(cars)
+### Tidying data
+
+## Wrangling data
+
+## Plotting data
+
+## Analysis
+```{r}
+sessionInfo()
 ```
 
-## 
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
 
 
