@@ -34,18 +34,69 @@ An additional dataset (exam_data_join.txt) was imported and joined with the main
 
 ## Tidying and wrangling data
 Several variables are renamed for clarity and consistency.
-<ul>1. The column Local_Topical.Anest which had combined variables, is separated into two distinct variables: LocalAnesthetic and TopicalAnesthetic.</ul>
+<ul>1. The column `Local_Topical.Anest` which had combined variables, is separated into two distinct variables: `LocalAnesthetic` and `TopicalAnesthetic`.</ul>
 <ul>2. One duplicate entry was removed </ul>
-<ul>3. The C column is transformed to have values "C" or "T" and subsequently renamed to "Group".</ul>
-<ul>4. Unwanted columns like year, month, and T are removed.</ul>
-<ul>5. Values in the Education column are modified for clarity, removing "yrs" and replacing "MT" and "LT" with ">" and "<" respectively.</ul>
+<ul>3. The `C` column is transformed to have values "C" or "T" and subsequently renamed to `Group`.</ul>
+<ul>4. Unwanted columns like `year`, `month`, and `T` are removed.</ul>
+<ul>5. Values in the `Education` column are modified for clarity, removing "yrs" and replacing "MT" and "LT" with ">" and "<" respectively.</ul>
 <ul>5. Boolean columns are created or modified, transforming string values like "Yes" and "No" to TRUE and FALSE respectively.</ul>
 <ul>6. New columns are derived, such as one indicating if the number of qualifying teeth is less than 15.</ul>
-<ul>7. The PID is separated to also include the enrollment center.</ul>
-<ul>8. Variables like BMI are grouped into quartiles.</ul>
-<ul>9. In total, 140 participants identified with multiple racial categories. For those who selected only one category, the options were consolidated to 'White', 'Black', 'Nat.Am', 'Asian', and 'Hisp'. Participants who identified with more than one category were categorized as 'Mixed'.</ul>
+<ul>7. The `PID` is separated to also include the enrollment center.</ul>
+<ul>8. Variables like `BMI` are grouped into quartiles.</ul>
+<ul>9. A new variable called `Race` was created. In total, 140 participants identified with multiple racial categories. For those who selected only one category, the options were consolidated to 'White', 'Black', 'Nat.Am', 'Asian', and 'Hisp'. Participants who identified with more than one category were categorized as 'Mixed'.</ul>
 <ul>10. Lastly, the dataset was organized in ascending order based on patient ID, and the refined data was saved as 'tidy_exam_data.txt'. All subsequent analyses were conducted using this dataset. </ul>
 
+
+## Exploring data
+
+OurData contains 834 rows (participants) and 34 columns (variable). The columns types are character (9 values), factor (2 values), logical (12) values and numeric (11 values). 
+
+```{r, echo=FALSE, message = FALSE}
+summary(OurData)
+skimr::skim(OurData)
+```
+### Exploring missing values 
+There are 810 missing values in the category "BL.Diab.Type". Only the person with diabetes could report diabetes type. 
+
+```{r, echo=FALSE, message = FALSE}
+OurData %>% 
+  summarise_all(~sum(is.na(.))) %>% 
+  gather(variable, na_count) %>%
+  filter(na_count > 0) 
+```
+
+### Raport of min, max, mean and sd of `Age`.
+
+```{r, echo=FALSE, message = FALSE}
+OurData %>% 
+  group_by(Group) %>%
+  summarise(min_age = min(Age, na.rm = TRUE),
+            max_age = max(Age, na.rm = TRUE),
+            mean_age = mean(Age, na.rm = TRUE),
+            sd_age = sd(Age, na.rm = TRUE))
+```
+
+### Raport of min, max, mean and sd of `Birthweight` filtered by `BMI` <= 30, `Age` > 25, race "Black" and `Enroll.center` "NY".
+
+```{r, echo=FALSE, message = FALSE}
+OurData %>% 
+  filter(BMI <= 30) %>%
+  filter(Age > 25) %>%
+  filter(race == "Black") %>%
+  filter(Enroll.Center == "NY" ) %>%
+  group_by(Group) %>%
+  summarise(min_birthweight = min(Birthweight, na.rm = TRUE),
+            max_birthweight = max(Birthweight, na.rm = TRUE),
+            mean_birthweight = mean(Birthweight, na.rm = TRUE),
+            sd_birthweight = sd(Birthweight, na.rm = TRUE)) 
+```
+
+### Number of participants in `C` and `T` group for each of enrollment center.
+
+```{r, echo=FALSE, message = FALSE}
+OurData %>% 
+  count(Enroll.Center, Group)
+```
 
 ## Plotting data
 ### Exploring correlated measurements.
@@ -112,9 +163,87 @@ scatter_plot_BMI_Age
 ```
 
 
-## Analysis
+## Analyses
+
+Lastly, we analyzed our data focusing on birthweight and birth outcome. First, we checked whether birth outcome was dependent of the enrollment center. There was a significant difference between the different enrollment centers (p=.0286).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+OurData %>%
+  aov(Birthweight~Enroll.Center, data = .) %>%
+  broom::tidy()
+
+
+Enroll.Center_birthweight <- ggplot(OurData,
+                                aes(x = Enroll.Center, y = Birthweight, fill = Enroll.Center)) +
+  geom_boxplot(aes(color = Enroll.Center)) +
+  theme_minimal() +
+  labs(title = "Enroll.Center vs. birthweight")
+Enroll.Center_birthweight
+```
+
+
+
+
+Second, birth outcome was also dependent of BMI of the patient (p=.0458).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+OurData %>% 
+  kruskal.test(Birth.outcome~BMI, data = .) %>%
+  broom::tidy()
+
+
+Hist_BMI_Birth.outcome <- ggplot(OurData, aes(x=BMI)) +
+  geom_histogram(aes(fill=Birth.outcome), bins=30, alpha=0.7, position="identity") + 
+  facet_wrap(~ Birth.outcome, scales="free_y") +
+  labs(title="Distribution of BMI by Birth Outcome", 
+       x="BMI", y="Count") +
+  theme_minimal()
+
+print(Hist_BMI_Birth.outcome)
+```
+
+
+
+
+However, there was no difference in birthweight between different race categories (p=.546).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+ANOVAresultraceBW <- OurData %>%
+    aov(Birthweight~ race, data = .)
+ANOVAresultraceBW %>%
+  broom::tidy()
+
+
+ggplot(data=OurData) +
+  aes(x = Birthweight) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race))
+```
+
+
+
+
+Sadly, the treatment intervention did neither affect the birthweight (p=.566)
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+OurData %>% 
+  t.test(Birthweight~Group, data = .) %>%
+  broom::tidy()
+
+
+ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
+  geom_boxplot() +
+  labs(title = "Comparison of Birthweight between Groups C and T",
+       x = "Group",
+       y = "Birthweight") +
+  theme_minimal()
+```
+
+
+## Session Info
 ```{r}
 sessionInfo()
 ```
+
 
 
