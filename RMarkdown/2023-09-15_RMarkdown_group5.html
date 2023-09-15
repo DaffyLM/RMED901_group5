@@ -361,9 +361,90 @@ display: none;
 <p>Read file</p>
 <div id="description-of-data" class="section level2">
 <h2>Description of data</h2>
-<div id="tidying-data" class="section level3">
-<h3>Tidying data</h3>
+<div id="description-of-the-dataset" class="section level3">
+<h3>Description of the dataset<br></h3>
+<p>The data is collcted from a randomized controlled trial (RCT). The
+objective of the RCT trial was to determine whether treatment of
+maternal periodontal disease can reduce risk of preterm birth and low
+birth weight.</p>
+<p>The data in this script is primarily extracted from the exam_data.txt
+file, and subsequently joined with exam_data_join.txt. Data exploration
+was performed using functions like summary(), glimpse(), and View().</p>
+<p>After removing one duplicate row, the dataset consisted of 834
+subjects.</p>
+<p>An additional dataset (exam_data_join.txt) was imported and joined
+with the main dataset based on the Patient ID (PID).</p>
 </div>
+</div>
+<div id="tidying-data" class="section level2">
+<h2>Tidying data</h2>
+Several variables are renamed for clarity and consistency.
+<ul>
+<ol style="list-style-type: decimal">
+<li>The column Local_Topical.Anest which had combined variables, is
+separated into two distinct variables: LocalAnesthetic and
+TopicalAnesthetic.
+</ul>
+<ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Duplicate entries are identified and removed.
+</ul>
+<ul>
+<ol start="3" style="list-style-type: decimal">
+<li>The C column is transformed to have values “C” or “T” and
+subsequently renamed to “Group”.
+</ul>
+<ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Unwanted columns like year, month, and T are removed.
+</ul>
+<ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Values in the Education column are modified for clarity, removing
+“yrs” and replacing “MT” and “LT” with “&gt;” and “&lt;” respectively.
+</ul>
+<ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Boolean columns are created or modified, transforming string values
+like “Yes” and “No” to TRUE and FALSE respectively.
+</ul>
+<ul>
+<ol start="6" style="list-style-type: decimal">
+<li>New columns are derived, such as one indicating if the number of
+qualifying teeth is less than 15.
+</ul>
+<ul>
+<ol start="7" style="list-style-type: decimal">
+<li>The PID is separated to also include the enrollment center.
+</ul>
+<ul>
+<ol start="8" style="list-style-type: decimal">
+<li>Variables like BMI are grouped into quartiles.
+</ul>
+<ul>
+<ol start="9" style="list-style-type: decimal">
+<li>In total, 140 participants identified with multiple racial
+categories. For those who selected only one category, the options were
+consolidated to ‘White’, ‘Black’, ‘Nat.Am’, ‘Asian’, and ‘Hisp’.
+Participants who identified with more than one category were categorized
+as ‘Mixed’.
+</ul>
+<ul>
+<ol start="10" style="list-style-type: decimal">
+<li>Lastly the dataset was sorted by the patient ID in ascending order.
+And a new file called tidy_exam_data.txt was saved.
+</ul></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol>
 </div>
 <div id="wrangling-data" class="section level2">
 <h2>Wrangling data</h2>
@@ -390,11 +471,12 @@ display: none;
 <div id="analysis" class="section level2">
 <h2>Analysis</h2>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 4.2.3 (2023-03-15 ucrt)
+<pre><code>## R version 4.3.1 (2023-06-16 ucrt)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
 ## Running under: Windows 10 x64 (build 19045)
 ## 
 ## Matrix products: default
+## 
 ## 
 ## locale:
 ## [1] LC_COLLATE=Norwegian Bokmål_Norway.utf8 
@@ -403,16 +485,20 @@ display: none;
 ## [4] LC_NUMERIC=C                            
 ## [5] LC_TIME=Norwegian Bokmål_Norway.utf8    
 ## 
+## time zone: Europe/Oslo
+## tzcode source: internal
+## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
 ##  [1] GGally_2.1.2    naniar_1.0.0    skimr_2.1.5     patchwork_1.1.3
 ##  [5] here_1.0.1      lubridate_1.9.2 forcats_1.0.0   stringr_1.5.0  
-##  [9] dplyr_1.1.2     purrr_1.0.1     readr_2.1.4     tidyr_1.3.0    
-## [13] tibble_3.2.1    ggplot2_3.4.2   tidyverse_2.0.0
+##  [9] dplyr_1.1.3     purrr_1.0.2     readr_2.1.4     tidyr_1.3.0    
+## [13] tibble_3.2.1    ggplot2_3.4.3   tidyverse_2.0.0
 ## 
 ## loaded via a namespace (and not attached):
+
 ##  [1] Rcpp_1.0.10        lattice_0.20-45    rprojroot_2.0.3    digest_0.6.31     
 ##  [5] utf8_1.2.3         R6_2.5.1           plyr_1.8.8         repr_1.1.6        
 ##  [9] visdat_0.6.0       evaluate_0.21      highr_0.10         pillar_1.9.0      
@@ -428,6 +514,22 @@ display: none;
 ## [49] RColorBrewer_1.1-3 tools_4.2.3        bit64_4.0.5        glue_1.6.2        
 ## [53] hms_1.1.3          parallel_4.2.3     fastmap_1.1.1      yaml_2.3.7        
 ## [57] timechange_0.2.0   colorspace_2.1-0   knitr_1.42         sass_0.4.6</code></pre>
+=======
+##  [1] sass_0.4.7         utf8_1.2.3         generics_0.1.3     stringi_1.7.12    
+##  [5] hms_1.1.3          digest_0.6.33      magrittr_2.0.3     RColorBrewer_1.1-3
+##  [9] evaluate_0.21      grid_4.3.1         timechange_0.2.0   fastmap_1.1.1     
+## [13] plyr_1.8.8         rprojroot_2.0.3    jsonlite_1.8.7     reshape_0.8.9     
+## [17] fansi_1.0.4        scales_1.2.1       jquerylib_0.1.4    cli_3.6.1         
+## [21] crayon_1.5.2       rlang_1.1.1        bit64_4.0.5        munsell_0.5.0     
+## [25] base64enc_0.1-3    withr_2.5.0        repr_1.1.6         cachem_1.0.8      
+## [29] yaml_2.3.7         parallel_4.3.1     tools_4.3.1        tzdb_0.4.0        
+## [33] colorspace_2.1-0   vctrs_0.6.3        R6_2.5.1           lifecycle_1.0.3   
+## [37] bit_4.0.5          vroom_1.6.3        pkgconfig_2.0.3    pillar_1.9.0      
+## [41] bslib_0.5.1        gtable_0.3.4       Rcpp_1.0.11        glue_1.6.2        
+## [45] visdat_0.6.0       highr_0.10         xfun_0.40          tidyselect_1.2.0  
+## [49] rstudioapi_0.15.0  knitr_1.43         farver_2.1.1       htmltools_0.5.6   
+## [53] labeling_0.4.3     rmarkdown_2.24     compiler_4.3.1</code></pre>
+
 </div>
 
 
