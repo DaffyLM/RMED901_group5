@@ -49,10 +49,7 @@ Several variables are renamed for clarity and consistency.
 
 ## Exploring data
 
-OurData contains 834 rows (participants) and 34 columns (variable). The columns types are character (9 values), factor (2 values), logical (12) values and numeric (11 values). 
-
 ```{r, echo=FALSE, message = FALSE}
-summary(OurData)
 skimr::skim(OurData)
 ```
 ### Exploring missing values 
@@ -165,20 +162,20 @@ scatter_plot_BMI_Age
 
 ## Analyses
 
-Lastly, we analyzed our data focusing on birthweight and birth outcome. First, we checked whether birth outcome was dependent of the enrollment center. There was a significant difference between the different enrollment centers (p=.0286).
+Lastly, we analyzed our data focusing on birth weight and birth outcome. First, we checked whether birth weight was dependent of the enrollment center. There was a significant difference between the different enrollment centers (p=.0286).
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 OurData %>%
   aov(Birthweight~Enroll.Center, data = .) %>%
   broom::tidy()
 
-
 Enroll.Center_birthweight <- ggplot(OurData,
-                                aes(x = Enroll.Center, y = Birthweight, fill = Enroll.Center)) +
+                                    aes(x = Enroll.Center, y = Birthweight, fill = Enroll.Center)) +
   geom_boxplot(aes(color = Enroll.Center)) +
   theme_minimal() +
   labs(title = "Enroll.Center vs. birthweight")
 Enroll.Center_birthweight
+
 ```
 
 
