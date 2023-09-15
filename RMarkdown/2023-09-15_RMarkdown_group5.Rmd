@@ -1,6 +1,6 @@
 ---
 title: "Group 5 Report"
-author: "Dagfinn, Mathilde, Johanna, Ingvild"
+author: "Dagfinn, Mathilde, Joanna, Ingvild"
 date: "2023-09-15"
 output: html_document
 ---
@@ -20,4 +20,5 @@ summary(cars)
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ```
+
 
