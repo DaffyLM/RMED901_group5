@@ -278,7 +278,6 @@ scatter_plot_BMI_Age <- ggplot(OurData,
 
 scatter_plot_BMI_Age
 
-
 ##Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
 ## Interleukin(IL)-6 vs. Age
 IL_6_baseline_Age <- ggplot(OurData,
@@ -302,25 +301,15 @@ IL_6_baseline_Age_group <- ggplot(OurData %>%
 IL_6_baseline_Age_group
 
 
-#Treatment vs. birthweight
-
-Treatment_birthweight <- ggplot(OurData,
-                                aes(x = Group, y = Birthweight)) +
-                                geom_boxplot(aes(color = Group)) +
-                                theme_minimal() +
-                                labs(title = "Treatment vs. birthweight")
-Treatment_birthweight
-
 #Was there a difference of birthweight between different race categories? 
 ggplot(data=OurData) +
   aes(x = Birthweight) +
   geom_boxplot(aes(color = race)) +
   facet_grid(rows = vars(race))
 
+#Is there an association between treatment and birthweight? 
 ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
   geom_boxplot() +
-  stat_summary(fun = mean, geom = "point", shape = 20, size = 3, color = "red", position = position_dodge(0.75)) +
-  stat_summary(fun = mean, geom = "line", aes(group = 1), color = "red", position = position_dodge(0.75)) +
   labs(title = "Comparison of Birthweight between Groups C and T",
        x = "Group",
        y = "Birthweight") +
