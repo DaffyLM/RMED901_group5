@@ -1,6 +1,37 @@
 Created 2023-09-07
 Last updated 2023-09-15
-Group 5 project: exam.data
+Group 5: Dagfinn, Joanna, Ingvild, Mathilde
+---------------------------------
+
+RMED901_group5 project for RMED901 Data science with R for medical researchers
+
+---------------------------------
+
+File structure:
+-RMED901_group5
+|--Readme.txt
+|--Data
+|---exam_data_join.txt
+|---exam_data.txt
+|---tidy_exam_data.txt
+|--Script
+|---Script_group5.R
+|--RMarkdown
+|---2023-09-15_RMarkdown_group5
+|---2023-09-15_RMarkdown_group5.Rmd
+|--RMED901.Rproj
+
+----------------------------------
+
+Table of Contents:
+|--Data deccription
+|--Script Overview
+|--Data Cleaning and Manipulation
+|--Data Exploration
+|--Visualization
+|--Notes
+|--Requirements
+
 ---
 Data description: The objective of this randomized controlled trial was to determine whether treatment of maternal periodontal disease can reduce risk of preterm birth and low birth weight.Dataset Description:
 The data in this script is primarily extracted from the exam_data.txt file, and subsequently joined with exam_data_join.txt. 
