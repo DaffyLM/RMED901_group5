@@ -36,7 +36,7 @@ summary(OurData)
 skimr::skim(OurData)
 ```
 ### Exploring missing values 
-There is 810 missing values in the category "BL.Diab.Type". Only the person with diabetes could report diabetes type. 
+There are 810 missing values in the category "BL.Diab.Type". Only the person with diabetes could report diabetes type. 
 
 ```{r}
 OurData %>% 
