@@ -22,12 +22,32 @@ OurData <- read_delim(here("Data", "tidy_exam_data.txt"))
 ```
 
 ## Description of data
+###  Description of the dataset<br>
+The data is collcted from a randomized controlled trial (RCT). The objective of the RCT trial was to determine whether treatment of maternal periodontal disease can reduce risk of preterm birth and low birth weight.
 
-### Tidying data
+The data in this script is primarily extracted from the exam_data.txt file, and subsequently joined with exam_data_join.txt. Data exploration was performed using functions like summary(), glimpse(), and View().
+
+After removing one duplicate row, the dataset consisted of 834 subjects. 
+
+An additional dataset (exam_data_join.txt) was imported and joined with the main dataset based on the Patient ID (PID).
+
+
+## Tidying and wrangling data
+Several variables are renamed for clarity and consistency.
+<ul>1. The column Local_Topical.Anest which had combined variables, is separated into two distinct variables: LocalAnesthetic and TopicalAnesthetic.</ul>
+<ul>2. One duplicate entry was removed </ul>
+<ul>3. The C column is transformed to have values "C" or "T" and subsequently renamed to "Group".</ul>
+<ul>4. Unwanted columns like year, month, and T are removed.</ul>
+<ul>5. Values in the Education column are modified for clarity, removing "yrs" and replacing "MT" and "LT" with ">" and "<" respectively.</ul>
+<ul>5. Boolean columns are created or modified, transforming string values like "Yes" and "No" to TRUE and FALSE respectively.</ul>
+<ul>6. New columns are derived, such as one indicating if the number of qualifying teeth is less than 15.</ul>
+<ul>7. The PID is separated to also include the enrollment center.</ul>
+<ul>8. Variables like BMI are grouped into quartiles.</ul>
+<ul>9. In total, 140 participants identified with multiple racial categories. For those who selected only one category, the options were consolidated to 'White', 'Black', 'Nat.Am', 'Asian', and 'Hisp'. Participants who identified with more than one category were categorized as 'Mixed'.</ul>
+<ul>10. Lastly, the dataset was organized in ascending order based on patient ID, and the refined data was saved as 'tidy_exam_data.txt'. All subsequent analyses were conducted using this dataset. </ul>
+
 
 ## Exploring data
-
-###Exploring data
 
 OurData contains 834 rows (patients) and 34 columns (variable). The columns types is character (9 values), factor (2 values), logical (12) values and numeric (11 values). 
 
@@ -79,7 +99,7 @@ OurData %>%
 ```
 
 ## Plotting data
-### Exploring correlated measurements
+### Exploring correlated measurements.
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 multiple_correlations_plot <- ggpairs(OurData[c("BMI", 
                     "Age", 
@@ -92,10 +112,138 @@ multiple_correlations_plot <- ggpairs(OurData[c("BMI",
 multiple_correlations_plot
 ```
 
+### Correlation between IL-6 and Race, and IL-6 and Age.
+```{r, echo=FALSE, warning=FALSE}
+ggplot(data=OurData) +
+  aes(y = IL6_baseline) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race)) +
+  coord_cartesian(ylim= c(0, 100))
 
-## Analysis
+OurData$Age_group <- cut(OurData$Age, breaks = c(0, 16, 21, 26, 31, 36, 41), 
+                         labels = c("16-20", "21-25", "26-30", "31-35", "36-40", "41-44"))
+
+IL_6_baseline_Age_group <- ggplot(OurData %>%
+                                    filter(!is.na(Age_group)),
+                           aes(x = as.factor(Age_group), y = IL6_baseline)) +
+  geom_boxplot(aes(color = Age_group))+
+  theme_minimal()+
+  labs(title = "Interleukin(IL)-6 distribution vs. Age_group")
+IL_6_baseline_Age_group
+
+```
+
+### Checked proportion of Patients Requiring EDC by Age
+```{r, echo=FALSE}
+data_for_plot <- OurData %>% 
+  filter(EDC.necessary. == TRUE) %>%
+  group_by(Age) %>%
+  summarise(count = n()) %>%
+  mutate(proportionEDC = count/sum(count)) 
+
+ggplot(data_for_plot, aes(x=Age, y=proportionEDC)) + 
+  geom_bar(stat="identity", fill="orange") + 
+  labs(title="Proportion of Patients Requiring EDC by Age",
+       x="Age",
+       y="Proportion of Patients") +
+  theme_minimal()
+```
+
+
+### Checked for linear relationship between age and BMI
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+scatter_plot_BMI_Age <- ggplot(OurData, 
+       aes(x = Age, y = BMI))+
+  geom_point()+
+  geom_smooth(method = "lm", color = "red") +
+  theme_minimal() +
+  labs(title = "Scatter Plot of Age vs. BMI")
+
+scatter_plot_BMI_Age
+```
+
+
+## Analyses
+
+Lastly, we analyzed our data focusing on birthweight and birth outcome. First, we checked whether birth outcome was dependent of the enrollment center. There was a significant difference between the different enrollment centers (p=.0286).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+OurData %>%
+  aov(Birthweight~Enroll.Center, data = .) %>%
+  broom::tidy()
+
+
+Enroll.Center_birthweight <- ggplot(OurData,
+                                aes(x = Enroll.Center, y = Birthweight, fill = Enroll.Center)) +
+  geom_boxplot(aes(color = Enroll.Center)) +
+  theme_minimal() +
+  labs(title = "Enroll.Center vs. birthweight")
+Enroll.Center_birthweight
+```
+
+
+
+
+Second, birth outcome was also dependent of BMI of the patient (p=.0458).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+OurData %>% 
+  kruskal.test(Birth.outcome~BMI, data = .) %>%
+  broom::tidy()
+
+
+Hist_BMI_Birth.outcome <- ggplot(OurData, aes(x=BMI)) +
+  geom_histogram(aes(fill=Birth.outcome), bins=30, alpha=0.7, position="identity") + 
+  facet_wrap(~ Birth.outcome, scales="free_y") +
+  labs(title="Distribution of BMI by Birth Outcome", 
+       x="BMI", y="Count") +
+  theme_minimal()
+
+print(Hist_BMI_Birth.outcome)
+```
+
+
+
+
+However, there was no difference in birthweight between different race categories (p=.546).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+ANOVAresultraceBW <- OurData %>%
+    aov(Birthweight~ race, data = .)
+ANOVAresultraceBW %>%
+  broom::tidy()
+
+
+ggplot(data=OurData) +
+  aes(x = Birthweight) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race))
+```
+
+
+
+
+Sadly, the treatment intervention did neither affect the birthweight (p=.566)
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+OurData %>% 
+  t.test(Birthweight~Group, data = .) %>%
+  broom::tidy()
+
+
+ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
+  geom_boxplot() +
+  labs(title = "Comparison of Birthweight between Groups C and T",
+       x = "Group",
+       y = "Birthweight") +
+  theme_minimal()
+```
+
+
+## Session Info
 ```{r}
 sessionInfo()
 ```
+
 
 
