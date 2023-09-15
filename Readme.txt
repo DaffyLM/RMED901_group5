@@ -30,7 +30,7 @@ Table of Contents:
 |--Data Exploration
 |--Visualization
 |--Notes
-|--Requirements
+|--Requirements 
 
 ---
 Data description: 
