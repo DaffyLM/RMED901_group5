@@ -316,13 +316,6 @@ IL_6_baseline_Age_group <- ggplot(OurData %>%
   labs(title = "Interleukin(IL)-6 distribution vs. Age_group")
 IL_6_baseline_Age_group
 
-
-#Was there a difference of birthweight between different race categories? 
-ggplot(data=OurData) +
-  aes(x = Birthweight) +
-  geom_boxplot(aes(color = race)) +
-  facet_grid(rows = vars(race))
-
 #Is there an association between treatment and birthweight? 
 ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
   geom_boxplot() +
@@ -330,6 +323,11 @@ ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
        x = "Group",
        y = "Birthweight") +
   theme_minimal()
+
+#T-test
+OurData %>% 
+  t.test(Birthweight~Group, data = .) %>%
+  broom::tidy()
 
 #Does the birth outcome depend on BMI of the patient?
 ggplot(data=OurData) +
@@ -348,6 +346,7 @@ Enroll.Center_birthweight <- ggplot(OurData,
   labs(title = "Enroll.Center vs. birthweight")
 Enroll.Center_birthweight
 
+
 #Does birth outcome depend on BMI? Check distribution of BMI
 Hist_BMI_Birth.outcome <- ggplot(OurData, aes(x=BMI)) +
   geom_histogram(aes(fill=Birth.outcome), bins=30, alpha=0.7, position="identity") + 
@@ -362,3 +361,27 @@ print(Hist_BMI_Birth.outcome)
 OurData %>% 
   kruskal.test(BMI~Birth.outcome, data = .) %>%
   broom::tidy()
+=======
+#Was there a difference of birthweight between different race categories? 
+##Check for normality
+OurData %>%
+  ggplot(aes(x=Birthweight, 
+             color=as.factor(race),
+             ))+
+  geom_histogram() 
+
+##The ANOVA
+ANOVAresultraceBW <- OurData %>%
+    aov(Birthweight~ race, data = .)
+
+ANOVAresultraceBW %>%
+  summary()
+ANOVAresultraceBW %>%
+  broom::tidy()
+
+##Plots
+ggplot(data=OurData) +
+  aes(x = Birthweight) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race))
+
