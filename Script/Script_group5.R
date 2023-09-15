@@ -316,13 +316,6 @@ IL_6_baseline_Age_group <- ggplot(OurData %>%
   labs(title = "Interleukin(IL)-6 distribution vs. Age_group")
 IL_6_baseline_Age_group
 
-
-#Was there a difference of birthweight between different race categories? 
-ggplot(data=OurData) +
-  aes(x = Birthweight) +
-  geom_boxplot(aes(color = race)) +
-  facet_grid(rows = vars(race))
-
 #Is there an association between treatment and birthweight? 
 ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
   geom_boxplot() +
@@ -345,3 +338,26 @@ Enroll.Center_birthweight <- ggplot(OurData,
   theme_minimal() +
   labs(title = "Enroll.Center vs. birthweight")
 Enroll.Center_birthweight
+
+#Was there a difference of birthweight between different race categories? 
+##Check for normality
+OurData %>%
+  ggplot(aes(x=Birthweight, 
+             color=as.factor(race),
+             ))+
+  geom_histogram() 
+
+##The ANOVA
+ANOVAresultraceBW <- OurData %>%
+    aov(Birthweight~ race, data = .)
+
+ANOVAresultraceBW %>%
+  summary()
+ANOVAresultraceBW %>%
+  broom::tidy()
+
+##Plots
+ggplot(data=OurData) +
+  aes(x = Birthweight) +
+  geom_boxplot(aes(color = race)) +
+  facet_grid(rows = vars(race))
