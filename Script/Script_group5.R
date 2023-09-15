@@ -335,6 +335,8 @@ ggplot(data=OurData) +
   geom_bar(aes(color = BMI_Quartile)) +
   facet_grid(rows = vars(BMI_Quartile))
 
+
+
 #Does the birth outcome depend on the center?
 
 Enroll.Center_birthweight <- ggplot(OurData,
@@ -344,6 +346,22 @@ Enroll.Center_birthweight <- ggplot(OurData,
   labs(title = "Enroll.Center vs. birthweight")
 Enroll.Center_birthweight
 
+
+#Does birth outcome depend on BMI? Check distribution of BMI
+Hist_BMI_Birth.outcome <- ggplot(OurData, aes(x=BMI)) +
+  geom_histogram(aes(fill=Birth.outcome), bins=30, alpha=0.7, position="identity") + 
+  facet_wrap(~ Birth.outcome, scales="free_y") +
+  labs(title="Distribution of BMI by Birth Outcome", 
+       x="BMI", y="Count") +
+  theme_minimal()
+
+print(Hist_BMI_Birth.outcome)
+
+#BMI is not normally distributed - use Kruskal-Wallis test
+OurData %>% 
+  kruskal.test(BMI~Birth.outcome, data = .) %>%
+  broom::tidy()
+=======
 #Was there a difference of birthweight between different race categories? 
 ##Check for normality
 OurData %>%
@@ -366,3 +384,4 @@ ggplot(data=OurData) +
   aes(x = Birthweight) +
   geom_boxplot(aes(color = race)) +
   facet_grid(rows = vars(race))
+
