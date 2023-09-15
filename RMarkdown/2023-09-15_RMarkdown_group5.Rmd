@@ -22,10 +22,30 @@ OurData <- read_delim(here("Data", "tidy_exam_data.txt"))
 ```
 
 ## Description of data
+###  Description of the dataset<br>
+The data is collcted from a randomized controlled trial (RCT). The objective of the RCT trial was to determine whether treatment of maternal periodontal disease can reduce risk of preterm birth and low birth weight.
 
-### Tidying data
+The data in this script is primarily extracted from the exam_data.txt file, and subsequently joined with exam_data_join.txt. Data exploration was performed using functions like summary(), glimpse(), and View().
 
-## Wrangling data
+After removing one duplicate row, the dataset consisted of 834 subjects. 
+
+An additional dataset (exam_data_join.txt) was imported and joined with the main dataset based on the Patient ID (PID).
+
+
+## Tidying and wrangling data
+Several variables are renamed for clarity and consistency.
+<ul>1. The column Local_Topical.Anest which had combined variables, is separated into two distinct variables: LocalAnesthetic and TopicalAnesthetic.</ul>
+<ul>2. One duplicate entry was removed </ul>
+<ul>3. The C column is transformed to have values "C" or "T" and subsequently renamed to "Group".</ul>
+<ul>4. Unwanted columns like year, month, and T are removed.</ul>
+<ul>5. Values in the Education column are modified for clarity, removing "yrs" and replacing "MT" and "LT" with ">" and "<" respectively.</ul>
+<ul>5. Boolean columns are created or modified, transforming string values like "Yes" and "No" to TRUE and FALSE respectively.</ul>
+<ul>6. New columns are derived, such as one indicating if the number of qualifying teeth is less than 15.</ul>
+<ul>7. The PID is separated to also include the enrollment center.</ul>
+<ul>8. Variables like BMI are grouped into quartiles.</ul>
+<ul>9. In total, 140 participants identified with multiple racial categories. For those who selected only one category, the options were consolidated to 'White', 'Black', 'Nat.Am', 'Asian', and 'Hisp'. Participants who identified with more than one category were categorized as 'Mixed'.</ul>
+<ul>10. Lastly, the dataset was organized in ascending order based on patient ID, and the refined data was saved as 'tidy_exam_data.txt'. All subsequent analyses were conducted using this dataset. </ul>
+
 
 ## Plotting data
 ### Exploring correlated measurements
