@@ -216,6 +216,22 @@ ggplot(data=OurData) +
   #Does whether patient required essential dental care change with age of the patients?
   #Do BMI and age have a linear relationship?
   
+#Check if birth outcome is dependent on the center using plots
+
+OurData$center <- substr(OurData$PID, 1, 1)
+
+plot_BirthOutcome_by_Center <- ggplot(OurData, aes(x=center, fill=Birth.outcome)) +
+  geom_bar(position="dodge") +
+  labs(title="Birth Outcomes in Different Centers", 
+       x="Center", y="Count", fill="Outcome") +
+  scale_fill_manual(values=c("Non-live birth" = "#d7191c", 
+                             "Lost to FU" = "#f1b6da", 
+                             "Live birth" = "#2c7bb6", 
+                             "Elective abortion" = "#fdae61")) +
+  theme_minimal()
+
+
+plot_BirthOutcome_by_Center
 
 #Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Race`?
 OurData <- OurData %>%
@@ -278,16 +294,38 @@ scatter_plot_BMI_Age <- ggplot(OurData,
 
 scatter_plot_BMI_Age
 
+##Does the serum measure for Interleukin(IL)-6 at baseline distribution depend on `Age`?
+## Interleukin(IL)-6 vs. Age
+IL_6_baseline_Age <- ggplot(OurData,
+                            aes(x = as.factor(Age), y = IL6_baseline)) +
+  geom_point()+
+  theme_minimal()+
+  labs(title = "Interleukin(IL)-6 distribution vs. Age")
+IL_6_baseline_Age
+
+## Interleukin(IL)-6 vs. Age_group
+
+OurData$Age_group <- cut(OurData$Age, breaks = c(0, 16, 21, 26, 31, 36, 41), 
+                         labels = c("16-20", "21-25", "26-30", "31-35", "36-40", "41-44"))
+
+IL_6_baseline_Age_group <- ggplot(OurData %>%
+                                    filter(!is.na(Age_group)),
+                           aes(x = as.factor(Age_group), y = IL6_baseline)) +
+  geom_boxplot(aes(color = Age_group))+
+  theme_minimal()+
+  labs(title = "Interleukin(IL)-6 distribution vs. Age_group")
+IL_6_baseline_Age_group
+
+
 #Was there a difference of birthweight between different race categories? 
 ggplot(data=OurData) +
   aes(x = Birthweight) +
   geom_boxplot(aes(color = race)) +
   facet_grid(rows = vars(race))
 
+#Is there an association between treatment and birthweight? 
 ggplot(OurData, aes(x = Group, y = Birthweight, fill = Group)) +
   geom_boxplot() +
-  stat_summary(fun = mean, geom = "point", shape = 20, size = 3, color = "red", position = position_dodge(0.75)) +
-  stat_summary(fun = mean, geom = "line", aes(group = 1), color = "red", position = position_dodge(0.75)) +
   labs(title = "Comparison of Birthweight between Groups C and T",
        x = "Group",
        y = "Birthweight") +
@@ -299,4 +337,11 @@ ggplot(data=OurData) +
   geom_bar(aes(color = BMI_Quartile)) +
   facet_grid(rows = vars(BMI_Quartile))
 
+#Does the birth outcome depend on the center?
 
+Enroll.Center_birthweight <- ggplot(OurData,
+                                aes(x = Enroll.Center, y = Birthweight, fill = Enroll.Center)) +
+  geom_boxplot(aes(color = Enroll.Center)) +
+  theme_minimal() +
+  labs(title = "Enroll.Center vs. birthweight")
+Enroll.Center_birthweight
