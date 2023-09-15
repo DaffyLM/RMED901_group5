@@ -76,7 +76,7 @@ OurData %>%
             sd_age = sd(Age, na.rm = TRUE))
 ```
 
-### Raport of min, max, mean and sd of `Birthweight` filtered by `BMI` <= 30, `Age` > 25, race "Black" and `Enroll.center` "NY"
+### Raport of min, max, mean and sd of `Birthweight` filtered by `BMI` <= 30, `Age` > 25, race "Black" and `Enroll.center` "NY".
 
 ```{r, echo=FALSE, message = FALSE}
 OurData %>% 
